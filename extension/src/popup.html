@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TikTok 客服助手</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 380px;
+      min-height: 500px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8fafc;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .header p {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .account-list {
+      margin-bottom: 20px;
+    }
+
+    .account-item {
+      background: white;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      border-left: 4px solid #10b981;
+    }
+
+    .account-item.expired {
+      border-left-color: #ef4444;
+    }
+
+    .account-item.warning {
+      border-left-color: #f59e0b;
+    }
+
+    .account-name {
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 4px;
+    }
+
+    .account-username {
+      font-size: 12px;
+      color: #6b7280;
+      margin-bottom: 8px;
+    }
+
+    .account-status {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
+    }
+
+    .status-badge {
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-weight: 500;
+    }
+
+    .status-valid {
+      background: #dcfce7;
+      color: #166534;
+    }
+
+    .status-warning {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .status-expired {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    .upload-time {
+      color: #6b7280;
+    }
+
+    .actions {
+      display: flex;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-primary {
+      background: #3b82f6;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #2563eb;
+    }
+
+    .btn-secondary {
+      background: #e5e7eb;
+      color: #374151;
+    }
+
+    .btn-secondary:hover {
+      background: #d1d5db;
+    }
+
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 40px 20px;
+      color: #6b7280;
+    }
+
+    .empty-state svg {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 16px;
+      opacity: 0.5;
+    }
+
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      color: #6b7280;
+    }
+
+    .spinner {
+      width: 20px;
+      height: 20px;
+      border: 2px solid #e5e7eb;
+      border-top: 2px solid #3b82f6;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-right: 8px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .notification {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 12px 16px;
+      border-radius: 6px;
+      color: white;
+      font-size: 14px;
+      z-index: 1000;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .notification.show {
+      transform: translateX(0);
+    }
+
+    .notification.success {
+      background: #10b981;
+    }
+
+    .notification.error {
+      background: #ef4444;
+    }
+
+    .settings {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    .settings-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    .settings-item label {
+      color: #374151;
+    }
+
+    .settings-item input {
+      width: 200px;
+      padding: 6px 8px;
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>TikTok 客服助手</h1>
+    <p>账号管理与 Cookie 上报工具</p>
+  </div>
+
+  <div class="content">
+    <div id="loading" class="loading" style="display: none;">
+      <div class="spinner"></div>
+      <span>加载中...</span>
+    </div>
+
+    <div id="account-list" class="account-list"></div>
+
+    <div id="empty-state" class="empty-state" style="display: none;">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+      </svg>
+      <h3>暂无账号</h3>
+      <p>请先登录 TikTok 后点击"检测账号"</p>
+    </div>
+
+    <div class="actions">
+      <button id="detect-btn" class="btn btn-primary">检测账号</button>
+      <button id="upload-btn" class="btn btn-secondary" disabled>上传数据</button>
+    </div>
+
+    <div class="settings">
+      <div class="settings-item">
+        <label>服务器地址:</label>
+        <input type="text" id="server-url" placeholder="https://api.example.com" />
+      </div>
+      <div class="settings-item">
+        <label>自动上传:</label>
+        <input type="checkbox" id="auto-upload" />
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

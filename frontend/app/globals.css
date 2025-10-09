@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors;
+  }
+  
+  .btn-primary {
+    @apply btn bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-gray-200 text-gray-900 hover:bg-gray-300 focus:ring-gray-500;
+  }
+  
+  .btn-danger {
+    @apply btn bg-red-600 text-white hover:bg-red-700 focus:ring-red-500;
+  }
+  
+  .input {
+    @apply block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500;
+  }
+  
+  .card {
+    @apply bg-white shadow rounded-lg;
+  }
+  
+  .card-header {
+    @apply px-4 py-5 border-b border-gray-200 sm:px-6;
+  }
+  
+  .card-body {
+    @apply px-4 py-5 sm:p-6;
+  }
+  
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .badge-green {
+    @apply badge bg-green-100 text-green-800;
+  }
+  
+  .badge-yellow {
+    @apply badge bg-yellow-100 text-yellow-800;
+  }
+  
+  .badge-red {
+    @apply badge bg-red-100 text-red-800;
+  }
+  
+  .badge-blue {
+    @apply badge bg-blue-100 text-blue-800;
+  }
+  
+  .badge-gray {
+    @apply badge bg-gray-100 text-gray-800;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+
+/* 自定义滚动条 */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 消息气泡样式 */
+.message-bubble {
+  @apply max-w-xs lg:max-w-md px-4 py-2 rounded-lg;
+}
+
+.message-inbound {
+  @apply message-bubble bg-white border border-gray-200 text-gray-900;
+}
+
+.message-outbound {
+  @apply message-bubble bg-blue-600 text-white ml-auto;
+}
+
+.message-internal {
+  @apply message-bubble bg-yellow-50 border border-yellow-200 text-yellow-800;
+}
+
+/* 打字指示器 */
+.typing-indicator {
+  @apply flex space-x-1;
+}
+
+.typing-dot {
+  @apply w-2 h-2 bg-gray-400 rounded-full animate-pulse;
+}
+
+.typing-dot:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.typing-dot:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.typing-dot:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* 状态指示器 */
+.status-indicator {
+  @apply w-2 h-2 rounded-full;
+}
+
+.status-online {
+  @apply status-indicator bg-green-400;
+}
+
+.status-away {
+  @apply status-indicator bg-yellow-400;
+}
+
+.status-busy {
+  @apply status-indicator bg-red-400;
+}
+
+.status-offline {
+  @apply status-indicator bg-gray-400;
+}

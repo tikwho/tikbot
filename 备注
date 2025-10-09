@@ -1,0 +1,212 @@
+
+	•	后端用 **Cookie 会话直连 TikTok（WS/长连）**收发评论与私信；
+	•	插件仅负责本地账号 Cookie 上报与账号管理；
+	•	忽略频率限制与人工审核，以多坐席协作为核心目标；
+	•	Next.js 提供运营与坐席工作台；NestJS + PG +typeorm + Redis 为后端基础。
+
+⸻
+
+1. 目标与范围
+	•	业务目标：在高并发场景下，实现多客服（多坐席）对 TikTok 评论与私信的实时接待、分配、协作与闭环，无人工审核、无节流，确保“不断电”“不卡单”“不撞单”。
+	•	非目标：广告投放管理、OA 流程、BI 报表（仅输出基础指标与导出）。
+	•	成功标准：
+	•	新消息到达 → < 2s 出现在坐席工作台；
+	•	坐席认领/转派/回复操作 → < 500ms 完成内网状态更新；
+	•	重复发送与撞单 0 次（以周为单位）。
+
+⸻
+
+2. 角色与权限
+	•	Owner：租户管理、合规设置、密钥/代理池、数据导出。
+	•	Admin：团队、账号、技能组、队列、宏模板管理。
+	•	Manager：排班、容量上限、队列权重、质检抽样。
+	•	Agent（坐席）：接待、认领、转派、内部笔记、模板回复。
+	•	Auditor（质检）：只读、抽样评分（不拦截发送）。
+
+RBAC 最小授权；所有敏感操作写入审计日志。
+
+⸻
+
+3. 整体架构
+	•	接入层：会话 Orchestrator + 会话 Worker（每账号 1 主 1 备），通过 Playwright/Chromium 上下文或直连 WS 客户端接入 TikTok；统一解析入站事件，统一调用外发。
+	•	协作层：会话聚合（Conversation）、队列与分配（Routing & Capacity）、锁与幂等、Typing状态。
+	•	应用层：Next.js 管理端 + 坐席工作台（Team Inbox、我的会话、队列、模板、便签）。
+	•	数据层：PostgreSQL（业务数据）、Redis（队列/锁/状态）、对象存储（附件/截图）。
+	•	可观测：Prometheus + Grafana（连接、QPS、失败率、延迟）。
+
+⸻
+
+4. 插件端（最小职责）
+	•	读取 *.tiktok.com Cookie、UA、语言/时区、本机指纹；本地加密后上传（AES-GCM + RSA 封装）。
+	•	账号页：列表、最近上传时间、有效性检测、手动覆盖/删除。
+	•	无常驻后台、无监听/发送；仅Cookie 上报与账号元数据维护。
+
+⸻
+
+5. 后端会话直连
+
+5.1 Worker 生命周期
+	•	INIT：解密会话材料 → 加载 Playwright Context（或直连 WS 头）→ 指定代理 → 打开消息页。
+	•	CONNECT：建立 WS/事件通道，注册 message/close/error。
+	•	RECV：解析评论/DM → 归并到会话 → 入库 → 触发分配/通知。
+	•	SEND：出站任务（坐席发送/系统触发）→ 生成幂等键 → DOM/HTTP 发送 → 回执入库。
+	•	RECONNECT：异常退避 + 备份连接接管。
+	•	REFRESH：Cookie 过期/异常 → 通知运营更新。
+
+5.2 兼容路径
+	•	首选：Playwright 复用真实浏览器网络栈（最稳）。
+	•	优化：稳定后为固定接口迁移到直连 WS/HTTP，降资源成本。
+
+⸻
+
+6. 会话与消息模型
+	•	会话键：account_id + channel (dm|comment) + user_id（必要时细化到 video_id）
+	•	会话状态：open | pending | snoozed | resolved | locked
+	•	消息方向：inbound | outbound | internal_note
+	•	外发幂等：hash(conversation_id + text + target_ref + minute_bucket)
+	•	锁：conv:{id}（Redis Redlock，可续租 60–120s）—持锁者才能外发；无锁者可加 internal_note/草稿/@提及。
+
+⸻
+
+7. 路由与分配（多坐席协作核心）
+
+7.1 策略优先级
+	1.	Sticky Agent（上次处理人在线则直达）。
+	2.	技能与语言（意图/语言 → 技能组）。
+	3.	优先级（VIP、首信、关键字）。
+	4.	容量与轮询（当前负载/容量比最低者优先）。
+
+7.2 容量模型
+	•	坐席配置并行上限（如 6）；超出则新会话入团队共享队列，坐席可认领（Claim）。
+	•	转派（Transfer）记录轨迹；可设置跟进人（Follower）。
+
+7.3 协作动作
+	•	内部笔记（仅内部可见）、@同事、共享草稿；
+	•	合并/拆分会话（同一用户多线程）；
+	•	Typing 指示（3–5s 心跳）；
+	•	阅读状态（已读光标）。
+
+⸻
+
+8. 坐席工作台（Next.js）
+	•	收件箱：我的/团队/VIP/待跟进/已解决；快捷搜索（用户、标签、全文）。
+	•	会话详情：时间线（内外消息 + 操作轨迹）、右栏用户侧栏（画像、历史、标签、订单/工单链接）、当前持锁者与 Typing 显示。
+	•	操作区：回复输入框、模板库（个人/团队）、翻译开关、附件上传、内部笔记。
+	•	协作条：认领、转派、邀请协作（添加 follower）、设置跟进提醒。
+	•	键盘快捷键：R 回复、N 笔记、C 认领、T 转派、Cmd/Ctrl+Enter 发送。
+
+⸻
+
+9. 管理后台（Next.js）
+	•	账号 & 会话：账号状态（在线/心跳/代理地区）、Cookie 有效期、手动切代理/停机。
+	•	团队 & 成员：技能/语言、并行上限、排班（可选）。
+	•	路由策略：技能组、语言映射、VIP 列表、优先级规则。
+	•	模板 & 宏：变量 {nickname} {video_title} {last_order}，A/B 版本，个人/团队范围。
+	•	标签：用户标签、会话标签（可驱动路由/报表）。
+	•	导出：CSV（会话、消息、轨迹、绩效指标）。
+	•	审计：关键操作留痕（转派、删除、导出、配置变更）。
+
+⸻
+
+10. API & WS 契约（节选）
+	•	POST /v1/conversations/:id/reply { text, attachments? } → 内部做加锁 + 幂等 + 外发
+	•	POST /v1/conversations/:id/claim / transfer / add-follower / resolve
+	•	POST /v1/notes { conversation_id, body }
+	•	GET /v1/inbox?filter=（我的/团队/VIP/待跟进）
+	•	POST /v1/agents/:id/presence { presence }（online/away/busy/offline）
+	•	WS（坐席侧）事件：NEW_MESSAGE、ASSIGNED、LOCKED/UNLOCKED、TYPING、OUTBOUND_RESULT、QUEUE_UPDATE
+
+⸻
+
+11. 数据库（实体概要）
+	•	conversations：id, tenant_id, team_id, account_id, channel, user_id, status, priority, assignee_id, follower_ids[], locked_by, locked_until, last_msg_at, tags[], meta jsonb, created_at, updated_at
+	•	messages：id, conversation_id, direction, body, body_plain, attachments jsonb, author_id, external_ref jsonb, idempotency_key, created_at, sent_at, error
+	•	agents：id, team_id, user_id, skills[], languages[], capacity, presence, current_load, last_seen_at
+	•	queues / queue_items：队列配置与排队项
+	•	accounts / account_sessions：别名、代理、加密会话 blob、UA/语言/时区、过期时间
+	•	audit_logs：操作轨迹
+	•	macros、templates、labels：运营配置
+	•	attachments：对象存储引用（内部可见/外发可用）
+
+⸻
+
+12. 状态机与一致性
+	•	会话：open → pending/snoozed → resolved；任意状态可 locked/unlocked。
+	•	锁：获取/续租/释放（异常自动回收）；未持锁者不可外发。
+	•	幂等：入站 dedup_hash；出站 idempotency_key。
+	•	重复保护：同一会话最近 1 分钟同文案外发拒绝；编辑后视为新文案。
+
+⸻
+
+13. 指标与可观测（Dashboard）
+	•	连接：活跃 WS 数、重连次数、心跳 RTT。
+	•	消息：入站/出站 QPS、出站成功率、失败码分布、平均响应时长。
+	•	坐席：分配量、处理时长、并行负载、转派率、解决率。
+	•	队列：等待时长分布、堆积告警（> X 条、> Y 分钟）。
+	•	导出：按日/周 CSV。
+
+⸻
+
+14. 安全与合规
+	•	密钥管理：前端加密上传；后端 Envelope 加密（行级 AES-GCM + KMS），只在 Worker 内存解密。
+	•	最小存储：不记录明文 Cookie/请求体；敏感字段脱敏。
+	•	权限控制：租户隔离、团队隔离、字段级访问（内部笔记仅内部可见）。
+	•	紧急开关：一键“只收不发”（不会自动触发，但供应急）。
+
+⸻
+
+15. 部署与容量
+	•	后端：NestJS（Docker/PM2），Auto-Scaler 基于入站速率和活跃会话数。
+	•	会话 Worker：按账号水平扩展；热点账号常驻，冷账号按需唤醒。
+	•	Redis：分片或主从（锁/队列/Presence）。
+	•	PG：读写分离（消息表热写），消息体可冷热分层（近 90 天热、历史冷）。
+	•	对象存储：S3/OSS，CDN 内网回源。
+
+⸻
+
+16. 上线与灰度（无频控前提下的稳态）
+	1.	Phase A（影子收集 48h）：只收不发，验证归并/分配/协作流。
+	2.	Phase B（小流量接待）：1~2 账号，全部自动分配，多坐席无审核，观察撞单与重复率。
+	3.	Phase C（全量）：扩充账号池与坐席，启用备线与重连告警。
+	4.	回滚策略：开紧急“只收不发”，或切回手动发送。
+
+⸻
+
+17. 关键测试用例（抽样）
+	•	并发：同一会话双坐席同时发送 → 仅持锁者成功。
+	•	幂等：快速连点发送同文案 → 仅一次外发。
+	•	路由：Sticky、技能、容量、轮询排序正确性。
+	•	重连：WS 中断 → 指数退避重连，备线接管。
+	•	合并/拆分：同用户不同入口消息被聚合；拆分子线程独立分配。
+	•	导出：CSV 字段与时区正确。
+	•	权限：内部笔记仅内部可见；审计日志完整。
+
+⸻
+
+18. 风险与对策
+	•	页面/接口变更：Playwright 优先 + 日常冒烟用例；必要路径再做直连客户端。
+	•	账号风控：虽然不做频控，也建议保持随机延时与人类化打字（不拦截，仅 UI 提示）。
+	•	Cookie 过期：到期前 3 天提醒，插件一键更新。
+	•	资源成本：Worker 做 Idle 休眠 + 事件唤醒；直连化降低 Playwright 占用。
+
+⸻
+
+19. 近期交付清单（MVP 两周）
+	•	后端：会话 Worker（收/发/重连）、分配器（Sticky/技能/容量/轮询）、锁+幂等、坐席 WS 推送。
+	•	前端：Team Inbox + 会话页（认领/转派/内部笔记/模板/Typing/锁态）。
+	•	插件：Cookie 上传页、列表、覆盖/删除。
+	•	观测：基础面板（连接、QPS、失败率、出站耗时）。
+	•	导出：会话/消息 CSV。
+
+⸻
+
+20. 可选增强（后续版本）
+	•	SLA/提醒：按优先级设置响应/解决时限，到点提醒。
+	•	知识库：常见问答匹配，自动插入宏（不拦截）。
+	•	质检：抽样评分、敏感词仅高亮。
+	•	排班：结合在线时段更优分配。
+	•	多渠道：后续并入 IG/FB/YouTube 评论与私信，统一席位接待。
+
+⸻
+
+基于规划自动实现代码
