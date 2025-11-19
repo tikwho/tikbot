@@ -1,0 +1,207 @@
+
+Ab[31]
+
+    monkeyPatchXMLHttpRequest
+
+
+
+
+
+Cb[0](F[0], N, W, F[1])) : (E = K[Gb[1]](N, W)
+
+
+
+
+综合
+https://github.com/theheqiang/spider_reverse/blob/main/douyin/signature.py
+
+https://github.com/5ime/Tiktok_Signature/blob/main/index.js
+https://github.com/5ime/Tiktok_Signature/blob/main/Signer.js
+
+
+
+https://github.com/theheqiang/spider_reverse/blob/main/douyin/x_bogus_.py
+
+
+https://github.com/JoeanAmier/TikTokDownloader/blob/041014ec818a84d08ce7195d96d01f5e6bbeaf9b/src/encrypt/msToken.py
+
+
+
+
+2003可能是区域不对
+UA一定要对应加密和请求的
+
+未登录和地区有关
+
+
+
+fetch("https://im-api.tiktok.com/v2/conversation/create?msToken=fLMKXE4YpFuMro5EPD18UpU61tmb1-oggaLPquRmQKIiG3hvzMe9fcVQvPS8ze3Loz9e9NMSXR7C4NExo4XjvI8ceN5WE8JY41lVMFuGItQ-TtFR4cBWWS8nm4fhSCgsqZKYkBLLbkbz_nnbBJ4Y4A==&X-Bogus=DFSzswVYsBy4FT//tIgvy5LZzYj7", {
+  "headers": {
+    "accept": "application/x-protobuf",
+    "accept-language": "en-US,en;q=0.9",
+    "content-type": "application/x-protobuf",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "cookie": "tt-target-idc-sign=t8hdZ6Ndx2c1CCt7VGvpKglw-ZdDjiU1o62TGyOnWa0tl36KZRXTpyb3_VOa9am8erv9b8uRwTZRz-Y8unrEBXDlCjsoeiOjS6gi1nLBFSuF7f3dT5pwhkVULtATg3yH3fZN-iv0zgMw4vyR3-_h-aQqBoEnNOG4TFPgUs8DBNB7ycAUEHbjGarIJp0cGrCOFGjTWUesUc1OQfKxxNOYLUWTK7y1Gjg-fWYXlEpcc7-tJ-WESB85-Kh8YKbZ9H9ij64y_cNulQfUD2ElpHbpU7i6AuSOVbWyx64aIxjaOwiFFWaVghFNZOCI1uQYQen8d-Y709OBigXCtqq2TdBJOTi9RHK56UfpT2kvyTQsh8jfU-zk3mODpZOxdpYOqvOyCmNmd5N1GigFLFwbQyqfVpGo1jPFWBDSq5hcPNN9FE38PSbaTQM8_nPxPwPjeyDKSSRXPvccxT1fBBYeieZIvrGrcUbUmhEpYzBFx3Mo2r-uwl_N9MpGV7x8R7CDp-i8; sid_ucp_v1=1.0.0-KDY3NDM3NDE0ZmUxZGEyMGVmZGFmNTYzN2EzODAzOGFiN2UyOGY0ZDgKIgiqiM6o7PCEgGYQqZO2tgYYswsgDDDQp4CwBjgBQOoHSAQQBBoHdXNlYXN0NSIgNzg2ZWRhNjhhYTEyYWMxNzc0Yzg1NDZmZDZiNGI2YTA; tt-target-idc=useast8; tt_chain_token=PQIvSynzfFLMLlrWvKVUmQ==; store-idc=useast5; sessionid_ss=786eda68aa12ac1774c8546fd6b4b6a0; uid_tt=97f3a12af105b4391bd39ddc1c9952c58240948fcd37d19062f0681fbc0ecd20; sessionid=786eda68aa12ac1774c8546fd6b4b6a0; multi_sids=7349896061421585450%3A786eda68aa12ac1774c8546fd6b4b6a0; sid_tt=786eda68aa12ac1774c8546fd6b4b6a0; s_v_web_id=verify_m0c59qsj_YWrTqJl0_Lwe2_4hqW_8XpL_mCGmjqAXMVlI; passport_csrf_token=f922feabdb44628955410a884563a8be; uid_tt_ss=97f3a12af105b4391bd39ddc1c9952c58240948fcd37d19062f0681fbc0ecd20; d_ticket=296613f50c48a40d5f6f6b41d30a1b741403b; passport_csrf_token_default=f922feabdb44628955410a884563a8be; cmpl_token=AgQQAPNSF-RO0rY-_SFNIV0T_KwQBjZNf6nZYNU43Q; store-country-code-src=uid; store-country-code=us; sid_guard=786eda68aa12ac1774c8546fd6b4b6a0%7C1724746153%7C15552000%7CSun%2C+23-Feb-2025+08%3A09%3A13+GMT; tt_csrf_token=XmmNU4dN-Uu9yoYwi_i50TUGI5OyjIgKkHtc; ssid_ucp_v1=1.0.0-KDY3NDM3NDE0ZmUxZGEyMGVmZGFmNTYzN2EzODAzOGFiN2UyOGY0ZDgKIgiqiM6o7PCEgGYQqZO2tgYYswsgDDDQp4CwBjgBQOoHSAQQBBoHdXNlYXN0NSIgNzg2ZWRhNjhhYTEyYWMxNzc0Yzg1NDZmZDZiNGI2YTA; ak_bmsc=72A4D3B7BCBA9D3C1C4126855C1BDD8E~000000000000000000000000000000~YAAQrFA7F/NOOZqRAQAA7AkBsximoee300UNKiXK6b2gw9HfICptsw/D1dxbhgXcDWPx9rUrYzB+DeUVcYyvawhrJOShQjF43TVw/VdpPkR1NeBgpv+/1414UL3Slx+99YBTueCTUfdnMzAdWlMbD/eQV+TkyAFgC2v2W9Ef0HNJzm7Yk+/oebRzgmaYEBStxQsPQpvObygPEpEvfl7QfAO7iX8L2/b9VX3IpYPhbVpx6iocuEZ7/q8IstM+tiM4P08L5OnjuUUvuwttiSO1EQV0R4O9LKxIWfeweEp1swsY6txvZG4Ipe2AjNmVZY1AmrREp5dVQtAj7vN3wNchKkFROsyV+oA58ViuCOgwLlVGrYC8UxmQaGGL954A2JitWNDtMhMc4m6AQ9Gm0poK/wMjdE8VJz/GvA==; bm_sv=6AB537EBDD1BFDC4EE5D56F885DD464A~YAAQVaXcF/BCxaqRAQAAv3FKsxij+h3POaEl5FnWorXiR30q5SFXe4tvK5zzdh+dPHEtWK2hIciwNrBdmm7pbNUgtMKPHt6do3vrgQTY1Sqt0St3LjyZBdulSqhAgZ9juHJLL4z8fAZAnhjgekXktIX3Q+vidYykkjPbLiEHM9ajQXx/kLb8iq/IMkXbbblOm2yR7HhZaH2C4P+ZoofbnoLfo47DrD2JIAPgL2ozSsEnoRUKAVZDXX1VqsX7ZC/BHQ==~1; odin_tt=b2b26d56cc6a338ec0771857c77a89f02ab213d1de20c9daf006fdb7ec0ed881e65fef00dca9f321c2178ded5759ed75707f4cc788bb85044fed1a14194a12a847fa2589aa6588d22494b62d327b8bd9; ttwid=1%7CIqyMioOKmf4PqS--ZGvorrE4859euWFSwcmWHDsKd9c%7C1725289890%7C2a0ee9504604281f89b4bb4239532bc0048b63c3a579e898bbcf24e90853a7ff; msToken=nyyTApKTxp9hPK7_hvunU_D_FyFwFPRPe3WvCzOg9-itu-I9t1NaBz2HuAsW-8pj9yso_ce5dSbpJHIqAsS6dnfFVhD0bb3kXrapwe5eqWiFPnWrXlQ1zT00soCM_ws06RGJjYwceshBDX7FHeltng==",
+    "Referer": "https://www.douyin.com/",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "body": "\bá\u0004\u0010£N\u001a\u00051.2.0\"\u0000(\u00030\u0000::655de92:Detached: 655de9218246c1e09fa73dcb926ab51d80563d71B\u0019&\u0016\b\u0001\u0010Â ðõ¹^\u0010ªÎ¨ìðfJ\u00137407727825401300523Z\u0003webz\u000b\n\u0003aid\u0012\u00041988z\u0016\n\bapp_name\u0012\ntiktok_webz\u000e\n\u0007channel\u0012\u0003webz\u0019\n\u000fdevice_platform\u0012\u0006web_pcz \n\tdevice_id\u0012\u00137407727825401300523z\f\n\u0006region\u0012\u0002USz\u0015\n\u000fpriority_region\u0012\u0002USz\r\n\u0002os\u0012\u0007windowsze\n\u0007referer\u0012Zhttps://www.douyin.com/business-suite/messages?from=homepage&lang=en&u=6806020411274331142zj\n\froot_referer\u0012Zhttps://www.douyin.com/business-suite/messages?from=homepage&lang=en&u=6806020411274331142z\u0016\n\u000ecookie_enabled\u0012\u0004truez\u0014\n\fscreen_width\u0012\u00041920z\u0015\n\rscreen_height\u0012\u00041080z\u0019\n\u0010browser_language\u0012\u0005en-USz\u0019\n\u0010browser_platform\u0012\u0005Win32z\u0017\n\fbrowser_name\u0012\u0007Mozillazz\n\u000fbrowser_version\u0012g5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36z\u0016\n\u000ebrowser_online\u0012\u0004truez@\n\bverifyFp\u00124verify_m0c59qsj_YWrTqJl0_Lwe2_4hqW_8XpL_mCGmjqAXMVlIz\u0012\n\fapp_language\u0012\u0002enz\u0016\n\u0010webcast_language\u0012\u0002enz\u0018\n\u0007tz_name\u0012\rAsia/Shanghaiz\u0017\n\u000fis_page_visible\u0012\u0004truez\u0013\n\u000bfocus_state\u0012\u0004truez\u0016\n\ris_fullscreen\u0012\u0005falsez\u0010\n\u000bhistory_len\u0012\u00013z\u0015\n\ruser_is_login\u0012\u0004truez\u001f\n\u0017data_collection_enabled\u0012\u0004truez\u0012\n\nfrom_appID\u0012\u00041988z}\n\nuser_agent\u0012oMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36z­\u0001\n\u0010Web-Sdk-Ms-Token\u0012\u00018rgsLSyV7i_96b_77Mt2S-zFuBvjGra2sitQKoYctPXnoOS7upxye_Y9cg-6hSyBj8NRm58fpj3u9kTkSJrHg6hK_bJBCnvTWjJv9QoYSJUtsxI1YMVawIvn3Zpk2MwEiKtq4RM2HWFzMUq0qD_Ir9A=\u0001\u0001",
+  "method": "POST"
+});
+
+
+
+
+
+fetch("https://im-api.tiktok.com/v1/message/send?aid=1988&version_code=1.0.0&app_name=tiktok_web&device_platform=web_pc&msToken=fLMKXE4YpFuMro5EPD18UpU61tmb1-oggaLPquRmQKIiG3hvzMe9fcVQvPS8ze3Loz9e9NMSXR7C4NExo4XjvI8ceN5WE8JY41lVMFuGItQ-TtFR4cBWWS8nm4fhSCgsqZKYkBLLbkbz_nnbBJ4Y4A==&X-Bogus=DFSzswVLPD65LOLLtIgwD5LZzYJz", {
+  "headers": {
+    "accept": "application/x-protobuf",
+    "accept-language": "en-US,en;q=0.9",
+    "content-type": "application/x-protobuf",
+    "sec-ch-ua": "\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "tt-ticket-guard-client-data": "eyJ0c19zaWduIjoidHMuMS40YmJiM2E1YmI5Y2U2ODQ4NmViYmM4YmY0YmM3ZTZmMzU3MTA1ZTEwZjc1OTg1MjYzYWVkYmY2OGFkNjk4NWYxN2E1MGU4YTQxN2RmMDY5ZGY5YTU1NWJkMTZjNjZlZjhiMzYzOWE1NmI2NDJkN2Q4ZjljODgxZjQyYjkzMjllYyIsInJlcV9jb250ZW50IjoidGlja2V0LHBhdGgsdGltZXN0YW1wIiwicmVxX3NpZ24iOiJNRVVDSVFEY1BDazUrVmpHUFNWbEhsRlhLUUdVcUJhc05la2NyUjY4K1dnd3BVd0RXQUlnZDlkeTRjeUpoWStJS1FwWC9GYS92bzlyUkJ2WXlvU3hBbnlhSG9qRnFCMD0iLCJ0aW1lc3RhbXAiOjE3MjUyOTAwOTR9",
+    "tt-ticket-guard-iteration-version": "0",
+    "tt-ticket-guard-public-key": "BB6AVW/2L8UkFJ45cf5+mBof8+H9/iffYt5Fc+5VKJ+m8ZJmW5cRU6ufR3xxya/FD6AJTsZlqqQB6eP8JzpLqf4=",
+    "tt-ticket-guard-version": "2",
+    "tt-ticket-guard-web-version": "1",
+    "cookie": "tt-target-idc-sign=t8hdZ6Ndx2c1CCt7VGvpKglw-ZdDjiU1o62TGyOnWa0tl36KZRXTpyb3_VOa9am8erv9b8uRwTZRz-Y8unrEBXDlCjsoeiOjS6gi1nLBFSuF7f3dT5pwhkVULtATg3yH3fZN-iv0zgMw4vyR3-_h-aQqBoEnNOG4TFPgUs8DBNB7ycAUEHbjGarIJp0cGrCOFGjTWUesUc1OQfKxxNOYLUWTK7y1Gjg-fWYXlEpcc7-tJ-WESB85-Kh8YKbZ9H9ij64y_cNulQfUD2ElpHbpU7i6AuSOVbWyx64aIxjaOwiFFWaVghFNZOCI1uQYQen8d-Y709OBigXCtqq2TdBJOTi9RHK56UfpT2kvyTQsh8jfU-zk3mODpZOxdpYOqvOyCmNmd5N1GigFLFwbQyqfVpGo1jPFWBDSq5hcPNN9FE38PSbaTQM8_nPxPwPjeyDKSSRXPvccxT1fBBYeieZIvrGrcUbUmhEpYzBFx3Mo2r-uwl_N9MpGV7x8R7CDp-i8; sid_ucp_v1=1.0.0-KDY3NDM3NDE0ZmUxZGEyMGVmZGFmNTYzN2EzODAzOGFiN2UyOGY0ZDgKIgiqiM6o7PCEgGYQqZO2tgYYswsgDDDQp4CwBjgBQOoHSAQQBBoHdXNlYXN0NSIgNzg2ZWRhNjhhYTEyYWMxNzc0Yzg1NDZmZDZiNGI2YTA; tt-target-idc=useast8; tt_chain_token=PQIvSynzfFLMLlrWvKVUmQ==; store-idc=useast5; sessionid_ss=786eda68aa12ac1774c8546fd6b4b6a0; uid_tt=97f3a12af105b4391bd39ddc1c9952c58240948fcd37d19062f0681fbc0ecd20; sessionid=786eda68aa12ac1774c8546fd6b4b6a0; multi_sids=7349896061421585450%3A786eda68aa12ac1774c8546fd6b4b6a0; sid_tt=786eda68aa12ac1774c8546fd6b4b6a0; s_v_web_id=verify_m0c59qsj_YWrTqJl0_Lwe2_4hqW_8XpL_mCGmjqAXMVlI; passport_csrf_token=f922feabdb44628955410a884563a8be; uid_tt_ss=97f3a12af105b4391bd39ddc1c9952c58240948fcd37d19062f0681fbc0ecd20; d_ticket=296613f50c48a40d5f6f6b41d30a1b741403b; passport_csrf_token_default=f922feabdb44628955410a884563a8be; cmpl_token=AgQQAPNSF-RO0rY-_SFNIV0T_KwQBjZNf6nZYNU43Q; store-country-code-src=uid; store-country-code=us; sid_guard=786eda68aa12ac1774c8546fd6b4b6a0%7C1724746153%7C15552000%7CSun%2C+23-Feb-2025+08%3A09%3A13+GMT; tt_csrf_token=XmmNU4dN-Uu9yoYwi_i50TUGI5OyjIgKkHtc; ssid_ucp_v1=1.0.0-KDY3NDM3NDE0ZmUxZGEyMGVmZGFmNTYzN2EzODAzOGFiN2UyOGY0ZDgKIgiqiM6o7PCEgGYQqZO2tgYYswsgDDDQp4CwBjgBQOoHSAQQBBoHdXNlYXN0NSIgNzg2ZWRhNjhhYTEyYWMxNzc0Yzg1NDZmZDZiNGI2YTA; ak_bmsc=72A4D3B7BCBA9D3C1C4126855C1BDD8E~000000000000000000000000000000~YAAQrFA7F/NOOZqRAQAA7AkBsximoee300UNKiXK6b2gw9HfICptsw/D1dxbhgXcDWPx9rUrYzB+DeUVcYyvawhrJOShQjF43TVw/VdpPkR1NeBgpv+/1414UL3Slx+99YBTueCTUfdnMzAdWlMbD/eQV+TkyAFgC2v2W9Ef0HNJzm7Yk+/oebRzgmaYEBStxQsPQpvObygPEpEvfl7QfAO7iX8L2/b9VX3IpYPhbVpx6iocuEZ7/q8IstM+tiM4P08L5OnjuUUvuwttiSO1EQV0R4O9LKxIWfeweEp1swsY6txvZG4Ipe2AjNmVZY1AmrREp5dVQtAj7vN3wNchKkFROsyV+oA58ViuCOgwLlVGrYC8UxmQaGGL954A2JitWNDtMhMc4m6AQ9Gm0poK/wMjdE8VJz/GvA==; bm_sv=6AB537EBDD1BFDC4EE5D56F885DD464A~YAAQVaXcF/BCxaqRAQAAv3FKsxij+h3POaEl5FnWorXiR30q5SFXe4tvK5zzdh+dPHEtWK2hIciwNrBdmm7pbNUgtMKPHt6do3vrgQTY1Sqt0St3LjyZBdulSqhAgZ9juHJLL4z8fAZAnhjgekXktIX3Q+vidYykkjPbLiEHM9ajQXx/kLb8iq/IMkXbbblOm2yR7HhZaH2C4P+ZoofbnoLfo47DrD2JIAPgL2ozSsEnoRUKAVZDXX1VqsX7ZC/BHQ==~1; odin_tt=b2b26d56cc6a338ec0771857c77a89f02ab213d1de20c9daf006fdb7ec0ed881e65fef00dca9f321c2178ded5759ed75707f4cc788bb85044fed1a14194a12a847fa2589aa6588d22494b62d327b8bd9; ttwid=1%7CIqyMioOKmf4PqS--ZGvorrE4859euWFSwcmWHDsKd9c%7C1725289890%7C2a0ee9504604281f89b4bb4239532bc0048b63c3a579e898bbcf24e90853a7ff; msToken=7sN84iKHfdDIPITdky7feoI7KPHk_HvtdFBNTFbOGf_MjLO6W1kSRCI7icQaXMuxKhmsFMgMjmWY0pYAb76RflxlveGpB8EQ160F1hu6a_6IRqokG1Z2E5vtc-l-FCHY7mz2mowFo7ZK9U4eXuHGLlQ=",
+    "Referer": "https://www.douyin.com/",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  },
+  "body": "\bd\u0010­N\u001a\u00051.2.0\"\u0000(\u00030\u0000::655de92:Detached: 655de9218246c1e09fa73dcb926ab51d80563d71Bä\u0003¢\u0006à\u0003\n+0:1:6806020411274331142:7349896061421585450\u0010\u0001\u0018Ñê ¤õêf\"\u0002{\"aweType\":0,\"text\":\"ð°25% commission + free samples + cash bonuses\\nHi. Your videos are just too funny! I'm Lynn from the official Light US store and we'd like to work with you to promote our product Star Ambient Light\\nif you're interested, send me your Whats.App to talk more! \"}*\u0015\n\u0011s:mentioned_users\u0012\u0000*;\n\u0013s:client_message_id\u0012$40b59916-38e2-4d9f-b52e-47d30e6d1ccb0\u0007:\ndeprecatedB$40b59916-38e2-4d9f-b52e-47d30e6d1ccbJ\u00137407727825401300523Z\u0003webz\u000b\n\u0003aid\u0012\u00041988z\u0016\n\bapp_name\u0012\ntiktok_webz\u000e\n\u0007channel\u0012\u0003webz\u0019\n\u000fdevice_platform\u0012\u0006web_pcz \n\tdevice_id\u0012\u00137407727825401300523z\f\n\u0006region\u0012\u0002USz\u0015\n\u000fpriority_region\u0012\u0002USz\r\n\u0002os\u0012\u0007windowsze\n\u0007referer\u0012Zhttps://www.douyin.com/business-suite/messages?from=homepage&lang=en&u=6806020411274331142zj\n\froot_referer\u0012Zhttps://www.douyin.com/business-suite/messages?from=homepage&lang=en&u=6806020411274331142z\u0016\n\u000ecookie_enabled\u0012\u0004truez\u0014\n\fscreen_width\u0012\u00041920z\u0015\n\rscreen_height\u0012\u00041080z\u0019\n\u0010browser_language\u0012\u0005en-USz\u0019\n\u0010browser_platform\u0012\u0005Win32z\u0017\n\fbrowser_name\u0012\u0007Mozillazz\n\u000fbrowser_version\u0012g5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36z\u0016\n\u000ebrowser_online\u0012\u0004truez@\n\bverifyFp\u00124verify_m0c59qsj_YWrTqJl0_Lwe2_4hqW_8XpL_mCGmjqAXMVlIz\u0012\n\fapp_language\u0012\u0002enz\u0016\n\u0010webcast_language\u0012\u0002enz\u0018\n\u0007tz_name\u0012\rAsia/Shanghaiz\u0017\n\u000fis_page_visible\u0012\u0004truez\u0013\n\u000bfocus_state\u0012\u0004truez\u0016\n\ris_fullscreen\u0012\u0005falsez\u0010\n\u000bhistory_len\u0012\u00013z\u0015\n\ruser_is_login\u0012\u0004truez\u001f\n\u0017data_collection_enabled\u0012\u0004truez\u0012\n\nfrom_appID\u0012\u00041988z}\n\nuser_agent\u0012oMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36z­\u0001\n\u0010Web-Sdk-Ms-Token\u0012\u00018rgsLSyV7i_96b_77Mt2S-zFuBvjGra2sitQKoYctPXnoOS7upxye_Y9cg-6hSyBj8NRm58fpj3u9kTkSJrHg6hK_bJBCnvTWjJv9QoYSJUtsxI1YMVawIvn3Zpk2MwEiKtq4RM2HWFzMUq0qD_Ir9A=\u0001\u0001",
+  "method": "POST"
+});
+
+
+
+{
+    "headers": {
+        "aid": "1988",
+        "app_name": "tiktok_web",
+        "channel": "web",
+        "device_platform": "web_pc",
+        "device_id": "7407727825401300523",
+        "region": "US",
+        "priority_region": "US",
+        "os": "windows",
+        "referer": "https://www.douyin.com/business-suite/messages?from=homepage&lang=en&u=6806020411274331142",
+        "root_referer": "https://www.douyin.com/business-suite/messages?from=homepage&lang=en&u=6806020411274331142",
+        "cookie_enabled": "true",
+        "screen_width": "1920",
+        "screen_height": "1080",
+        "browser_language": "en-US",
+        "browser_platform": "Win32",
+        "browser_name": "Mozilla",
+        "browser_version": "5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "browser_online": "true",
+        "verifyFp": "verify_m0c59qsj_YWrTqJl0_Lwe2_4hqW_8XpL_mCGmjqAXMVlI",
+        "app_language": "en",
+        "webcast_language": "en",
+        "tz_name": "Asia/Shanghai",
+        "is_page_visible": "true",
+        "focus_state": "true",
+        "is_fullscreen": "false",
+        "history_len": "3",
+        "user_is_login": "true",
+        "data_collection_enabled": "true",
+        "from_appID": "1988",
+        "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Web-Sdk-Ms-Token": "8rgsLSyV7i_96b_77Mt2S-zFuBvjGra2sitQKoYctPXnoOS7upxye_Y9cg-6hSyBj8NRm58fpj3u9kTkSJrHg6hK_bJBCnvTWjJv9QoYSJUtsxI1YMVawIvn3Zpk2MwEiKtq4RM2HWFzMUq0qD_Ir9A="
+    },
+    "body": {
+        "send_message_body": {
+            "conversation_id": "0:1:6806020411274331142:7349896061421585450",
+            "conversation_short_id": {
+                "low": 223625502,
+                "high": 1725289762,
+                "unsigned": false
+            },
+            "conversation_type": 1,
+            "content": "{\"aweType\":0,\"text\":\"💰25% commission + free samples + cash bonuses\\nHi. Your videos are just too funny! I'm Lynn from the official Light US store and we'd like to work with you to promote our product Star Ambient Light\\nif you're interested, send me your Whats.App to talk more! \"}",
+            "mentioned_users": [],
+            "client_message_id": "40b59916-38e2-4d9f-b52e-47d30e6d1ccb",
+            "ticket": "deprecated",
+            "message_type": 7,
+            "ext": {
+                "s:mentioned_users": "",
+                "s:client_message_id": "40b59916-38e2-4d9f-b52e-47d30e6d1ccb"
+            },
+            "send_media_list": []
+        }
+    },
+    "cmd": 100,
+    "sequence_id": {
+        "low": 10029,
+        "high": 0,
+        "unsigned": false
+    },
+    "refer": 3,
+    "token": "",
+    "device_id": "7407727825401300523",
+    "sdk_version": "1.2.0",
+    "build_number": "655de92:Detached: 655de9218246c1e09fa73dcb926ab51d80563d71",
+    "inbox_type": 0,
+    "device_platform": "web",
+    "auth_type": 1
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+npm install protobufjs
+npm install -g protobufjs-cli
+
+
+pbjs -t static-module -w commonjs -o tiktokSchema.js tiktokSchema.proto
+
+pbts -o tiktokSchema.d.ts tiktokSchema.js
+
+��none��������
+
+
+mstoken
+
+https://github.com/JoeanAmier/TikTokDownloader/blob/f84ea07cf0e61d92834a838753739762b7296f0e/src/encrypt/msToken.py#L23
+二维码登录
+https://github.com/xinlingqudongX/TSDK/blob/18a16ab0d5c7f42dd88c099ea5e2ca1d35a0c70d/api/douyin/h5.py#L574
+
+abogus参数
+http://39.107.101.62:8111/docs#/
+
+https://blog.csdn.net/m0_54373110/article/details/136932847
+
+
+
+从原JS中找BadgeStruct.toObject
+https://github.com/frankvHoof93/TikTokLiveSharp/blob/be7cb0ef6728d0a9bd716aa32cf5a8f326a0a635/tiktok_schema.proto#L1145
+
+https://github.com/jwdeveloper/TikTokLiveJava/blob/0f6ee58d7f8845d1f7e4465a558703bf25b98251/API/src/main/proto/data.proto#L111
+https://github.com/isaackogan/TikTokLive/blob/1b0a6de29949f178685dde64baa3843b984fde12/scripts/proto/src/data.proto
+
+
+
+
+https://github.com/isaackogan/TikTokLive

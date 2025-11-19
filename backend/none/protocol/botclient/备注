@@ -1,0 +1,514 @@
+s_sdk_cert_key
+
+// tsSign
+// this.sdk.cryptoSDK.getCertificate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+wss://frontier-pc.douyin.com/ws/v2?device_platform=web&version_code=fws_1.0.0&access_key=ea9462515f7e3804aee40c4c56616d91&fpid=32&aid=6383&device_id=7441112481865434635&xsack=0&xaack=0&xsqos=0&qos_sdk_version=2&conn_tag=aweme_pc_web
+
+
+const _ = `wss://frontier-pc.douyin.com/ws/v2?device_platform=web&version_code=fws_1.0.0&access_key=${this.accsskey}&fpid=${M.fpid}&aid=${M.aid}&device_id=${this.uid}&xsack=0&xaack=0&xsqos=0&qos_sdk_version=2&conn_tag=aweme_pc_web`;
+
+
+
+
+
+
+ocAt6mDdPDeIihiS/0CmnnOwgne87PiMYusavuBdxwMjWTZOhEhoSWO/zWRnyIB4jnT+aw==
+
+https://tikapis.com/api/docs
+
+
+fetch("https://im-api-sg.tiktok.com/v1/message/send?msToken=J9pTNtZ2RR5xqwYdQ43qHM5MXjAgsRtF9jSOojylhGsm5iIBuKIPJvbhSRolKGdufF5nW6uSc4ELtGJlDbIEhmAcZ1oFq_g5FsPcYE5DlBxyN9DEptqF57l5O4RVQkThDpfMwo4PNkBR7L8=&X-Bogus=DFSzswVLkD8iKfcst50RjcLZzYjB", {
+    "headers": {
+      "accept": "application/x-protobuf",
+      "accept-language": "en-US,en;q=0.9",
+      "content-type": "application/x-protobuf",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-site",
+      "cookie": "tt-target-idc=alisg; sid_ucp_v1=1.0.0-KGRjNThjNzAxM2RjOTY0YWMzZmFhYWRiYTM3MTljNjQzMTYwMTM3Y2EKGAiFiIvGzvfqqGAQvJSErAYYsws4B0D0BxADGgNzZzEiIGZkZmU3OGRlYmEwNDlhMjQyMWJiNmUwYzRhZjM1ZGQ0; sessionid=fdfe78deba049a2421bb6e0c4af35dd4; uid_tt=90c5f9e8434ae0dda58bb6930b44810c7f7e962a694495145838522ea8465d9d; tt-target-idc-sign=N_g5bTGveP_dF5n5AkMOV-fqmKFX0gj7Vpr8GcdHvoSc8rcgnvf65UWbND9XteTk-b9PK3uCqIPWPMOufqY-fCofVivsPJbJoxa3jwWUYxtTmyZvuB3b36Ip4JJ9cOTnTcIDjpw9midrfBF2NiBbI5sFBLllfURMhrngzlpwqvugqz2lb8vvPAldQair-JCgcd-mCinhERh2hzAINM141oEteXjCTd2vQMjdBy-7yzSaaeaYDxIv4aOOPIN-z-8XQU4A7SCnQQ6F40lvLhODqiKbrBGTumjHOzMNtSQPXcR9WoXQ2Qw7b7B-I3Pg_lLGbtF085X2Nm_wkEmwqBV8qkFkfhGuh_lpKBz6SoJzCH2mfMpU9LONqtfH7zzKdMVRVGBTGPMEDSrjR6f-FYcUP9iC29XifXJVg1dSG443AneeTjRyVdXfp5Z0jps1CWKjATuRvcTWorNZmhDk00FtCUGsR4XiXM4J7VAyY1FfJ5Vtgb8DUKSgb-tCMTxJnSPH; sid_tt=fdfe78deba049a2421bb6e0c4af35dd4; s_v_web_id=verify_lqbrr7jy_fWm4NZKY_TbBG_4XJF_8xh0_ZvyWCzuiI7BQ; odin_tt=e031267cd349916f43075d20a1fe32b381dfe4bcc06051459f9c994bbd87035c1df019340388bf77a6c69c760491f982a509d45b70eec6dbf7a432259df6090b2b543add91fb726dac97450b73244b81; tt_chain_token=QwnYBxbbbkSftXFd0JKc5A==; store-idc=alisg; store-country-code=cn; store-country-code-src=uid; tt_csrf_token=KGLsKC8U-i7YqR1odNORcyQ8kPKe9ErDUxdw; uid_tt_ss=90c5f9e8434ae0dda58bb6930b44810c7f7e962a694495145838522ea8465d9d; sid_guard=fdfe78deba049a2421bb6e0c4af35dd4%7C1712631128%7C13314064%7CTue%2C+10-Sep-2024+05%3A13%3A12+GMT; ssid_ucp_v1=1.0.0-KGRjNThjNzAxM2RjOTY0YWMzZmFhYWRiYTM3MTljNjQzMTYwMTM3Y2EKGAiFiIvGzvfqqGAQvJSErAYYsws4B0D0BxADGgNzZzEiIGZkZmU3OGRlYmEwNDlhMjQyMWJiNmUwYzRhZjM1ZGQ0; sessionid_ss=fdfe78deba049a2421bb6e0c4af35dd4; ttwid=1%7C4OPFuXRKD_H-qyRbQQ0F0FUIoQbnqWRvc4DVOyFs5Ps%7C1712819035%7Cb624a798ffd919b2a3216a14186713f501c8b99832cfbcf000e783d1d0533354; msToken=J9pTNtZ2RR5xqwYdQ43qHM5MXjAgsRtF9jSOojylhGsm5iIBuKIPJvbhSRolKGdufF5nW6uSc4ELtGJlDbIEhmAcZ1oFq_g5FsPcYE5DlBxyN9DEptqF57l5O4RVQkThDpfMwo4PNkBR7L8=",
+      "Referer": "https://www.tiktok.com/",
+      "Referrer-Policy": "strict-origin-when-cross-origin"
+    },
+    "body": "\bd\u0010ÂO\u001a\u00051.0.9\"\u0000(\u00030\u0000:\u001f864240d:release-webapp-20240408BÉ\u0004¢\u0006Å\u0004\n+0:1:6940517328601924613:6948680389724570630\u0010\u0001\u0018õ¸a\"\u0003{\"aweType\":0,\"cover_url\":\"https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXdkaWdhMXgzc2lwMmEza25icHNpYnJsbHBpZTkxbjhuNWl1bnhjMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ukmtvq4oYcTq2XmHJr/giphy.gif\",\"desc\":\"Create passive income\",\"is_card\":false,\"link_url\":\"https://rt.tiktok.com/zSFa8u3X4/\",\"prev_id\":\"\",\"push_detail\":\"\",\"root_id\":\"\",\"stranger_index\":2,\"title\":\"Making Money Online\"}*\u0015\n\u0011s:mentioned_users\u0012\u0000*;\n\u0013s:client_message_id\u0012$6af1b3de-d9b5-4927-8d03-405f002235780\u001a:\ndeprecatedB$6af1b3de-d9b5-4927-8d03-405f00223578J\u00137314138184412317214Z\u0003webzS\n\u0007referer\u0012Hhttps://www.tiktok.com/messages?allow_label=false&lang=en&scene=businessz\u0012\n\nfrom_appID\u0012\u00041988z\u0012\n\fapp_language\u0012\u0002enz\u0016\n\bapp_name\u0012\ntiktok_webz\u000e\n\u0007channel\u0012\u0003webz\u0002\n\nuser_agent\u0012\u0002Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) douyin/2.7.0 Chrome/104.0.5112.102 Electron/20.1.0-tt.4.release.douyin.103 TTElectron/20.1.0-tt.4.release.douyin.103 Safari/537.36 awemePcClient/2.7.0 buildId/10817787 osName/Windowsz¥\u0001\n\u0010Web-Sdk-Ms-Token\u0012\u0001nNzHVmBapjMoSrqS_t4Ixjpp_zzmaPG09Q7wRRmnt2a_Z0JxnwogxnyJLf64kueDc3oXFVQZe-y-ROo37INCP5cb6JblAtxP9Nh04qFglFVFcG4ylHvzFZZjgk0YMIKYBZEViR-2Y5ZYdEIv\u0001\u0001",
+    "method": "POST"
+  });
+
+
+
+
+
+  fetch("https://www.tiktok.com/cloudpush/update_sender_token/", {
+    "headers": {
+      "accept": "application/json, text/plain, */*",
+      "accept-language": "en-US,en;q=0.9",
+      "content-type": "application/x-www-form-urlencoded",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "x-secsdk-csrf-token": "DOWNGRADE",
+      "cookie": "tt-target-idc=alisg; sid_ucp_v1=1.0.0-KGRjNThjNzAxM2RjOTY0YWMzZmFhYWRiYTM3MTljNjQzMTYwMTM3Y2EKGAiFiIvGzvfqqGAQvJSErAYYsws4B0D0BxADGgNzZzEiIGZkZmU3OGRlYmEwNDlhMjQyMWJiNmUwYzRhZjM1ZGQ0; sessionid=fdfe78deba049a2421bb6e0c4af35dd4; uid_tt=90c5f9e8434ae0dda58bb6930b44810c7f7e962a694495145838522ea8465d9d; passport_fe_beating_status=true; tt-target-idc-sign=N_g5bTGveP_dF5n5AkMOV-fqmKFX0gj7Vpr8GcdHvoSc8rcgnvf65UWbND9XteTk-b9PK3uCqIPWPMOufqY-fCofVivsPJbJoxa3jwWUYxtTmyZvuB3b36Ip4JJ9cOTnTcIDjpw9midrfBF2NiBbI5sFBLllfURMhrngzlpwqvugqz2lb8vvPAldQair-JCgcd-mCinhERh2hzAINM141oEteXjCTd2vQMjdBy-7yzSaaeaYDxIv4aOOPIN-z-8XQU4A7SCnQQ6F40lvLhODqiKbrBGTumjHOzMNtSQPXcR9WoXQ2Qw7b7B-I3Pg_lLGbtF085X2Nm_wkEmwqBV8qkFkfhGuh_lpKBz6SoJzCH2mfMpU9LONqtfH7zzKdMVRVGBTGPMEDSrjR6f-FYcUP9iC29XifXJVg1dSG443AneeTjRyVdXfp5Z0jps1CWKjATuRvcTWorNZmhDk00FtCUGsR4XiXM4J7VAyY1FfJ5Vtgb8DUKSgb-tCMTxJnSPH; sid_tt=fdfe78deba049a2421bb6e0c4af35dd4; ak_bmsc=C9DD26AC30847C496041580661A9D5E8~000000000000000000000000000000~YAAQVvI/F5xh5qGOAQAAY0CPyxeCl61kj+4Owm/p2KEZc2zEC/FSP4n4oFTKxoG/eTUaPodgTpO8nlfbslFkTpmOF0UCEkC/l8fy0BqhLH4YCv1uq78ZnG/iTLVeBJJbuaeJdCnGnpKHdwQb4LyfL331nn0NN9vNUM+x7NbuamecgT6Pn8uDTtrWWBJpF1LdiEB297lMv1hjshghoxrE7akzB8TL3B3Q1XUReCVX4ej4lUnKRbAhHaE9T7yLdQjbKhhCAd64GExeiEOL8WzR+ToAEW4vJ76W96M5phJT8oqkkK9FpPJefzT/CvUFt/d1ZHa9PA9NUjmL2HBQ/taYm1Mktj4lYeIGCe0qp5GhekC5FfMCHkDwXH598mP4xlE5mykM4S48VVDzIwQ=; s_v_web_id=verify_lqbrr7jy_fWm4NZKY_TbBG_4XJF_8xh0_ZvyWCzuiI7BQ; odin_tt=e031267cd349916f43075d20a1fe32b381dfe4bcc06051459f9c994bbd87035c1df019340388bf77a6c69c760491f982a509d45b70eec6dbf7a432259df6090b2b543add91fb726dac97450b73244b81; tt_chain_token=QwnYBxbbbkSftXFd0JKc5A==; store-idc=alisg; store-country-code=cn; store-country-code-src=uid; tt_csrf_token=KGLsKC8U-i7YqR1odNORcyQ8kPKe9ErDUxdw; tiktok_webapp_theme=light; uid_tt_ss=90c5f9e8434ae0dda58bb6930b44810c7f7e962a694495145838522ea8465d9d; sid_guard=fdfe78deba049a2421bb6e0c4af35dd4%7C1712631128%7C13314064%7CTue%2C+10-Sep-2024+05%3A13%3A12+GMT; ssid_ucp_v1=1.0.0-KGRjNThjNzAxM2RjOTY0YWMzZmFhYWRiYTM3MTljNjQzMTYwMTM3Y2EKGAiFiIvGzvfqqGAQvJSErAYYsws4B0D0BxADGgNzZzEiIGZkZmU3OGRlYmEwNDlhMjQyMWJiNmUwYzRhZjM1ZGQ0; sessionid_ss=fdfe78deba049a2421bb6e0c4af35dd4; perf_feed_cache={%22expireTimestamp%22:1712991600000%2C%22itemIds%22:[%227355569996761697567%22%2C%227337753975384542469%22%2C%227350531166438477062%22]}; csrf_session_id=e969909914f3b05702eab791c6b46fb3; csrfToken=wFwsELjJ-jQe4AGGNUTlzFzyisctHJWl1T1Q; bm_sv=CE435FF69AF36B72D983305A8D285FA2~YAAQ5JPMF8UYsMmOAQAAYFL4yxcGam95ki4A6sRggPy3XlP9Q4XHOC03rko+GNKtRjIz9g1RQtlCSA5ZkpOKiAE7f92OFzyXfvjBFZ7ksP/4bXYhxq7hBpd+v4ouI6FJwUiwinNPW9kBzv8CcyLRuQYCG+Vh7GTEV5/SGkDgcnVYNPGwuNfKpufOsFE1fFSWcfNqK4mW/UmOLAeml573I6MPr+c4TX6ajcVAncXVrkEDztkUTB5YrpxZDeFxYIn6~1; ttwid=1%7C4OPFuXRKD_H-qyRbQQ0F0FUIoQbnqWRvc4DVOyFs5Ps%7C1712819035%7Cb624a798ffd919b2a3216a14186713f501c8b99832cfbcf000e783d1d0533354; msToken=mE94IYqH-ccidIpT58Z7RoloADeqRMMTl6b3r7uzVrjLuZmfEzLJPQtJHsDyks2nt6gPWWBbddUMzAM83CImW1dEQMnYaEpPI-hZDqOp-Hgp4syT1R4_6Z01SLar3BODuM_l5Px5DlSr9uY=; msToken=mE94IYqH-ccidIpT58Z7RoloADeqRMMTl6b3r7uzVrjLuZmfEzLJPQtJHsDyks2nt6gPWWBbddUMzAM83CImW1dEQMnYaEpPI-hZDqOp-Hgp4syT1R4_6Z01SLar3BODuM_l5Px5DlSr9uY=",
+      "Referer": "https://www.tiktok.com/messages?allow_label=false&lang=en&scene=business",
+      "Referrer-Policy": "strict-origin-when-cross-origin"
+    },
+    "body": "aid=1988&sender_id=17&app_region=US&app_language=en&version_code=1.0.0&platform=web_app&token=eHbnj-_65ImrJzKsRZcsuS%3AAPA91bF9azM5UcPdu3zDMjLrO4XHbrYape5-zszeuhO_qo8c6fwHfWpFDvFculo1J6YbcfxUqnapGhPj_aJRpfmNz2GBpKuVQysj1zRxJl_uYIZ2ezjiXVKBUepbrPkJgGzrR2mZjw9e",
+    "method": "POST"
+  });
+
+
+  fetch("https://mssdk-sg.byteoversea.com/web/report?msToken=3DkcWLqAEzFD38ga4zLi-FulITWx-nCa3WGBOEayTqr4PcDYqi_OkZCEawyV9inuO2EXwvsB3Q3CAC9WaiW_-14v40du6_WI0a09vq4zKoMOZro-p3XlXaJ_Rn9-JrJtFIvLoO79wJ2f2rw4&X-Bogus=DFSzswVYG53nTVxwt50urOLZzYJx", {
+    "headers": {
+      "accept": "*/*",
+      "accept-language": "en-US,en;q=0.9",
+      "content-type": "text/plain;charset=UTF-8",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "cross-site",
+      "cookie": "msToken=3DkcWLqAEzFD38ga4zLi-FulITWx-nCa3WGBOEayTqr4PcDYqi_OkZCEawyV9inuO2EXwvsB3Q3CAC9WaiW_-14v40du6_WI0a09vq4zKoMOZro-p3XlXaJ_Rn9-JrJtFIvLoO79wJ2f2rw4",
+      "Referer": "https://www.tiktok.com/",
+      "Referrer-Policy": "strict-origin-when-cross-origin"
+    },
+    "body": "{\"magic\":538969122,\"version\":1,\"dataType\":8,\"strData\":\"30ON7m2kJhEEIesQPm//Au9UkoWKT7Xarbw5agYX/9RwQ4CTnmcT5kEnKf2gemNdfhBlbnCWnUVkzhP1JVqzTzthf1lP07fdb9zdUUZ5Mp7neOZDuHT8wMk5UrL4LnT7PpegyEjwUsbF2aavFKPMamgiPlEZ/7rVPlQDNFi9tZG3RcCsM5otkwYpU9ZiwWf84+ujCqM6J4KBjEKae6P7md5N3LZhgJMHUSm9mXIw91oEJ4QpxlPsB6caLK28NRScKgeEUCNAUFJ/L3CNSJBjZqjhCpaNRdWAffvtgBRDl1C5HhUlpaiG6l+HeL9n4SRpnplmHNftxXd8J6fm2rPSSolzDZEWzA38Ll+ncFq6Zx0ppHRNHu/kcTs4Bf7OID/mQnmAlRUlyHgYnxgndV+TMwj4hewvAQiDLv3/NnghMa2bKjb/xFWG+r5QbFKwpDbusAL4x97jvVtSqftYB/ty0SltlLInn8AWdQksY/QcFCoiOL3StCfgG6wnL8os512FIia5ahZ5VBUkbDU5XCqKi7SDjb3KD08tDH9VSZR4XdfzJofqsK5WrLlspoD4Y9nTJK3VsweFP4to7RkpGTTVB+zhBvz5e8txsly4hOf=\",\"tspFromClient\":1712826529128}",
+    "method": "POST"
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+补全
+https://www.douyin.com/
+
+1、
+E.im_proto.
+a.pigeon.ResponseBasic.
+2、T. i.
+3、
+_.encode = function(_, O) {
+    if (O || (O = x.create()),
+_.decode = function(_, O) {
+    _ instanceof p || (_ = p.create(_));
+
+GetUserConversationListResponseBody
+
+
+
+由数据库读出需要启动的账号
+循环生成 new 实例
+
+可以新启动，可以重启和销毁
+
+
+https://blog.csdn.net/weixin_45307278/article/details/131454290
+
+
+
+sendByWs
+
+切换消息用户
+field=direct_message&value=1
+https://www.tiktok.com/api/privacy/user/settings/update/v1?WebIdLastTime=1685964750&aid=1988&app_language=zh-Hans&app_name=tiktok_web&browser_language=zh-CN&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F120.0.0.0%20Safari%2F537.36&channel=tiktok_web&cookie_enabled=true&device_id=7241163383020848646&device_platform=web_pc&focus_state=true&from_page=message&history_len=3&is_fullscreen=false&is_page_visible=true&os=windows&priority_region=RO&referer=&region=US&screen_height=1080&screen_width=1920&tz_name=Asia%2FShanghai&field=direct_message&value=1&verifyFp=verify_lq16gk0u_UiHO7CnO_GQOb_4DmO_A3y6_nEs9ZkLeSh7e&webcast_language=zh-Hans
+
+
+
+创建用户信息
+609
+{
+    "100": "v1/message/send",
+    "200": "v1/message/get_by_user",
+    "203": "v2/message/get_by_user_init",
+    "211": "v1/message/get_by_id",
+    "300": "v1/conversation/get_list",
+    "301": "v1/message/get_by_conversation",
+    "302": "v1/message/get_checkinfo",
+    "400": "v1/account/online",
+    "401": "v1/account/offline",
+    "410": "v1/client/user_action",
+    "411": "v1/client/input_status",
+    "603": "v1/conversation/delete",
+    "605": "v1/conversation/participants_list",
+    "608": "v2/conversation/get_info",
+    "609": "v2/conversation/create",
+    "610": "v2/conversation/get_info_list",
+    "611": "v2/conversation/get_by_favorite",
+    "612": "v2/conversation/get_by_top",
+    "614": "v1/conversation/dissolve",
+    "615": "v1/conversation/get_checkinfo",
+    "650": "v1/conversation/add_participants",
+    "651": "v1/conversation/remove_participants",
+    "652": "v1/conversation/leave",
+    "655": "v1/conversation/update_participant",
+    "701": "v1/message/delete",
+    "702": "v1/message/recall",
+    "705": "v1/message/set_property",
+    "901": "v1/conversation/get_core_info",
+    "902": "v1/conversation/set_core_info",
+    "904": "v1/conversation/upsert_core_ext_info",
+    "921": "v1/conversation/set_setting_info",
+    "922": "v1/conversation/upsert_settings_ext",
+    "1001": "v1/stranger/get_conversation_list",
+    "1002": "v1/stranger/get_messages",
+    "1003": "v1/stranger/delete_message",
+    "1004": "v1/stranger/delete_conversation",
+    "1005": "v1/stranger/delete_all_conversations",
+    "1006": "v1/stranger/mark_read_conversation",
+    "1007": "v1/stranger/mark_read_all_conversations",
+    "2000": "v3/conversation/get_read_index",
+    "2001": "v3/conversation/get_min_index",
+    "2002": "v3/conversation/mark_read",
+    "2003": "v1/media/get_upload_token",
+    "2004": "v1/media/get_urls",
+    "2006": "v1/conversation/list",
+    "2007": "v1/broadcast/send_message",
+    "2008": "v1/broadcast/recv_message",
+    "2009": "v1/broadcast/user_counter",
+    "2010": "v1/client/ack",
+    "2011": "v1/voip/create",
+    "2012": "v1/voip/call",
+    "2013": "v1/voip/update",
+    "2014": "v1/channel/heartbeat",
+    "2015": "v1/profile/get_info",
+    "2016": "v1/client/report_metrics",
+    "2017": "v1/config/get",
+    "2018": "v1/client/unread_count",
+    "2019": "v1/conversation/block_member",
+    "2020": "v1/conversation/block_conversation",
+    "2021": "v1/message/modify_ext",
+    "2030": "v1/client/get_unread_count",
+    "2031": "v1/send_message/p2p",
+    "2032": "v1/blocklist/get",
+    "2033": "v1/blocklist/set",
+    "2034": "v1/blocklist/check",
+    "2036": "v1/message/mark",
+    "2037": "v1/message/pull_mark",
+    "2038": "v1/conversation/batch_get_conversation_participants_readindex",
+    "2043": "v1/message/get_message_by_init",
+    "2054": "v1/message/report_mark_count",
+    "2055": "v1/message/get_mark_count",
+    "2056": "v1/message/batch_unmark",
+    "2057": "v1/client/batch_ack",
+    "2059": "v1/message/audio_recognition"
+}
+
+
+
+ class N extends L.W {
+            SendMessage(e) {
+                return (0,
+                o.__awaiter)(this, void 0, void 0, (function*() {
+                    const t = c.m.RequestBody.create({
+                        send_message_body: {
+                            conversation_id: e.conversationId,
+                            conversation_short_id: e.conversationShortId,
+                            conversation_type: e.conversationType,
+                            content: e.content,
+                            mentioned_users: e.mentionedUsers,
+                            client_message_id: e.clientId,
+                            ticket: e.ticket,
+                            message_type: e.messageType,
+                            ext: e.ext,
+                            ref_msg_info: e.referenceInfo
+                        }
+                    });
+                    return this.sendWithRawBody(t, c.m.IMCMD.SEND_MESSAGE, {
+                        inboxType: e.inboxType,
+                        maxRetryTimes: this.ctx.option.maxSendMsgRetryTimes
+                    })
+                }
+                ))
+            }
+            GetMessagesByUser(e) {
+                return (0,
+                o.__awaiter)(this, void 0, void 0, (function*() {
+                    const t = c.m.RequestBody.create({
+                        messages_per_user_body: {
+                            cursor: e.cursor,
+                            limit: e.limit
+                        }
+                    });
+                    try {
+                        return yield this.sendWithRawBody(t, c.m.IMCMD.GET_MESSAGES_BY_USER, {
+                            inboxType: e.inboxType,
+                            maxRetryTimes: 1
+                        })
+                    } catch (t) {
+                        return _.Y.ctxWarn(this.ctx, `pull user error:${t}, ignore`),
+                        c.m.Response.create({
+                            body: c.m.ResponseBody.create({
+                                messages_per_user_body: c.m.MessagesPerUserResponseBody.create({
+                                    next_cursor: e.cursor,
+                                    has_more: !1,
+                                    messages: []
+                                })
+                            })
+                        })
+                    }
+                }
+                ))
+            }
+            GetMessagesByUserInitV2(e) {
+                return (0,
+                o.__awaiter)(this, void 0, void 0, (function*() {
+                    const t = c.m.RequestBody.create({
+                        messages_per_user_init_v2_body: {
+                            cursor: e.cursor,
+                            init_sub_type: e.initSubType,
+                            conv_limit: e.convLimit,
+                            msg_limit: e.msgLimit
+                        }
+                    });
+                    return this.sendWithRawBody(t, c.m.IMCMD.GET_MESSAGES_BY_USER_INIT_V2, {
+                        inboxType: e.inboxType,
+                        forceHttp: !0,
+                        maxRetryTimes: 10
+                    })
+                }
+                ))
+            }
+            GetMessagesByInit(e) {
+                return (0,
+                o.__awaiter)(this, void 0, void 0, (function*() {
+                    const t = c.m.RequestBody.create({
+                        message_by_init: {
+                            version: e.version,
+                            page: e.page,
+                            conv_limit: e.convLimit,
+                            msg_limit: e.msgLimit
+                        }
+                    });
+                    return this.sendWithRawBody(t, c.m.IMCMD.GET_MESSAGE_BY_INIT, {
+                        inboxType: e.inboxType,
+                        forceHttp: !0,
+                        maxRetryTimes: 10
+                    })
+                }
+                ))
+            }
+            GetMessagesByConversation(e) {
+                return (0,
+                o.__awaiter)(this, void 0, void 0, (function*() {
+                    const t = c.m.RequestBody.create({
+                        messages_in_conversation_body: {
+                            conversation_id: e.conversationId,
+                            conversation_short_id: e.conversationShortId,
+                            conversation_type: e.conversationType,
+                            anchor_index: e.anchorIndex,
+                            limit: e.limit,
+                            direction: e.direction
+                        }
+                    });
+                    return this.sendWithRawBody(t, c.m.IMCMD.GET_MESSAGES_BY_CONVERSATION, {
+                        inboxType: e.inboxType,
+                        forceHttp: !0
+                    })
+                }
+                ))
+            }
+            CreateConversationV2(e) {
+                return (0,
+                o.__awaiter)(this, void 0, void 0, (function*() {
+                    const t = c.m.RequestBody.create({
+                        create_conversation_v2_body: {
+                            conversation_type: e.type,
+                            participants: e.participants,
+                            persistent: e.persistent,
+                            idempotent_id: e.idempotentId,
+                            name: e.name,
+                            avatar_url: e.avatarUrl,
+                            description: e.desc,
+                            biz_ext: e.bizExt
+                        }
+                    });
+                    return this.sendWithRawBody(t, c.m.IMCMD.CREATE_CONVERSATION_V2, {
+                        inboxType: e.inboxType
+                    })
+                }
+                ))
+            }
+            GetConversationInfoListV2(e) {
+                return (0,
+                o.__awaiter)(this, void 0, void 0, (function*() {
+                    const t = c.m.RequestBody.create({
+                        get_conversation_info_list_v2_body: {
+                            conversation_info_list: e.conversations.map((e=>({
+                                conversation_id: e.conversationId,
+                                conversation_short_id: e.conversationShortId,
+                                conversation_type: e.conversationType
+                            })))
+                        }
+                    });
+                    return this.sendWithRawBody(t, c.m.IMCMD.GET_CONVERSATION_INFO_LIST_V2, {
+                        inboxType: e.inboxType
+                    })
+                }
+                ))
+            }
+            MarkConversationReadV3(e) {
+                return (0,
+                o.__awaiter)(this, void 0, void 0, (function*() {
+                    const t = c.m.RequestBody.create({
+                        mark_conversation_read_body: {
+                            conversation_id: e.conversationId,
+                            conversation_short_id: e.conversationShortId,
+                            conversation_type: e.conversationType,
+                            read_message_index: e.readIndex,
+                            conv_unread_count: e.unreadCount,
+                            total_unread_count: e.totalUnreadCount
+                        }
+                    });
+                    return this.send(t, c.m.IMCMD.MARK_CONVERSATION_READ_V3, {
+                        inboxType: e.inboxType,
+                        maxRetryTimes: 1
+                    })
+                }
+                ))
+            }
+            RecallMessage(e) {
+                return (0,
+                o.__awaiter)(this, void 0, void 0, (function*() {
+                    const t = c.m.RequestBody.create({
+                        recall_message_body: {
+                            conversation_id: e.conversationId,
+                            conversation_short_id: e.conversationShortId,
+                            conversation_type: e.conversationType,
+                            server_message_id: e.serverId
+                        }
+                    });
+                    return this.sendWithRawBody(t, c.m.IMCMD.RECALL_MESSAGE, {
+                        inboxType: e.inboxType
+                    })
+                }
+                ))
+            }
+            GetTicket(e) {
+                return (0,
+                o.__awaiter)(this, void 0, void 0, (function*() {
+                    const t = c.m.RequestBody.create({
+                        get_ticket_body: {
+                            ticket_type: T.HF.ticketType,
+                            conversation_type: e.conversationType,
+                            conversation_short_id: e.shortId,
+                            to_id: e.toId,
+                            ext: e.ext
+                        }
+                    });
+                    return (yield this.send(t, c.m.IMCMD.GET_TICKET, {
+                        inboxType: e.inboxType
+                    })).get_ticket_body
+                }
+                ))
+            }
+            GetConversationParticipantsList(e) {
+                return (0,
+                o.__awaiter)(this, void 0, void 0, (function*() {
+                    const t = c.m.RequestBody.create({
+                        conversation_participants_body: {
+                            conversation_id: e.conversationId,
+                            conversation_short_id: e.conversationShortId,
+                            conversation_type: e.conversationType,
+                            cursor: e.cursor,
+                            limit: e.limit
+                        }
+                    });
+                    return this.sendWithRawBody(t, c.m.IMCMD.CONVERSATION_PARTICIPANTS_LIST, {
+                        inboxType: e.inboxType
+                    })
+                }
+                ))
+            }
+            GetConversationParticipantByUserId(e) {
+                return (0,
+                o.__awaiter)(this, void 0, void 0, (function*() {
+                    const t = c.m.RequestBody.create({
+                        mget_conversation_participants_body: {
+                            conversation_id: e.conversationId,
+                            conversation_short_id: e.conversationShortId,
+                            conversation_type: e.conversationType,
+                            participants: e.participants
+                        }
+                    });
+                    return this.sendWithRawBody(t, c.m.IMCMD.MGET_CONVERSATION_PARTICIPANTS, {
+                        inboxType: e.inboxType
+                    })
+                }
+                ))
+            }
+            ClientAck(e) {
+                return (0,
+                o.__awaiter)(this, void 0, void 0, (function*() {
+                    try {
+                        const t = c.m.RequestBody.create({
+                            client_ack_body: {
+                                start_time_stamp: e.startTimeStamp,
+                                cmd: e.cmd,
+                                network_type: e.NetworkType,
+                                logid: e.logid,
+                                client_time_stamp: e.clientTimeStamp,
+                                server_message_id: e.serverId,
+                                type: e.type
+                            }
+                        });
+                        yield this.send(t, c.m.IMCMD.CLIENT_ACK, {
+                            useBeacon: !0,
+                            inboxType: e.inboxType
+                        })
+                    } catch (e) {
+                        _.Y.ctxWarn(this.ctx, `send ack error: ${e}, ignore`)
+                    }
+                }
+                ))
+            }
+            ClientBatchAck(e) {
+                var t, n;
+                return (0,
+                o.__awaiter)(this, void 0, void 0, (function*() {
+                    try {
+                        const o = null === (t = null == e ? void 0 : e.map) || void 0 === t ? void 0 : t.call(e, (e=>({
+                            start_time_stamp: e.startTimeStamp,
+                            cmd: e.cmd,
+                            network_type: e.NetworkType,
+                            logid: e.logid,
+                            client_time_stamp: e.clientTimeStamp,
+                            server_message_id: e.serverId,
+                            type: e.type
+                        })))
+                          , r = c.m.RequestBody.create({
+                            client_batch_ack_body: {
+                                ack_list: o
+                            }
+                        });
+                        yield this.send(r, c.m.IMCMD.CLIENT_BATCH_ACK, {
+                            useBeacon: !0,
+                            inboxType: null === (n = null == e ? void 0 : e[0]) || void 0 === n ? void 0 : n.inboxType
+                        })
+                    } catch (e) {
+                        _.Y.ctxWarn(this.ctx, `send batch ack error: ${e}, ignore`)
+                    }
+                }
+                ))
+            }
+        }

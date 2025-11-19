@@ -18,23 +18,13 @@ import { WorkersModule } from './workers/workers.module';
 import { WebsocketModule } from './websocket/websocket.module';
 import { MetricsModule } from './metrics/metrics.module';
 
-// 实体
-import { User } from './users/entities/user.entity';
-import { Team } from './teams/entities/team.entity';
-import { Account } from './accounts/entities/account.entity';
-import { Conversation } from './conversations/entities/conversation.entity';
-import { Message } from './messages/entities/message.entity';
-import { Agent } from './agents/entities/agent.entity';
-import { QueueItem } from './queues/entities/queue-item.entity';
-import { Template } from './templates/entities/template.entity';
-import { AuditLog } from './audit/entities/audit-log.entity';
-
 @Module({
   imports: [
     // 配置模块
     ConfigModule.forRoot({
       isGlobal: true,
-      envFilePath: '../.env',
+      envFilePath: ['.env.local', '.env'],  // 支持多个文件
+      expandVariables: true,  // 支持变量展开
     }),
 
     // 数据库模块
@@ -44,15 +34,7 @@ import { AuditLog } from './audit/entities/audit-log.entity';
         type: 'postgres',
         url: configService.get('DATABASE_URL'),
         entities: [
-          User,
-          Team, 
-          Account,
-          Conversation,
-          Message,
-          Agent,
-          QueueItem,
-          Template,
-          AuditLog,
+          __dirname + '/**/*.entity{.ts,.js}',
         ],
         synchronize: true, // 生产环境应设为 false
         logging: configService.get('NODE_ENV') === 'development',

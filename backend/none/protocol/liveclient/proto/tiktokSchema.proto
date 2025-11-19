@@ -1,0 +1,554 @@
+syntax = "proto3";
+package TikTok;
+
+// Data structure from im/fetch/ response
+message WebcastResponse {
+  repeated Message messages = 1;
+  string cursor = 2;
+  int32 fetchInterval = 3;
+  int64 serverTimestamp = 4;
+  string internalExt = 5;
+  int32 fetchType = 6; // ws (1) or polling (2)
+  repeated WebsocketParam wsParams = 7;
+  int32 heartbeatDuration = 8;
+  bool needAck = 9;
+  string wsUrl = 10;
+}
+
+message Message {
+  string type = 1;
+  bytes binary = 2;
+}
+
+message WebsocketParam {
+  string name = 1;
+  string value = 2;
+}
+
+// Message types depending on Message.tyoe
+message WebcastControlMessage {
+  int32 action = 2;
+}
+
+// Statistics like viewer count
+message WebcastRoomUserSeqMessage {
+  repeated TopUser topViewers = 2;
+  int32 viewerCount = 3;
+}
+
+message TopUser {
+  uint64 coinCount = 1;
+  User user = 2;
+}
+
+message WebcastChatMessage {
+  WebcastMessageEvent event = 1;
+  User user = 2;
+  string comment = 3;
+  repeated WebcastSubEmote emotes = 13;
+}
+
+// Chat Emotes (Subscriber)
+message WebcastEmoteChatMessage {
+  User user = 2;
+  EmoteDetails emote = 3;
+}
+
+message WebcastSubEmote {
+ int32 placeInComment = 1; //starting at 0, you insert the emote itself into the comment at that place
+ EmoteDetails emote = 2;
+}
+
+message WebcastMemberMessage {
+  WebcastMessageEvent event = 1;
+  User user = 2;
+  int32 actionId = 10;
+}
+
+message WebcastGiftMessage {
+  WebcastMessageEvent event = 1;
+  int32 giftId = 2;
+  int32 repeatCount = 5;
+  User user = 7;
+  int32 repeatEnd = 9;
+  uint64 groupId = 11;
+  WebcastGiftMessageGiftDetails giftDetails = 15;
+  string monitorExtra = 22;
+  WebcastGiftMessageGiftExtra giftExtra = 23;
+}
+
+message WebcastGiftMessageGiftDetails {
+  WebcastGiftMessageGiftImage giftImage = 1;
+  string giftName = 16;
+  string describe = 2;
+  int32 giftType = 11;
+  int32 diamondCount = 12;
+}
+
+// Taken from https://github.com/Davincible/gotiktoklive/blob/da4630622bc586629a53faae64e8c53509af29de/proto/tiktok.proto#L57
+message WebcastGiftMessageGiftExtra {
+  uint64 timestamp = 6;
+  uint64 receiverUserId = 8;
+}
+
+message WebcastGiftMessageGiftImage {
+  string giftPictureUrl = 1;
+}
+
+
+// Battle start
+message WebcastLinkMicBattle {
+  repeated WebcastLinkMicBattleItems battleUsers = 10;
+}
+
+message WebcastLinkMicBattleItems {
+  WebcastLinkMicBattleGroup battleGroup = 2;
+}
+
+message WebcastLinkMicBattleGroup {
+  LinkUser user = 1;
+}
+
+
+// Battle status
+message WebcastLinkMicArmies {
+  repeated WebcastLinkMicArmiesItems battleItems = 3;
+  int32 battleStatus = 7;
+}
+
+message WebcastLinkMicArmiesItems {
+  uint64 hostUserId = 1;
+  repeated WebcastLinkMicArmiesGroup battleGroups = 2;
+}
+
+message WebcastLinkMicArmiesGroup {
+  repeated User users = 1;
+  int32 points = 2;
+}
+
+
+// Follow & share event
+message WebcastSocialMessage {
+  WebcastMessageEvent event = 1;
+  User user = 2;
+}
+
+// Like event (is only sent from time to time, not with every like)
+message WebcastLikeMessage {
+  WebcastMessageEvent event = 1;
+  User user = 5;
+  int32 likeCount = 2;
+  int32 totalLikeCount = 3;
+}
+
+// New question event
+message WebcastQuestionNewMessage {
+  QuestionDetails questionDetails = 2;
+}
+
+message QuestionDetails {
+  string questionText = 2;
+  User user = 5;
+}
+
+message WebcastMessageEvent {
+  uint64 msgId = 2;
+  uint64 createTime = 4;
+  WebcastMessageEventDetails eventDetails = 8;
+}
+
+// Contains UI information
+message WebcastMessageEventDetails {
+  string displayType = 1;
+  string label = 2;
+}
+
+// Source: Co-opted https://github.com/zerodytrash/TikTok-Livestream-Chat-Connector/issues/19#issuecomment-1074150342
+message WebcastLiveIntroMessage {
+  uint64 id = 2;
+  string description = 4;
+  User user = 5;
+}
+
+message SystemMessage {
+  string description = 2;
+}
+
+message WebcastInRoomBannerMessage {
+  string data = 2;
+}
+
+message RankItem {
+  string colour = 1;
+  uint64 id = 4;
+}
+
+message WeeklyRanking {
+  string type = 1;
+  string label = 2;
+  RankItem rank = 3;
+}
+
+message RankContainer {
+  WeeklyRanking rankings = 4;
+}
+
+message WebcastHourlyRankMessage {
+  RankContainer data = 2;
+}
+
+message EmoteDetails {
+  string emoteId = 1;
+  EmoteImage image = 2;
+}
+
+message EmoteImage {
+  string imageUrl = 1;
+}
+
+// Envelope (treasure boxes)
+// Taken from https://github.com/ThanoFish/TikTok-Live-Connector/blob/9b215b96792adfddfb638344b152fa9efa581b4c/src/proto/tiktokSchema.proto
+message WebcastEnvelopeMessage {
+  TreasureBoxData treasureBoxData = 2;
+  TreasureBoxUser treasureBoxUser = 1;
+}
+
+message TreasureBoxUser {
+  TreasureBoxUser2 user2 = 8;
+}
+
+message TreasureBoxUser2 {
+  repeated TreasureBoxUser3 user3 = 4;
+}
+
+message TreasureBoxUser3 {
+  TreasureBoxUser4 user4 = 21;
+}
+
+message TreasureBoxUser4 {
+  User user = 1;
+}
+
+message TreasureBoxData {
+  uint32 coins = 5;
+  uint32 canOpen = 6;
+  uint64 timestamp = 7;
+}
+
+// New Subscriber message
+message WebcastSubNotifyMessage {
+  WebcastMessageEvent event = 1;
+  User user = 2;
+  int32 exhibitionType = 3;
+  int32 subMonth = 4;
+  int32 subscribeType = 5;
+  int32 oldSubscribeStatus = 6;
+  int32 subscribingStatus = 8;
+}
+
+// ==================================
+// Generic stuff
+
+message User {
+  uint64 userId = 1;
+  string nickname = 3;
+  ProfilePicture profilePicture = 9;
+  string uniqueId = 38;
+  string secUid = 46;
+  SubscribeInfo subscribeInfo = 63;
+  repeated BadgeStruct badgeList = 64;// repeated int64 mintTypeLabel = 65; // Undefined reference
+  FansClubInfo fansClubInfo = 66;
+  uint64 createTime = 16;
+  string bioDescription = 5;
+  FollowInfo followInfo = 22;
+}
+
+message FollowInfo {
+  int32 followingCount = 1;
+  int32 followerCount = 2;
+  int32 followStatus = 3;
+  int32 pushStatus = 4;
+}
+
+message LinkUser {
+  uint64 userId = 1;
+  string nickname = 2;
+  ProfilePicture profilePicture = 3;
+  string uniqueId = 4;
+}
+
+message ProfilePicture {
+  repeated string urls = 1;
+}
+
+message PrivilegeLogExtra {
+  string privilegeId = 2;
+  string level = 5;
+}
+
+message UserBadge {
+  string type = 2;
+  string name = 3;
+}
+
+message UserImageBadge {
+  int32 displayType = 1;
+  UserImageBadgeImage image = 2;
+}
+
+message UserImageBadgeImage {
+  string url = 1;
+}
+
+// Websocket incoming message structure
+message WebcastWebsocketMessage {
+  uint64 id = 2;
+  string type = 7;
+  bytes binary = 8;
+}
+
+// Websocket acknowledgment message
+message WebcastWebsocketAck {
+  uint64 id = 2;
+  string type = 7;
+}
+
+// Image Message
+message Image {
+  repeated string url = 1;
+  string extras = 2;
+  bool isAnimated = 9;
+}
+
+// BadgeStruct Message and Related Messages
+message BadgeStruct {
+  DisplayType displayType = 1;
+  PriorityType priorityType = 2;
+  //SceneType sceneType = 3;
+  int32 sceneType = 3;
+  Position position = 4;
+  bool displayStatus = 5;
+  string greyedByClient = 6;
+  ExhibitionType exhibitionType = 7;
+  string openweburl = 10;
+  bool display = 11;
+  PrivilegeLogExtra privilegeLogExtra = 12;
+  bool isCustomized = 24;
+
+  oneof badgeType {
+    ImageBadge image = 20;
+    TextBadge text = 21;
+    StringBadge str = 22;
+    CombineBadge combine = 23;
+  }
+
+  message CombineBadge {
+    Image icon = 2;
+    TextBadge text = 3;
+    string str = 4;
+    ProfileCardPanel profileCardPanel = 7;
+    CombineBadgeBackground background = 11;
+    CombineBadgeBackground backgroundDarkMode = 12;
+    bool iconAutoMirrored = 13;
+    bool backgroundAutoMirrored = 14;
+    int32 publicScreenShowStyle = 15;
+    int32 personalCardShowStyle = 16;
+    int32 ranklistOnlineAudienceShowStyle = 17;
+    int32 multiGuestShowStyle = 18;
+  }
+
+  message ProfileCardPanel {
+    bool useNewProfileCardStyle = 1;
+    ProjectionConfig projectionConfig = 3;
+    ProfileContent profileContent = 4;
+  }
+
+  message ProjectionConfig {
+    bool useProjection = 1;
+    Image icon = 2;
+  }
+
+  message ProfileContent {
+    bool useContent = 1;
+    repeated IconConfig iconList = 2;
+    NumberConfig numberConfig = 3;
+  }
+
+  message NumberConfig {
+    int64 number = 1;
+    CombineBadgeBackground background = 3;
+  }
+
+  message CombineBadgeBackground {
+    Image image = 1;
+    string backgroundColorCode = 2;
+    string borderColorCode = 3;
+  }
+
+  message ImageBadge {
+    Image image = 2;
+  }
+
+  message TextBadge {
+    string defaultPattern = 3;
+  }
+
+  message IconConfig {
+    Image icon = 1;
+    CombineBadgeBackground background = 2;
+  }
+
+  message StringBadge {
+    string str = 2;
+  }
+
+  // Enums for BadgeStruct
+  enum DisplayType {
+    UNKNOWN = 0;
+    IMAGE = 1;
+    TEXT = 2;
+    STRING = 3;
+    COMBINE = 4;
+  }
+
+  enum PriorityType {
+    UNKNOWN = 0;
+    STRONG_RELATION = 10;
+    PLATFORM = 20;
+    RELATION = 30;
+    ACTIVITY = 40;
+    RANKLIST = 50;
+  }
+
+  // enum SceneType {
+  //     UNKNOWN = 0,              // 场景类型未知
+  //     ADMIN = 1,                // 管理员场景
+  //     FIRST_RECHARGE = 2,       // 用户首次充值场景
+  //     FRIENDS = 3,              // 朋友相关场景
+  //     SUBSCRIBER = 4,           // 订阅者相关场景
+  //     ACTIVITY = 5,             // 活动场景
+  //     RANKLIST = 6,             // 排行榜场景
+  //     NEWSUBSCRIBER = 7,        // 新订阅者场景
+  //     USERGRADE = 8,            // 用户等级场景
+  //     STATECONTROLLEDMEDIA = 9, // 国家控制媒体场景
+  //     FANS = 10,                // 粉丝相关场景
+  //     LIVEPRO = 11,             // 直播专业场景
+  //     ANCHOR = 12               // 主播场景
+  // };
+
+  enum ExhibitionType {
+    BADGE = 0;
+    IDENTITY_LABEL = 1;
+  }
+
+  enum Position {
+    UNKNOWN = 0;
+    LEFT = 1;
+    RIGHT = 2;
+  }
+
+  enum HorizontalPaddingRule {
+    USE_MIDDLE_AND_WIDTH = 0;
+    USE_LEFT_AND_MIDDLE_AND_RIGHT = 1;
+  }
+
+  enum VerticalPaddingRule {
+    USE_DEFAULT = 0;
+    USE_TOP_AND_BOTTOM = 1;
+  }
+
+  // Enum for badge text positioning relative to the badge.
+  enum BadgeTextPosition {
+      BADGETEXTPOSITION_UNKNOWN = 0;
+      BADGETEXTPOSITION_RIGHT = 1;
+      BADGETEXTPOSITION_BELOW = 2;
+  }
+
+
+}
+
+
+// @SubscribeBadge
+// proto.webcast.data.User
+// C:\Users\ja\RiderProjects\TikTokProBufferGenerator\Application\output\sources\test.js
+message SubscribeBadge {
+  Image originImg = 3;
+  Image previewImg = 4;
+  bool isCustomized = 5;
+}
+
+
+// @SubscribeInfo
+// proto.webcast.data.User
+// C:\Users\ja\RiderProjects\TikTokProBufferGenerator\Application\output\sources\test.js
+message SubscribeInfo {
+  bool qualification = 1;
+  bool isSubscribe = 2;
+  SubscribeBadge badge = 3;
+  bool enableSubscription = 4;
+  int64 subscriberCount = 5;
+  bool isInGracePeriod = 6;
+  bool isSubscribedToAnchor = 7;
+  bool userGiftSubAuth = 9;
+  bool anchorGiftSubAuth = 10;
+}
+
+message FansClub {
+  string clubName = 1;
+  int64 clubId = 2;
+  int64 sinceTimestamp = 3;
+  bool isActive = 4;
+}
+
+message FansClubInfo {
+  bool use_new_profile_card_style = 1;
+  // BadgeTextPosition badge_text_position = 2;
+  // ProjectionConfig projection_config = 3;
+  // ProfileContent profile_content = 4;
+  // SeparatorConfig separator_config = 5;
+  // CombineBadge combine_badge = 6;
+  // ImageBadge image_badge = 7;
+  // TextBadge text_badge = 8;
+  // StringBadge string_badge = 9;
+  BadgeStruct badge_struct = 10;
+}
+
+message PayGrade {
+  int32 level = 1;
+  int64 experience = 2;
+}
+
+message UserAttr {
+  bool isVIP = 1;
+  bool isPremium = 2;
+}
+
+message AnchorInfo {
+  int32 anchorLevel = 1;
+  int64 starPoints = 2;
+}
+
+message AnchorLevel {
+  int32 level = 1;
+  int64 points = 2;
+}
+
+message AuthorStats {
+  int64 postCount = 1;
+  int64 likeCount = 2;
+}
+
+
+message LevelBadge {
+    // Assuming fields for LevelBadge - customize these as per actual use
+    int32 id = 1;
+    string description = 2;
+}
+
+message SubLevel {
+    int32 level = 1;                 // Corresponds to the level field
+    string desc = 2;                 // Description of the SubLevel
+    int32 monthLimit = 3;            // Limit in months for this level
+    LevelBadge badge = 4;            // Badge information as a nested message
+    BadgeStruct badgeStruct = 5;     // Additional badge struct info
+}

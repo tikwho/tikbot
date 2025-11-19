@@ -1,0 +1,1061 @@
+
+
+fetch("https://www.douyin.com/tiktok/web/project/post/v1/?app_name=tiktok_web&channel=tiktok_web&device_platform=web&tz_name=Asia%2FShanghai&aid=1988&msToken=6-7OdfccG9CjWVUXrAodcLaPJDm23DAGLP833sGxQe2FRHobVc3iFlwY9nAXacYCpkTTA8-R7fR6V5bwiHCQg86kkao_F24MF-8LYsxugDnI00Oe_azXYXb_m21wuh5PdTeIGgHKWb4Z2tXk45SrxaU6Jgjj&X-Bogus=DFSzswcL0nQCedCOtKCDwU/RssHD&_signature=_02B4Z6wo00001g0LYMQAAIDCNRhQQxuJ3wYNC2RAAOSH67", {
+    "headers": {
+      "accept": "application/json, text/plain, */*",
+      "accept-language": "zh,pt-BR;q=0.9,pt;q=0.8,zh-CN;q=0.7,en-US;q=0.6,en;q=0.5,zh-TW;q=0.4",
+      "cache-control": "no-cache",
+      "content-type": "application/json",
+      "pragma": "no-cache",
+      "priority": "u=1, i",
+      "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "tt-ticket-guard-client-data": "eyJ0c19zaWduIjoidHMuMS45ZjI5NDBlZTk1NTA2NGRmMWQ4NzM5ODA5MjVlZmFkMDg5ZDM5OTc5YWQ1MTBjMzEwYWJiNTAyOGViMjFlMGFlN2E1MGU4YTQxN2RmMDY5ZGY5YTU1NWJkMTZjNjZlZjhiMzYzOWE1NmI2NDJkN2Q4ZjljODgxZjQyYjkzMjllYyIsInJlcV9jb250ZW50IjoidGlja2V0LHBhdGgsdGltZXN0YW1wIiwicmVxX3NpZ24iOiJNRVlDSVFDZ2dCNmo0ZHI4U2VLZWhzRUVRRFYybVpTdUZmTjROc2lPV3Z1S1pYaVE3d0loQUsxOUdSVHo3NjNsbXdWY0d5N3pOZ2sxNVh1YVg2N09xYXZQdGJxa1JreGoiLCJ0aW1lc3RhbXAiOjE3MzE5MzczMTh9",
+      "tt-ticket-guard-iteration-version": "0",
+      "tt-ticket-guard-public-key": "BKeHlHqb9kQIO4w3z+7FOUixxyt6uagb3nMRseJwwAX4CfOkgff9ignk10lOi3g5sDC6Pd4LmChCZcyi6q+vFLE=",
+      "tt-ticket-guard-version": "2",
+      "tt-ticket-guard-web-version": "1",
+      "cookie": "tt_chain_token=J4uJTz6INnTkIuVMUHohTw==; living_user_id=880168972930; delay_guest_mode_vid=5; passport_csrf_token=e1a18fbcb29f71b12c19f77bbbb7b449; passport_csrf_token_default=e1a18fbcb29f71b12c19f77bbbb7b449; d_ticket=4017add8e4c0c470abdf2911f26b75c264559; multi_sids=7028939348067795974%3A84955bc523bb8b242acba5ece1f54170; uid_tt=9173e3514512a9466106735b2f8f33c7b15e3154485372e91f5cde799f8764f1; uid_tt_ss=9173e3514512a9466106735b2f8f33c7b15e3154485372e91f5cde799f8764f1; sid_tt=84955bc523bb8b242acba5ece1f54170; sessionid=84955bc523bb8b242acba5ece1f54170; sessionid_ss=84955bc523bb8b242acba5ece1f54170; store-idc=useast5; store-country-code=us; store-country-code-src=uid; tt-target-idc=useast5; tt-target-idc-sign=bv67Pwidt8xksbI6hEG-p-hzl382KKBgrMgrYBiWO0XJQEQU-vmVgW3WS6zAPK2GAcxM9QnoWY2TOSh-Y9Jylr5BOIOvg9pM8TxGsCNTTD7yRFKbuDBSBDAabE_WGvUXV-tqFaal5dOqAv0hDZ1hHi7eYUb8fd15flq43cGDTWaOV_cuy_tx2lRIeBJcj4U3Tcef7vPemjCOICoDnJjC9C30O3Bgo2BRfeYq2C95h_Q-gVC_OBKJm-2qSn45fkZrmkKFUKM2thNZXeyReBUNstoUjOV0AeZEaRP9LDUxOQZAUJFsPlXyzoE4kVmZZhJPlTDzp5qvO4IMEFih31JV-bXJyhzteltGGTg8qQNQ0xzLM74MbapgPS9OXbVOOKk5WcenZyiveRzAFotC0p-eMNrHP8ImiVRN5OeRIWDY2Hzuz8GgP3RgjzbKZlXgUOTIGI1Y1vDJ43toqz-5Pbz2CSfvZ9nCbE-k2XS11fLEmsIROWip_amA8_hooDD4c7m4; last_login_method=email; _ga=GA1.1.1340106346.1729093966; FPID=FPID2.3.amaVTAd%2By16pprTZCPyAQpK%2B5ViUD5bm%2BZOWjOvk%2FKk%3D.1729093966; FPAU=1.3.1664634681.1729093969; FPID=FPID2.2.amaVTAd%2By16pprTZCPyAQpK%2B5ViUD5bm%2BZOWjOvk%2FKk%3D.1729093966; _ga_GR6VLNH8D4=GS1.1.1729126266.2.0.1729126266.0.0.678575815; cmpl_token=AgQQAPNSF-RO0rG1Ib8Vah0__JjlWyjSP4chYNQnpQ; sid_guard=84955bc523bb8b242acba5ece1f54170%7C1729156890%7C15552000%7CTue%2C+15-Apr-2025+09%3A21%3A30+GMT; sid_ucp_v1=1.0.0-KGVlYzZhMzRlZWU1OTFiY2Y0Zjk5N2MwNjhlNGFjOTg4NDBmODMzYTAKIgiGiOPqiePzxWEQmq7DuAYYswsgDDDNnq-MBjgBQOoHSAQQBBoHdXNlYXN0NSIgODQ5NTViYzUyM2JiOGIyNDJhY2JhNWVjZTFmNTQxNzA; ssid_ucp_v1=1.0.0-KGVlYzZhMzRlZWU1OTFiY2Y0Zjk5N2MwNjhlNGFjOTg4NDBmODMzYTAKIgiGiOPqiePzxWEQmq7DuAYYswsgDDDNnq-MBjgBQOoHSAQQBBoHdXNlYXN0NSIgODQ5NTViYzUyM2JiOGIyNDJhY2JhNWVjZTFmNTQxNzA; FPAU=1.3.1664634681.1729093969; tiktok_webapp_theme=light; _tt_enable_cookie=1; _ga_GZB380RXJX=GS1.1.1731686624.3.1.1731689801.0.0.53012713; tt_csrf_token=e2Qnok3s-jylCtyR70Y8tEFhqPaCBeHhpzQU; _ttp=2p0IrS8VpSTFCOVfTwk11blLaUN; csrf_session_id=ba7551c11184ee2d0f546357006b71c7; _ga_K04KJD8QTB=GS1.1.1731899042.1.1.1731899060.0.0.31316289; passport_fe_beating_status=true; odin_tt=244a3b076c21e83d26ad0eda36110367193d4d6fb7474d3caa618469c1c7e96b34ed958d6b28e960e7f16d1f95068d51b648d0fcfa0aa2b946f25416b43c40bff8b9135520bd038c856258d19f61fa42; FPLC=3Je%2Bo2iY4UsFJIgS3O4UjA6shNLS8zZSUNfW75FRdeB0h%2BjL%2BfhGLdJOd5Kr0RroR8%2FW1n3zo2zuJE4R%2FBljwPcRqT7JacEM2C9eGVjHJOsr8rT35pEGcdpSEBnEWg%3D%3D; _ga_LWWPCY99PB=GS1.1.1731920524.69.1.1731920540.0.0.1816143127; s_v_web_id=verify_m3mu9hnz_kUrkqeiK_hE6T_4ENO_A0Aq_lysDvAxWwklW; ak_bmsc=45CF4F325A29EDF2B342122133A53695~000000000000000000000000000000~YAAQrlA7F4rOMiaTAQAAru5EPxkDOnSf+/+JQ08Z+qSXpN2kzePaPHScv7nfdi5QRivXaU03rB8ZYllep2inMA1zPAQkAfsSXnWS1tvydip7+q3TBEzE8zGUQzTnch3EA+9wY9hoLgn7z8XoQv5K2ozOglqeCb/kzIMSoDBPMkd/vMAKfOD/4W8e0mlCG2db5E2WErZ30yl2c78WmY4vLjpVkdgNrBro26M1/f+3SXCdOdj2JHYhvh3wg2aOi8d81bY+N1yi9LfqUTFvwk1pW0RQB1nESGdrdnudWir5fhacBQjFbHzZVdcZG8+ddXhl4PCIQ9uq/RUUnH95uUzRMZbTz9AhAoSa21L80MnSseTpp58iLNc+aIF4tl7WK/X/JnJ4X3e8eYVj5A==; tiktok_webapp_theme_source=system; ttwid=1%7CjFMK-RknGsU3ecgNQbRHqlLfSEWHwMlEBLeAqAUNFTY%7C1731933309%7Cd47b49685eb9a3e81fc4f3f68f8a35a6042206742a983ead46add0a4094e7443; perf_feed_cache={%22expireTimestamp%22:1732104000000%2C%22itemIds%22:[%227438539106667253022%22%2C%227438512075338452257%22]}; msToken=nI7kiebiIoSvhppEcnEzaqp4_alyh4QsnHmhib45ghUHVEPIzofyYfHNRiepqtQGgBJ91nL5tK1TQ7reOduhx2jfBHdQa28v1xm4VoO_CqL_kC9Ui4SPiFNQFQmOkhccU98x-AqeST3quxnTnKhCTUkvCxnY; msToken=6-7OdfccG9CjWVUXrAodcLaPJDm23DAGLP833sGxQe2FRHobVc3iFlwY9nAXacYCpkTTA8-R7fR6V5bwiHCQg86kkao_F24MF-8LYsxugDnI00Oe_azXYXb_m21wuh5PdTeIGgHKWb4Z2tXk45SrxaU6Jgjj",
+      "Referer": "https://www.douyin.com/tiktokstudio/upload?from=upload&lang=zh-Hant-TW",
+      "Referrer-Policy": "strict-origin-when-cross-origin"
+    },
+    "body": "{\"post_common_info\":{\"creation_id\":\"GLdkCrNSHABuR_4-VLknW\",\"enter_post_page_from\":2,\"post_type\":3},\"feature_common_info_list\":[{\"schedule_time\":1731945300,\"geofencing_regions\":[],\"playlist_name\":\"\",\"playlist_id\":\"\",\"tcm_params\":\"{\\\"commerce_toggle_info\\\":{}}\",\"sound_exemption\":0,\"anchors\":[],\"vedit_common_info\":{\"draft\":\"\",\"video_id\":\"v12025gd0000cstk48vog65o0iac7kng\"},\"privacy_setting_info\":{\"visibility_type\":0,\"allow_duet\":0,\"allow_stitch\":0,\"allow_comment\":1},\"content_check_id\":\"\"}],\"single_post_req_list\":[{\"batch_index\":0,\"video_id\":\"v12025gd0000cstk48vog65o0iac7kng\",\"is_long_video\":1,\"single_post_feature_info\":{\"text\":\"#highschool hi\",\"text_extra\":[{\"tag_id\":\"0\",\"start\":0,\"end\":11,\"user_id\":\"\",\"type\":1,\"hashtag_name\":\"highschool\"}],\"markup_text\":\"<h id=\\\"0\\\">#highschool</h> hi\",\"music_info\":{},\"poster_delay\":0,\"cloud_edit_video_height\":720,\"cloud_edit_video_width\":1280,\"cloud_edit_is_use_video_canvas\":false}}]}",
+    "method": "POST"
+  });
+
+
+
+  fetch("https://www.douyin.com/tiktok/web/project/status/v1/?project_id=7438613541592126510&aid=1988", {
+    "headers": {
+      "accept": "application/json, text/plain, */*",
+      "accept-language": "zh,pt-BR;q=0.9,pt;q=0.8,zh-CN;q=0.7,en-US;q=0.6,en;q=0.5,zh-TW;q=0.4",
+      "cache-control": "no-cache",
+      "pragma": "no-cache",
+      "priority": "u=1, i",
+      "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "cookie": "tt_chain_token=J4uJTz6INnTkIuVMUHohTw==; living_user_id=880168972930; delay_guest_mode_vid=5; passport_csrf_token=e1a18fbcb29f71b12c19f77bbbb7b449; passport_csrf_token_default=e1a18fbcb29f71b12c19f77bbbb7b449; d_ticket=4017add8e4c0c470abdf2911f26b75c264559; multi_sids=7028939348067795974%3A84955bc523bb8b242acba5ece1f54170; uid_tt=9173e3514512a9466106735b2f8f33c7b15e3154485372e91f5cde799f8764f1; uid_tt_ss=9173e3514512a9466106735b2f8f33c7b15e3154485372e91f5cde799f8764f1; sid_tt=84955bc523bb8b242acba5ece1f54170; sessionid=84955bc523bb8b242acba5ece1f54170; sessionid_ss=84955bc523bb8b242acba5ece1f54170; store-idc=useast5; store-country-code=us; store-country-code-src=uid; tt-target-idc=useast5; tt-target-idc-sign=bv67Pwidt8xksbI6hEG-p-hzl382KKBgrMgrYBiWO0XJQEQU-vmVgW3WS6zAPK2GAcxM9QnoWY2TOSh-Y9Jylr5BOIOvg9pM8TxGsCNTTD7yRFKbuDBSBDAabE_WGvUXV-tqFaal5dOqAv0hDZ1hHi7eYUb8fd15flq43cGDTWaOV_cuy_tx2lRIeBJcj4U3Tcef7vPemjCOICoDnJjC9C30O3Bgo2BRfeYq2C95h_Q-gVC_OBKJm-2qSn45fkZrmkKFUKM2thNZXeyReBUNstoUjOV0AeZEaRP9LDUxOQZAUJFsPlXyzoE4kVmZZhJPlTDzp5qvO4IMEFih31JV-bXJyhzteltGGTg8qQNQ0xzLM74MbapgPS9OXbVOOKk5WcenZyiveRzAFotC0p-eMNrHP8ImiVRN5OeRIWDY2Hzuz8GgP3RgjzbKZlXgUOTIGI1Y1vDJ43toqz-5Pbz2CSfvZ9nCbE-k2XS11fLEmsIROWip_amA8_hooDD4c7m4; last_login_method=email; _ga=GA1.1.1340106346.1729093966; FPID=FPID2.3.amaVTAd%2By16pprTZCPyAQpK%2B5ViUD5bm%2BZOWjOvk%2FKk%3D.1729093966; FPAU=1.3.1664634681.1729093969; FPID=FPID2.2.amaVTAd%2By16pprTZCPyAQpK%2B5ViUD5bm%2BZOWjOvk%2FKk%3D.1729093966; _ga_GR6VLNH8D4=GS1.1.1729126266.2.0.1729126266.0.0.678575815; cmpl_token=AgQQAPNSF-RO0rG1Ib8Vah0__JjlWyjSP4chYNQnpQ; sid_guard=84955bc523bb8b242acba5ece1f54170%7C1729156890%7C15552000%7CTue%2C+15-Apr-2025+09%3A21%3A30+GMT; sid_ucp_v1=1.0.0-KGVlYzZhMzRlZWU1OTFiY2Y0Zjk5N2MwNjhlNGFjOTg4NDBmODMzYTAKIgiGiOPqiePzxWEQmq7DuAYYswsgDDDNnq-MBjgBQOoHSAQQBBoHdXNlYXN0NSIgODQ5NTViYzUyM2JiOGIyNDJhY2JhNWVjZTFmNTQxNzA; ssid_ucp_v1=1.0.0-KGVlYzZhMzRlZWU1OTFiY2Y0Zjk5N2MwNjhlNGFjOTg4NDBmODMzYTAKIgiGiOPqiePzxWEQmq7DuAYYswsgDDDNnq-MBjgBQOoHSAQQBBoHdXNlYXN0NSIgODQ5NTViYzUyM2JiOGIyNDJhY2JhNWVjZTFmNTQxNzA; FPAU=1.3.1664634681.1729093969; tiktok_webapp_theme=light; _tt_enable_cookie=1; _ga_GZB380RXJX=GS1.1.1731686624.3.1.1731689801.0.0.53012713; tt_csrf_token=e2Qnok3s-jylCtyR70Y8tEFhqPaCBeHhpzQU; _ttp=2p0IrS8VpSTFCOVfTwk11blLaUN; csrf_session_id=ba7551c11184ee2d0f546357006b71c7; _ga_K04KJD8QTB=GS1.1.1731899042.1.1.1731899060.0.0.31316289; passport_fe_beating_status=true; odin_tt=244a3b076c21e83d26ad0eda36110367193d4d6fb7474d3caa618469c1c7e96b34ed958d6b28e960e7f16d1f95068d51b648d0fcfa0aa2b946f25416b43c40bff8b9135520bd038c856258d19f61fa42; FPLC=3Je%2Bo2iY4UsFJIgS3O4UjA6shNLS8zZSUNfW75FRdeB0h%2BjL%2BfhGLdJOd5Kr0RroR8%2FW1n3zo2zuJE4R%2FBljwPcRqT7JacEM2C9eGVjHJOsr8rT35pEGcdpSEBnEWg%3D%3D; _ga_LWWPCY99PB=GS1.1.1731920524.69.1.1731920540.0.0.1816143127; s_v_web_id=verify_m3mu9hnz_kUrkqeiK_hE6T_4ENO_A0Aq_lysDvAxWwklW; ak_bmsc=45CF4F325A29EDF2B342122133A53695~000000000000000000000000000000~YAAQrlA7F4rOMiaTAQAAru5EPxkDOnSf+/+JQ08Z+qSXpN2kzePaPHScv7nfdi5QRivXaU03rB8ZYllep2inMA1zPAQkAfsSXnWS1tvydip7+q3TBEzE8zGUQzTnch3EA+9wY9hoLgn7z8XoQv5K2ozOglqeCb/kzIMSoDBPMkd/vMAKfOD/4W8e0mlCG2db5E2WErZ30yl2c78WmY4vLjpVkdgNrBro26M1/f+3SXCdOdj2JHYhvh3wg2aOi8d81bY+N1yi9LfqUTFvwk1pW0RQB1nESGdrdnudWir5fhacBQjFbHzZVdcZG8+ddXhl4PCIQ9uq/RUUnH95uUzRMZbTz9AhAoSa21L80MnSseTpp58iLNc+aIF4tl7WK/X/JnJ4X3e8eYVj5A==; tiktok_webapp_theme_source=system; ttwid=1%7CjFMK-RknGsU3ecgNQbRHqlLfSEWHwMlEBLeAqAUNFTY%7C1731933309%7Cd47b49685eb9a3e81fc4f3f68f8a35a6042206742a983ead46add0a4094e7443; perf_feed_cache={%22expireTimestamp%22:1732104000000%2C%22itemIds%22:[%227438539106667253022%22%2C%227438512075338452257%22]}; msToken=6-7OdfccG9CjWVUXrAodcLaPJDm23DAGLP833sGxQe2FRHobVc3iFlwY9nAXacYCpkTTA8-R7fR6V5bwiHCQg86kkao_F24MF-8LYsxugDnI00Oe_azXYXb_m21wuh5PdTeIGgHKWb4Z2tXk45SrxaU6Jgjj; msToken=-nAESfs3pUnoEX_vACcQYYcliUok6J_askkpciMJLqYf5BwjjL4R0B7Yl8eOl-QRizyvmlaHlcd7RcdfextluIFxSW_RxCPWG6K2ZqmsdMmr5hv0WFEyPQAJaAgMbq9J0j_ncsdM7Z7EhD_NTngk5EDfLJNI",
+      "Referer": "https://www.douyin.com/tiktokstudio/upload?from=upload&lang=zh-Hant-TW",
+      "Referrer-Policy": "strict-origin-when-cross-origin"
+    },
+    "body": null,
+    "method": "GET"
+  });
+
+
+
+创作者推荐
+fetch("https://www.douyin.com/tiktokstudio/api/web/user?needIsVerified=true&needProfileBio=true&locale=zh-Hant-TW&aid=1988&priority_region=SG&region=US&tz_name=Asia%2FShanghai&app_name=tiktok_creator_center&app_language=zh-Hant-TW&device_platform=web_pc&channel=tiktok_web&device_id=7420098649458017797&os=win&screen_width=1920&screen_height=1080&browser_language=zh&browser_platform=Win32&browser_name=Mozilla&browser_version=5.0+(Windows+NT+10.0%3B+Win64%3B+x64)+AppleWebKit%2F537.36+(KHTML,+like+Gecko)+Chrome%2F130.0.0.0+Safari%2F537.36", {
+    "headers": {
+      "accept": "application/json,*/*;q=0.8",
+      "accept-language": "zh,pt-BR;q=0.9,pt;q=0.8,zh-CN;q=0.7,en-US;q=0.6,en;q=0.5,zh-TW;q=0.4",
+      "agw-js-conv": "str",
+      "cache-control": "no-cache",
+      "pragma": "no-cache",
+      "priority": "u=1, i",
+      "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "tt-csrf-token": "e2Qnok3s-jylCtyR70Y8tEFhqPaCBeHhpzQU",
+      "cookie": "tt_chain_token=J4uJTz6INnTkIuVMUHohTw==; living_user_id=880168972930; delay_guest_mode_vid=5; passport_csrf_token=e1a18fbcb29f71b12c19f77bbbb7b449; passport_csrf_token_default=e1a18fbcb29f71b12c19f77bbbb7b449; d_ticket=4017add8e4c0c470abdf2911f26b75c264559; multi_sids=7028939348067795974%3A84955bc523bb8b242acba5ece1f54170; uid_tt=9173e3514512a9466106735b2f8f33c7b15e3154485372e91f5cde799f8764f1; uid_tt_ss=9173e3514512a9466106735b2f8f33c7b15e3154485372e91f5cde799f8764f1; sid_tt=84955bc523bb8b242acba5ece1f54170; sessionid=84955bc523bb8b242acba5ece1f54170; sessionid_ss=84955bc523bb8b242acba5ece1f54170; store-idc=useast5; store-country-code=us; store-country-code-src=uid; tt-target-idc=useast5; tt-target-idc-sign=bv67Pwidt8xksbI6hEG-p-hzl382KKBgrMgrYBiWO0XJQEQU-vmVgW3WS6zAPK2GAcxM9QnoWY2TOSh-Y9Jylr5BOIOvg9pM8TxGsCNTTD7yRFKbuDBSBDAabE_WGvUXV-tqFaal5dOqAv0hDZ1hHi7eYUb8fd15flq43cGDTWaOV_cuy_tx2lRIeBJcj4U3Tcef7vPemjCOICoDnJjC9C30O3Bgo2BRfeYq2C95h_Q-gVC_OBKJm-2qSn45fkZrmkKFUKM2thNZXeyReBUNstoUjOV0AeZEaRP9LDUxOQZAUJFsPlXyzoE4kVmZZhJPlTDzp5qvO4IMEFih31JV-bXJyhzteltGGTg8qQNQ0xzLM74MbapgPS9OXbVOOKk5WcenZyiveRzAFotC0p-eMNrHP8ImiVRN5OeRIWDY2Hzuz8GgP3RgjzbKZlXgUOTIGI1Y1vDJ43toqz-5Pbz2CSfvZ9nCbE-k2XS11fLEmsIROWip_amA8_hooDD4c7m4; last_login_method=email; _ga=GA1.1.1340106346.1729093966; FPID=FPID2.3.amaVTAd%2By16pprTZCPyAQpK%2B5ViUD5bm%2BZOWjOvk%2FKk%3D.1729093966; FPAU=1.3.1664634681.1729093969; FPID=FPID2.2.amaVTAd%2By16pprTZCPyAQpK%2B5ViUD5bm%2BZOWjOvk%2FKk%3D.1729093966; _ga_GR6VLNH8D4=GS1.1.1729126266.2.0.1729126266.0.0.678575815; cmpl_token=AgQQAPNSF-RO0rG1Ib8Vah0__JjlWyjSP4chYNQnpQ; sid_guard=84955bc523bb8b242acba5ece1f54170%7C1729156890%7C15552000%7CTue%2C+15-Apr-2025+09%3A21%3A30+GMT; sid_ucp_v1=1.0.0-KGVlYzZhMzRlZWU1OTFiY2Y0Zjk5N2MwNjhlNGFjOTg4NDBmODMzYTAKIgiGiOPqiePzxWEQmq7DuAYYswsgDDDNnq-MBjgBQOoHSAQQBBoHdXNlYXN0NSIgODQ5NTViYzUyM2JiOGIyNDJhY2JhNWVjZTFmNTQxNzA; ssid_ucp_v1=1.0.0-KGVlYzZhMzRlZWU1OTFiY2Y0Zjk5N2MwNjhlNGFjOTg4NDBmODMzYTAKIgiGiOPqiePzxWEQmq7DuAYYswsgDDDNnq-MBjgBQOoHSAQQBBoHdXNlYXN0NSIgODQ5NTViYzUyM2JiOGIyNDJhY2JhNWVjZTFmNTQxNzA; FPAU=1.3.1664634681.1729093969; tiktok_webapp_theme=light; _tt_enable_cookie=1; tt_csrf_token=e2Qnok3s-jylCtyR70Y8tEFhqPaCBeHhpzQU; csrf_session_id=ba7551c11184ee2d0f546357006b71c7; _ga_K04KJD8QTB=GS1.1.1731899042.1.1.1731899060.0.0.31316289; passport_fe_beating_status=true; s_v_web_id=verify_m3mu9hnz_kUrkqeiK_hE6T_4ENO_A0Aq_lysDvAxWwklW; tta_attr_id_mirror=0.1731980856.7438801135667937281; part=stable; _ttp=2p0IrS8VpSTFCOVfTwk11blLaUN.tt.1; _ga_Q92CFLCSHE=GS1.1.1731980782.1.1.1731980938.57.0.0; _gcl_au=1.1.797376554.1731980864.793040865.1731980865.1731980952; _ga_HV1FL86553=GS1.1.1731980863.1.1.1731980953.0.0.585758367; _ga_Y2RSHPPW88=GS1.1.1731980863.1.1.1731980953.0.0.167810680; csrfToken=kqCFCi9O-i21TUKtZZ6jKds2sHQ93L-tthN4; _ga_GZB380RXJX=GS1.1.1731997383.5.0.1731997383.0.0.507428523; _ga_LWWPCY99PB=GS1.1.1731997831.72.0.1731997831.0.0.1339986866; FPLC=H%2F9bjK5kTqPkEr3dtuJv4XHUFGSVuVETEgTKP%2FL8WCLc%2F2SQ84%2Bij4QOI4qytL%2FXzURgn3EolqQOP%2F5yP%2BkkF7owxhv4mj8hYhE6tZ5nWREvxZ6QXGEKxeI1ow4zmw%3D%3D; tiktok_webapp_theme_source=system; ak_bmsc=12DC0D8C1F007B9E49938B4F7E195D0C~000000000000000000000000000000~YAAQ3VA7F4w5okCTAQAAGjxeRRnil2TECDdQ0Cl6HSYFQNIv52eePh9F9g6sla0VZ5AIcQl4kwfd7QYQMKeXcljQaNuT/WWkS4GpHHSCvHo6jrxqwTzR6lmHwMabw+XqmDnsW26lBmGiL7TdjXQ4rt/fT7OynEMuSqjDUiW9WtrIdNnxrIaJ7Ald/AfimNiUm/OOru2BaDSgQ3JWCEzjGWRqZZlByPkkTUUPgeSb1Vf9NFIrIOjEf989ZDv+NIN5KSS2wgZ8dpUj3K3mX3MZ8orUToRB8WaBKg8w1sf0Fq4enqfsGjtL2px0YbUaLbpEZYmv5Of6QDzAMrCDYe6tUBc+KhAYql5gP0ISGnxDoU0xICrb9idAwGkX3QftGjs4Sr0QHGm4Up8jgA==; ttwid=1%7CjFMK-RknGsU3ecgNQbRHqlLfSEWHwMlEBLeAqAUNFTY%7C1732035629%7C88b6f3f43090b43f504d3544c3a1213cdb1cf23ae2795f9ddf91a401871790af; perf_feed_cache={%22expireTimestamp%22:1732057200000%2C%22itemIds%22:[%227438946277372595463%22%2C%227414511765054344455%22%2C%227438929067878911253%22]}; msToken=i5vxpGv3yVJ-29R6PKCK2bSh_DDJ9WJkhWUfYOUkwhpNB_qhn2EC9Hpz-1fV74Xz8SgD2x85qo8xPH433qUZF9eivhItSeskQoJ2nzMYLUFzZ8CiZx1CwZWERkwAKgJoBSW4beb8LdVL5FbvV3LKBPkCtqw=; msToken=UXbWEDEHNaH9-egcD9xUVvyNmVDCjEFoNCJjXkHH92BwuUDlbd653_8KjgjKgF1nflDVr30uiTrVYz1KLI_ozxjsnezH5ref1mSdH_Pl8_jAE_caXYvhBpiLsCRcuDQsUhrDPpvsl1XZpOMnXR7kprnrpYo=; odin_tt=1cfdaa48e114a72acf8596d80d0f7a9d664a00a269b311a3c7c4b96509bb3a987a8ac593173701b85673f564390332ffb52217510703c89aeb3993b60202da4654ba413ae0353f5aa0c8e8b7379cc5ea",
+      "Referer": "https://www.douyin.com/tiktokstudio/inspiration/trending",
+      "Referrer-Policy": "strict-origin-when-cross-origin"
+    },
+    "body": null,
+    "method": "GET"
+  });
+
+
+作品趋势
+fetch("https://www.douyin.com/_studio/inspiration/trending/video/v2?locale=zh-Hant-TW&aid=1988&priority_region=SG&region=US&tz_name=Asia%2FShanghai&app_name=tiktok_creator_center&app_language=zh-Hant-TW&device_platform=web_pc&channel=tiktok_web&device_id=7420098649458017797&os=win&screen_width=1920&screen_height=1080&browser_language=zh&browser_platform=Win32&browser_name=Mozilla&browser_version=5.0+(Windows+NT+10.0%3B+Win64%3B+x64)+AppleWebKit%2F537.36+(KHTML,+like+Gecko)+Chrome%2F130.0.0.0+Safari%2F537.36&key=trendingList&PageNum=1&PageSize=12&Region=US&Vertical=All&op_region=SG&TrendingType=0", {
+    "headers": {
+      "accept": "application/json, text/plain, */*",
+      "accept-language": "zh,pt-BR;q=0.9,pt;q=0.8,zh-CN;q=0.7,en-US;q=0.6,en;q=0.5,zh-TW;q=0.4",
+      "agw-js-conv": "str",
+      "cache-control": "no-cache",
+      "pragma": "no-cache",
+      "priority": "u=1, i",
+      "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "tt-csrf-token": "e2Qnok3s-jylCtyR70Y8tEFhqPaCBeHhpzQU",
+      "cookie": "tt_chain_token=J4uJTz6INnTkIuVMUHohTw==; living_user_id=880168972930; delay_guest_mode_vid=5; passport_csrf_token=e1a18fbcb29f71b12c19f77bbbb7b449; passport_csrf_token_default=e1a18fbcb29f71b12c19f77bbbb7b449; d_ticket=4017add8e4c0c470abdf2911f26b75c264559; multi_sids=7028939348067795974%3A84955bc523bb8b242acba5ece1f54170; uid_tt=9173e3514512a9466106735b2f8f33c7b15e3154485372e91f5cde799f8764f1; uid_tt_ss=9173e3514512a9466106735b2f8f33c7b15e3154485372e91f5cde799f8764f1; sid_tt=84955bc523bb8b242acba5ece1f54170; sessionid=84955bc523bb8b242acba5ece1f54170; sessionid_ss=84955bc523bb8b242acba5ece1f54170; store-idc=useast5; store-country-code=us; store-country-code-src=uid; tt-target-idc=useast5; tt-target-idc-sign=bv67Pwidt8xksbI6hEG-p-hzl382KKBgrMgrYBiWO0XJQEQU-vmVgW3WS6zAPK2GAcxM9QnoWY2TOSh-Y9Jylr5BOIOvg9pM8TxGsCNTTD7yRFKbuDBSBDAabE_WGvUXV-tqFaal5dOqAv0hDZ1hHi7eYUb8fd15flq43cGDTWaOV_cuy_tx2lRIeBJcj4U3Tcef7vPemjCOICoDnJjC9C30O3Bgo2BRfeYq2C95h_Q-gVC_OBKJm-2qSn45fkZrmkKFUKM2thNZXeyReBUNstoUjOV0AeZEaRP9LDUxOQZAUJFsPlXyzoE4kVmZZhJPlTDzp5qvO4IMEFih31JV-bXJyhzteltGGTg8qQNQ0xzLM74MbapgPS9OXbVOOKk5WcenZyiveRzAFotC0p-eMNrHP8ImiVRN5OeRIWDY2Hzuz8GgP3RgjzbKZlXgUOTIGI1Y1vDJ43toqz-5Pbz2CSfvZ9nCbE-k2XS11fLEmsIROWip_amA8_hooDD4c7m4; last_login_method=email; _ga=GA1.1.1340106346.1729093966; FPID=FPID2.3.amaVTAd%2By16pprTZCPyAQpK%2B5ViUD5bm%2BZOWjOvk%2FKk%3D.1729093966; FPAU=1.3.1664634681.1729093969; FPID=FPID2.2.amaVTAd%2By16pprTZCPyAQpK%2B5ViUD5bm%2BZOWjOvk%2FKk%3D.1729093966; _ga_GR6VLNH8D4=GS1.1.1729126266.2.0.1729126266.0.0.678575815; cmpl_token=AgQQAPNSF-RO0rG1Ib8Vah0__JjlWyjSP4chYNQnpQ; sid_guard=84955bc523bb8b242acba5ece1f54170%7C1729156890%7C15552000%7CTue%2C+15-Apr-2025+09%3A21%3A30+GMT; sid_ucp_v1=1.0.0-KGVlYzZhMzRlZWU1OTFiY2Y0Zjk5N2MwNjhlNGFjOTg4NDBmODMzYTAKIgiGiOPqiePzxWEQmq7DuAYYswsgDDDNnq-MBjgBQOoHSAQQBBoHdXNlYXN0NSIgODQ5NTViYzUyM2JiOGIyNDJhY2JhNWVjZTFmNTQxNzA; ssid_ucp_v1=1.0.0-KGVlYzZhMzRlZWU1OTFiY2Y0Zjk5N2MwNjhlNGFjOTg4NDBmODMzYTAKIgiGiOPqiePzxWEQmq7DuAYYswsgDDDNnq-MBjgBQOoHSAQQBBoHdXNlYXN0NSIgODQ5NTViYzUyM2JiOGIyNDJhY2JhNWVjZTFmNTQxNzA; FPAU=1.3.1664634681.1729093969; tiktok_webapp_theme=light; _tt_enable_cookie=1; tt_csrf_token=e2Qnok3s-jylCtyR70Y8tEFhqPaCBeHhpzQU; csrf_session_id=ba7551c11184ee2d0f546357006b71c7; _ga_K04KJD8QTB=GS1.1.1731899042.1.1.1731899060.0.0.31316289; passport_fe_beating_status=true; s_v_web_id=verify_m3mu9hnz_kUrkqeiK_hE6T_4ENO_A0Aq_lysDvAxWwklW; tta_attr_id_mirror=0.1731980856.7438801135667937281; part=stable; _ttp=2p0IrS8VpSTFCOVfTwk11blLaUN.tt.1; _ga_Q92CFLCSHE=GS1.1.1731980782.1.1.1731980938.57.0.0; _gcl_au=1.1.797376554.1731980864.793040865.1731980865.1731980952; _ga_HV1FL86553=GS1.1.1731980863.1.1.1731980953.0.0.585758367; _ga_Y2RSHPPW88=GS1.1.1731980863.1.1.1731980953.0.0.167810680; csrfToken=kqCFCi9O-i21TUKtZZ6jKds2sHQ93L-tthN4; _ga_GZB380RXJX=GS1.1.1731997383.5.0.1731997383.0.0.507428523; _ga_LWWPCY99PB=GS1.1.1731997831.72.0.1731997831.0.0.1339986866; FPLC=H%2F9bjK5kTqPkEr3dtuJv4XHUFGSVuVETEgTKP%2FL8WCLc%2F2SQ84%2Bij4QOI4qytL%2FXzURgn3EolqQOP%2F5yP%2BkkF7owxhv4mj8hYhE6tZ5nWREvxZ6QXGEKxeI1ow4zmw%3D%3D; tiktok_webapp_theme_source=system; ak_bmsc=12DC0D8C1F007B9E49938B4F7E195D0C~000000000000000000000000000000~YAAQ3VA7F4w5okCTAQAAGjxeRRnil2TECDdQ0Cl6HSYFQNIv52eePh9F9g6sla0VZ5AIcQl4kwfd7QYQMKeXcljQaNuT/WWkS4GpHHSCvHo6jrxqwTzR6lmHwMabw+XqmDnsW26lBmGiL7TdjXQ4rt/fT7OynEMuSqjDUiW9WtrIdNnxrIaJ7Ald/AfimNiUm/OOru2BaDSgQ3JWCEzjGWRqZZlByPkkTUUPgeSb1Vf9NFIrIOjEf989ZDv+NIN5KSS2wgZ8dpUj3K3mX3MZ8orUToRB8WaBKg8w1sf0Fq4enqfsGjtL2px0YbUaLbpEZYmv5Of6QDzAMrCDYe6tUBc+KhAYql5gP0ISGnxDoU0xICrb9idAwGkX3QftGjs4Sr0QHGm4Up8jgA==; ttwid=1%7CjFMK-RknGsU3ecgNQbRHqlLfSEWHwMlEBLeAqAUNFTY%7C1732035629%7C88b6f3f43090b43f504d3544c3a1213cdb1cf23ae2795f9ddf91a401871790af; perf_feed_cache={%22expireTimestamp%22:1732057200000%2C%22itemIds%22:[%227438946277372595463%22%2C%227414511765054344455%22%2C%227438929067878911253%22]}; msToken=i5vxpGv3yVJ-29R6PKCK2bSh_DDJ9WJkhWUfYOUkwhpNB_qhn2EC9Hpz-1fV74Xz8SgD2x85qo8xPH433qUZF9eivhItSeskQoJ2nzMYLUFzZ8CiZx1CwZWERkwAKgJoBSW4beb8LdVL5FbvV3LKBPkCtqw=; msToken=UXbWEDEHNaH9-egcD9xUVvyNmVDCjEFoNCJjXkHH92BwuUDlbd653_8KjgjKgF1nflDVr30uiTrVYz1KLI_ozxjsnezH5ref1mSdH_Pl8_jAE_caXYvhBpiLsCRcuDQsUhrDPpvsl1XZpOMnXR7kprnrpYo=; odin_tt=1cfdaa48e114a72acf8596d80d0f7a9d664a00a269b311a3c7c4b96509bb3a987a8ac593173701b85673f564390332ffb52217510703c89aeb3993b60202da4654ba413ae0353f5aa0c8e8b7379cc5ea",
+      "Referer": "https://www.douyin.com/tiktokstudio/inspiration/trending?trendingTag=trending_post",
+      "Referrer-Policy": "strict-origin-when-cross-origin"
+    },
+    "body": null,
+    "method": "GET"
+  });
+
+
+
+
+
+用户视频列表
+
+https://www.douyin.com/tiktok/creator/manage/item_list/v1/?locale=zh-Hant-TW&aid=1988&priority_region=SG&region=US&tz_name=Asia%2FShanghai&app_name=tiktok_creator_center&app_language=zh-Hant-TW&device_platform=web_pc&channel=tiktok_web&device_id=7420098649458017797&os=win&screen_width=1920&screen_height=1080&browser_language=zh&browser_platform=Win32&browser_name=Mozilla&browser_version=5.0+(Windows+NT+10.0%3B+Win64%3B+x64)+AppleWebKit%2F537.36+(KHTML,+like+Gecko)+Chrome%2F130.0.0.0+Safari%2F537.36&msToken=4SGxfMkyWeO9xxnC1AaiCY--mRMHaEJBbXPsGver_-FYjar67LaqZR0ANqXS-rE1isxneTrUWoGxdFVrxuRUfNf0va5_lY9WDvbahMrE4C5GlQSYXT9xMlRtyVX1GAhxFCYYl6GiX-ljmBCnfqXKlElPFh9J&X-Bogus=DFSzswcL0rjprdCOtKCDCt/RssHi&_signature=_02B4Z6wo00001WdYLdQAAIDBX0sdUkGwCFFnWClAAD7xcf
+
+
+音乐版权检查
+fetch("https://www.douyin.com/tiktok/copyright/music/check/v1/?video_id=v12025gd0000csucapnog65phsu4rbn0&aid=1988", {
+    "headers": {
+      "accept": "application/json, text/plain, */*",
+      "accept-language": "zh,pt-BR;q=0.9,pt;q=0.8,zh-CN;q=0.7,en-US;q=0.6,en;q=0.5,zh-TW;q=0.4",
+      "cache-control": "no-cache",
+      "pragma": "no-cache",
+      "priority": "u=1, i",
+      "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "cookie": "tt_chain_token=J4uJTz6INnTkIuVMUHohTw==; living_user_id=880168972930; delay_guest_mode_vid=5; passport_csrf_token=e1a18fbcb29f71b12c19f77bbbb7b449; passport_csrf_token_default=e1a18fbcb29f71b12c19f77bbbb7b449; d_ticket=4017add8e4c0c470abdf2911f26b75c264559; multi_sids=7028939348067795974%3A84955bc523bb8b242acba5ece1f54170; uid_tt=9173e3514512a9466106735b2f8f33c7b15e3154485372e91f5cde799f8764f1; uid_tt_ss=9173e3514512a9466106735b2f8f33c7b15e3154485372e91f5cde799f8764f1; sid_tt=84955bc523bb8b242acba5ece1f54170; sessionid=84955bc523bb8b242acba5ece1f54170; sessionid_ss=84955bc523bb8b242acba5ece1f54170; store-idc=useast5; store-country-code=us; store-country-code-src=uid; tt-target-idc=useast5; tt-target-idc-sign=bv67Pwidt8xksbI6hEG-p-hzl382KKBgrMgrYBiWO0XJQEQU-vmVgW3WS6zAPK2GAcxM9QnoWY2TOSh-Y9Jylr5BOIOvg9pM8TxGsCNTTD7yRFKbuDBSBDAabE_WGvUXV-tqFaal5dOqAv0hDZ1hHi7eYUb8fd15flq43cGDTWaOV_cuy_tx2lRIeBJcj4U3Tcef7vPemjCOICoDnJjC9C30O3Bgo2BRfeYq2C95h_Q-gVC_OBKJm-2qSn45fkZrmkKFUKM2thNZXeyReBUNstoUjOV0AeZEaRP9LDUxOQZAUJFsPlXyzoE4kVmZZhJPlTDzp5qvO4IMEFih31JV-bXJyhzteltGGTg8qQNQ0xzLM74MbapgPS9OXbVOOKk5WcenZyiveRzAFotC0p-eMNrHP8ImiVRN5OeRIWDY2Hzuz8GgP3RgjzbKZlXgUOTIGI1Y1vDJ43toqz-5Pbz2CSfvZ9nCbE-k2XS11fLEmsIROWip_amA8_hooDD4c7m4; last_login_method=email; _ga=GA1.1.1340106346.1729093966; FPID=FPID2.3.amaVTAd%2By16pprTZCPyAQpK%2B5ViUD5bm%2BZOWjOvk%2FKk%3D.1729093966; FPAU=1.3.1664634681.1729093969; FPID=FPID2.2.amaVTAd%2By16pprTZCPyAQpK%2B5ViUD5bm%2BZOWjOvk%2FKk%3D.1729093966; _ga_GR6VLNH8D4=GS1.1.1729126266.2.0.1729126266.0.0.678575815; cmpl_token=AgQQAPNSF-RO0rG1Ib8Vah0__JjlWyjSP4chYNQnpQ; sid_guard=84955bc523bb8b242acba5ece1f54170%7C1729156890%7C15552000%7CTue%2C+15-Apr-2025+09%3A21%3A30+GMT; sid_ucp_v1=1.0.0-KGVlYzZhMzRlZWU1OTFiY2Y0Zjk5N2MwNjhlNGFjOTg4NDBmODMzYTAKIgiGiOPqiePzxWEQmq7DuAYYswsgDDDNnq-MBjgBQOoHSAQQBBoHdXNlYXN0NSIgODQ5NTViYzUyM2JiOGIyNDJhY2JhNWVjZTFmNTQxNzA; ssid_ucp_v1=1.0.0-KGVlYzZhMzRlZWU1OTFiY2Y0Zjk5N2MwNjhlNGFjOTg4NDBmODMzYTAKIgiGiOPqiePzxWEQmq7DuAYYswsgDDDNnq-MBjgBQOoHSAQQBBoHdXNlYXN0NSIgODQ5NTViYzUyM2JiOGIyNDJhY2JhNWVjZTFmNTQxNzA; FPAU=1.3.1664634681.1729093969; tiktok_webapp_theme=light; _tt_enable_cookie=1; tt_csrf_token=e2Qnok3s-jylCtyR70Y8tEFhqPaCBeHhpzQU; csrf_session_id=ba7551c11184ee2d0f546357006b71c7; _ga_K04KJD8QTB=GS1.1.1731899042.1.1.1731899060.0.0.31316289; passport_fe_beating_status=true; s_v_web_id=verify_m3mu9hnz_kUrkqeiK_hE6T_4ENO_A0Aq_lysDvAxWwklW; tta_attr_id_mirror=0.1731980856.7438801135667937281; part=stable; _ttp=2p0IrS8VpSTFCOVfTwk11blLaUN.tt.1; _ga_Q92CFLCSHE=GS1.1.1731980782.1.1.1731980938.57.0.0; _gcl_au=1.1.797376554.1731980864.793040865.1731980865.1731980952; _ga_HV1FL86553=GS1.1.1731980863.1.1.1731980953.0.0.585758367; _ga_Y2RSHPPW88=GS1.1.1731980863.1.1.1731980953.0.0.167810680; csrfToken=kqCFCi9O-i21TUKtZZ6jKds2sHQ93L-tthN4; _ga_GZB380RXJX=GS1.1.1731997383.5.0.1731997383.0.0.507428523; _ga_LWWPCY99PB=GS1.1.1731997831.72.0.1731997831.0.0.1339986866; FPLC=H%2F9bjK5kTqPkEr3dtuJv4XHUFGSVuVETEgTKP%2FL8WCLc%2F2SQ84%2Bij4QOI4qytL%2FXzURgn3EolqQOP%2F5yP%2BkkF7owxhv4mj8hYhE6tZ5nWREvxZ6QXGEKxeI1ow4zmw%3D%3D; odin_tt=cc556954621b9b63322ecba82478d3bebb51d95e7073c2ec847eb0128fab14877e746950eee958d9e2a95f5c0c06f8d7c9782b00127cce3c6c02220ba510db639d9533b7b39f758bbc87285fd781b279; tiktok_webapp_theme_source=system; ak_bmsc=12DC0D8C1F007B9E49938B4F7E195D0C~000000000000000000000000000000~YAAQ3VA7F4w5okCTAQAAGjxeRRnil2TECDdQ0Cl6HSYFQNIv52eePh9F9g6sla0VZ5AIcQl4kwfd7QYQMKeXcljQaNuT/WWkS4GpHHSCvHo6jrxqwTzR6lmHwMabw+XqmDnsW26lBmGiL7TdjXQ4rt/fT7OynEMuSqjDUiW9WtrIdNnxrIaJ7Ald/AfimNiUm/OOru2BaDSgQ3JWCEzjGWRqZZlByPkkTUUPgeSb1Vf9NFIrIOjEf989ZDv+NIN5KSS2wgZ8dpUj3K3mX3MZ8orUToRB8WaBKg8w1sf0Fq4enqfsGjtL2px0YbUaLbpEZYmv5Of6QDzAMrCDYe6tUBc+KhAYql5gP0ISGnxDoU0xICrb9idAwGkX3QftGjs4Sr0QHGm4Up8jgA==; ttwid=1%7CjFMK-RknGsU3ecgNQbRHqlLfSEWHwMlEBLeAqAUNFTY%7C1732035629%7C88b6f3f43090b43f504d3544c3a1213cdb1cf23ae2795f9ddf91a401871790af; perf_feed_cache={%22expireTimestamp%22:1732057200000%2C%22itemIds%22:[%227438946277372595463%22%2C%227414511765054344455%22%2C%227438929067878911253%22]}; msToken=NN1lDwPvEOADcGPFkGsJdV_oHDMWVHAGYcekR0FXU3kKNECuglMkfigTNyOYZPX6UF9Z8MxQciX7i7_iaCCqdvoLwRNO--7gYJdrEfbaLub2fvlfXejZzbcIV_C2DcwUO1jNLeqWw4E0AvE4oRFFEYMLkKE=; msToken=IGb7-HTewySFv-Wk1SgCTghX2a1xr4r2TH03Opl3ciK6q1pmuOg4Mptc5YcLpOUyoNEvyzreIlfsv4PKPc0WYltbk1I9rpJ4Q7HHvo5r45PcLix_bdpCuMJ4mwhPHYKO1k9Ic10z8Mbw5JyEYLW7GXWpg8I=",
+      "Referer": "https://www.douyin.com/tiktokstudio/upload?from=upload",
+      "Referrer-Policy": "strict-origin-when-cross-origin"
+    },
+    "body": null,
+    "method": "GET"
+  });
+
+
+
+
+
+视频详情
+
+https://www.douyin.com/api/v1/post/detail/?locale=zh-Hant-TW&aid=1988&priority_region=SG&region=US&tz_name=Asia%2FShanghai&app_name=tiktok_creator_center&app_language=zh-Hant-TW&device_platform=web_pc&channel=tiktok_web&device_id=7420098649458017797&os=win&screen_width=1920&screen_height=1080&browser_language=zh&browser_platform=Win32&browser_name=Mozilla&browser_version=5.0+(Windows+NT+10.0%3B+Win64%3B+x64)+AppleWebKit%2F537.36+(KHTML,+like+Gecko)+Chrome%2F130.0.0.0+Safari%2F537.36&item_id=7438614104421469486
+
+
+
+return e.prototype.getConfigByRegion = function(e, t) {
+    void 0 === e && (e = "");
+    var r = e.toLowerCase().indexOf("ttp") > 0;
+    if (t)
+        this.tea_app_id = Ee,
+        r ? (this.tea_channel_type = "ttp",
+        this.noLog = !0) : this.tea_channel_type = "tcpy",
+        "EU-TTP" === e || "EU-TTP2" === e || "us-east-red" === e || "gcp" === e ? (this.tea_channel_type = "ttp",
+        this.tea_channel = "ie",
+        this.noLog = !0) : this.tea_channel = "sg";
+    else
+        switch (this.tea_app_id = Me,
+        e) {
+        case "us-east-1":
+        case "us-east-2":
+        case "us-east-5":
+        case "us-east-red":
+        case "gcp":
+        case "US-TTP":
+        default:
+            this.tea_channel = "va";
+            break;
+        case "boei18n":
+        case "ap-singapore-1":
+            this.tea_channel = "sg"
+        }
+    return this.options.logDomain && (this.tea_channel_domain = this.options.logDomain,
+    this.noLog = !1),
+    {
+        app_id: this.tea_app_id,
+        channel: this.tea_channel,
+        channel_type: this.tea_channel_type,
+        channel_domain: this.tea_channel_domain,
+        log: !1,
+        disable_sdk_monitor: !0,
+        disable_auto_pv: !0
+    }
+}
+
+发送视频
+fetch("https://www.douyin.com/tiktok/web/project/post/v1/?app_name=tiktok_web&channel=tiktok_web&device_platform=web&tz_name=Asia%2FShanghai&aid=1988&msToken=6-7OdfccG9CjWVUXrAodcLaPJDm23DAGLP833sGxQe2FRHobVc3iFlwY9nAXacYCpkTTA8-R7fR6V5bwiHCQg86kkao_F24MF-8LYsxugDnI00Oe_azXYXb_m21wuh5PdTeIGgHKWb4Z2tXk45SrxaU6Jgjj&X-Bogus=DFSzswcL0nQCedCOtKCDwU/RssHD&_signature=_02B4Z6wo00001g0LYMQAAIDCNRhQQxuJ3wYNC2RAAOSH67", {
+    "headers": {
+      "accept": "application/json, text/plain, */*",
+      "accept-language": "zh,pt-BR;q=0.9,pt;q=0.8,zh-CN;q=0.7,en-US;q=0.6,en;q=0.5,zh-TW;q=0.4",
+      "cache-control": "no-cache",
+      "content-type": "application/json",
+      "pragma": "no-cache",
+      "priority": "u=1, i",
+      "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "tt-ticket-guard-client-data": "eyJ0c19zaWduIjoidHMuMS45ZjI5NDBlZTk1NTA2NGRmMWQ4NzM5ODA5MjVlZmFkMDg5ZDM5OTc5YWQ1MTBjMzEwYWJiNTAyOGViMjFlMGFlN2E1MGU4YTQxN2RmMDY5ZGY5YTU1NWJkMTZjNjZlZjhiMzYzOWE1NmI2NDJkN2Q4ZjljODgxZjQyYjkzMjllYyIsInJlcV9jb250ZW50IjoidGlja2V0LHBhdGgsdGltZXN0YW1wIiwicmVxX3NpZ24iOiJNRVlDSVFDZ2dCNmo0ZHI4U2VLZWhzRUVRRFYybVpTdUZmTjROc2lPV3Z1S1pYaVE3d0loQUsxOUdSVHo3NjNsbXdWY0d5N3pOZ2sxNVh1YVg2N09xYXZQdGJxa1JreGoiLCJ0aW1lc3RhbXAiOjE3MzE5MzczMTh9",
+      "tt-ticket-guard-iteration-version": "0",
+      "tt-ticket-guard-public-key": "BKeHlHqb9kQIO4w3z+7FOUixxyt6uagb3nMRseJwwAX4CfOkgff9ignk10lOi3g5sDC6Pd4LmChCZcyi6q+vFLE=",
+      "tt-ticket-guard-version": "2",
+      "tt-ticket-guard-web-version": "1",
+      "cookie": "tt_chain_token=J4uJTz6INnTkIuVMUHohTw==; living_user_id=880168972930; delay_guest_mode_vid=5; passport_csrf_token=e1a18fbcb29f71b12c19f77bbbb7b449; passport_csrf_token_default=e1a18fbcb29f71b12c19f77bbbb7b449; d_ticket=4017add8e4c0c470abdf2911f26b75c264559; multi_sids=7028939348067795974%3A84955bc523bb8b242acba5ece1f54170; uid_tt=9173e3514512a9466106735b2f8f33c7b15e3154485372e91f5cde799f8764f1; uid_tt_ss=9173e3514512a9466106735b2f8f33c7b15e3154485372e91f5cde799f8764f1; sid_tt=84955bc523bb8b242acba5ece1f54170; sessionid=84955bc523bb8b242acba5ece1f54170; sessionid_ss=84955bc523bb8b242acba5ece1f54170; store-idc=useast5; store-country-code=us; store-country-code-src=uid; tt-target-idc=useast5; tt-target-idc-sign=bv67Pwidt8xksbI6hEG-p-hzl382KKBgrMgrYBiWO0XJQEQU-vmVgW3WS6zAPK2GAcxM9QnoWY2TOSh-Y9Jylr5BOIOvg9pM8TxGsCNTTD7yRFKbuDBSBDAabE_WGvUXV-tqFaal5dOqAv0hDZ1hHi7eYUb8fd15flq43cGDTWaOV_cuy_tx2lRIeBJcj4U3Tcef7vPemjCOICoDnJjC9C30O3Bgo2BRfeYq2C95h_Q-gVC_OBKJm-2qSn45fkZrmkKFUKM2thNZXeyReBUNstoUjOV0AeZEaRP9LDUxOQZAUJFsPlXyzoE4kVmZZhJPlTDzp5qvO4IMEFih31JV-bXJyhzteltGGTg8qQNQ0xzLM74MbapgPS9OXbVOOKk5WcenZyiveRzAFotC0p-eMNrHP8ImiVRN5OeRIWDY2Hzuz8GgP3RgjzbKZlXgUOTIGI1Y1vDJ43toqz-5Pbz2CSfvZ9nCbE-k2XS11fLEmsIROWip_amA8_hooDD4c7m4; last_login_method=email; _ga=GA1.1.1340106346.1729093966; FPID=FPID2.3.amaVTAd%2By16pprTZCPyAQpK%2B5ViUD5bm%2BZOWjOvk%2FKk%3D.1729093966; FPAU=1.3.1664634681.1729093969; FPID=FPID2.2.amaVTAd%2By16pprTZCPyAQpK%2B5ViUD5bm%2BZOWjOvk%2FKk%3D.1729093966; _ga_GR6VLNH8D4=GS1.1.1729126266.2.0.1729126266.0.0.678575815; cmpl_token=AgQQAPNSF-RO0rG1Ib8Vah0__JjlWyjSP4chYNQnpQ; sid_guard=84955bc523bb8b242acba5ece1f54170%7C1729156890%7C15552000%7CTue%2C+15-Apr-2025+09%3A21%3A30+GMT; sid_ucp_v1=1.0.0-KGVlYzZhMzRlZWU1OTFiY2Y0Zjk5N2MwNjhlNGFjOTg4NDBmODMzYTAKIgiGiOPqiePzxWEQmq7DuAYYswsgDDDNnq-MBjgBQOoHSAQQBBoHdXNlYXN0NSIgODQ5NTViYzUyM2JiOGIyNDJhY2JhNWVjZTFmNTQxNzA; ssid_ucp_v1=1.0.0-KGVlYzZhMzRlZWU1OTFiY2Y0Zjk5N2MwNjhlNGFjOTg4NDBmODMzYTAKIgiGiOPqiePzxWEQmq7DuAYYswsgDDDNnq-MBjgBQOoHSAQQBBoHdXNlYXN0NSIgODQ5NTViYzUyM2JiOGIyNDJhY2JhNWVjZTFmNTQxNzA; FPAU=1.3.1664634681.1729093969; tiktok_webapp_theme=light; _tt_enable_cookie=1; _ga_GZB380RXJX=GS1.1.1731686624.3.1.1731689801.0.0.53012713; tt_csrf_token=e2Qnok3s-jylCtyR70Y8tEFhqPaCBeHhpzQU; _ttp=2p0IrS8VpSTFCOVfTwk11blLaUN; csrf_session_id=ba7551c11184ee2d0f546357006b71c7; _ga_K04KJD8QTB=GS1.1.1731899042.1.1.1731899060.0.0.31316289; passport_fe_beating_status=true; odin_tt=244a3b076c21e83d26ad0eda36110367193d4d6fb7474d3caa618469c1c7e96b34ed958d6b28e960e7f16d1f95068d51b648d0fcfa0aa2b946f25416b43c40bff8b9135520bd038c856258d19f61fa42; FPLC=3Je%2Bo2iY4UsFJIgS3O4UjA6shNLS8zZSUNfW75FRdeB0h%2BjL%2BfhGLdJOd5Kr0RroR8%2FW1n3zo2zuJE4R%2FBljwPcRqT7JacEM2C9eGVjHJOsr8rT35pEGcdpSEBnEWg%3D%3D; _ga_LWWPCY99PB=GS1.1.1731920524.69.1.1731920540.0.0.1816143127; s_v_web_id=verify_m3mu9hnz_kUrkqeiK_hE6T_4ENO_A0Aq_lysDvAxWwklW; ak_bmsc=45CF4F325A29EDF2B342122133A53695~000000000000000000000000000000~YAAQrlA7F4rOMiaTAQAAru5EPxkDOnSf+/+JQ08Z+qSXpN2kzePaPHScv7nfdi5QRivXaU03rB8ZYllep2inMA1zPAQkAfsSXnWS1tvydip7+q3TBEzE8zGUQzTnch3EA+9wY9hoLgn7z8XoQv5K2ozOglqeCb/kzIMSoDBPMkd/vMAKfOD/4W8e0mlCG2db5E2WErZ30yl2c78WmY4vLjpVkdgNrBro26M1/f+3SXCdOdj2JHYhvh3wg2aOi8d81bY+N1yi9LfqUTFvwk1pW0RQB1nESGdrdnudWir5fhacBQjFbHzZVdcZG8+ddXhl4PCIQ9uq/RUUnH95uUzRMZbTz9AhAoSa21L80MnSseTpp58iLNc+aIF4tl7WK/X/JnJ4X3e8eYVj5A==; tiktok_webapp_theme_source=system; ttwid=1%7CjFMK-RknGsU3ecgNQbRHqlLfSEWHwMlEBLeAqAUNFTY%7C1731933309%7Cd47b49685eb9a3e81fc4f3f68f8a35a6042206742a983ead46add0a4094e7443; perf_feed_cache={%22expireTimestamp%22:1732104000000%2C%22itemIds%22:[%227438539106667253022%22%2C%227438512075338452257%22]}; msToken=nI7kiebiIoSvhppEcnEzaqp4_alyh4QsnHmhib45ghUHVEPIzofyYfHNRiepqtQGgBJ91nL5tK1TQ7reOduhx2jfBHdQa28v1xm4VoO_CqL_kC9Ui4SPiFNQFQmOkhccU98x-AqeST3quxnTnKhCTUkvCxnY; msToken=6-7OdfccG9CjWVUXrAodcLaPJDm23DAGLP833sGxQe2FRHobVc3iFlwY9nAXacYCpkTTA8-R7fR6V5bwiHCQg86kkao_F24MF-8LYsxugDnI00Oe_azXYXb_m21wuh5PdTeIGgHKWb4Z2tXk45SrxaU6Jgjj",
+      "Referer": "https://www.douyin.com/tiktokstudio/upload?from=upload&lang=zh-Hant-TW",
+      "Referrer-Policy": "strict-origin-when-cross-origin"
+    },
+    "body": "{\"post_common_info\":{\"creation_id\":\"GLdkCrNSHABuR_4-VLknW\",\"enter_post_page_from\":2,\"post_type\":3},\"feature_common_info_list\":[{\"schedule_time\":1731945300,\"geofencing_regions\":[],\"playlist_name\":\"\",\"playlist_id\":\"\",\"tcm_params\":\"{\\\"commerce_toggle_info\\\":{}}\",\"sound_exemption\":0,\"anchors\":[],\"vedit_common_info\":{\"draft\":\"\",\"video_id\":\"v12025gd0000cstk48vog65o0iac7kng\"},\"privacy_setting_info\":{\"visibility_type\":0,\"allow_duet\":0,\"allow_stitch\":0,\"allow_comment\":1},\"content_check_id\":\"\"}],\"single_post_req_list\":[{\"batch_index\":0,\"video_id\":\"v12025gd0000cstk48vog65o0iac7kng\",\"is_long_video\":1,\"single_post_feature_info\":{\"text\":\"#highschool hi\",\"text_extra\":[{\"tag_id\":\"0\",\"start\":0,\"end\":11,\"user_id\":\"\",\"type\":1,\"hashtag_name\":\"highschool\"}],\"markup_text\":\"<h id=\\\"0\\\">#highschool</h> hi\",\"music_info\":{},\"poster_delay\":0,\"cloud_edit_video_height\":720,\"cloud_edit_video_width\":1280,\"cloud_edit_is_use_video_canvas\":false}}]}",
+    "method": "POST"
+  });
+
+
+
+{
+    "post_common_info": {
+        "creation_id": "GLdkCrNSHABuR_4-VLknW",
+        "enter_post_page_from": 2,
+        "post_type": 3
+    },
+    "feature_common_info_list": [
+        {
+            "schedule_time": 1731945300,
+            "geofencing_regions": [],
+            "playlist_name": "",
+            "playlist_id": "",
+            "tcm_params": "{\"commerce_toggle_info\":{}}",
+            "sound_exemption": 0,
+            "anchors": [],
+            "vedit_common_info": {
+                "draft": "",
+                "video_id": "v12025gd0000cstk48vog65o0iac7kng"
+            },
+            "privacy_setting_info": {
+                "visibility_type": 0,
+                "allow_duet": 0,
+                "allow_stitch": 0,
+                "allow_comment": 1
+            },
+            "content_check_id": ""
+        }
+    ],
+    "single_post_req_list": [
+        {
+            "batch_index": 0,
+            "video_id": "v12025gd0000cstk48vog65o0iac7kng",
+            "is_long_video": 1,
+            "single_post_feature_info": {
+                "text": "#highschool hi",
+                "text_extra": [
+                    {
+                        "tag_id": "0",
+                        "start": 0,
+                        "end": 11,
+                        "user_id": "",
+                        "type": 1,
+                        "hashtag_name": "highschool"
+                    }
+                ],
+                "markup_text": "<h id=\"0\">#highschool</h> hi",
+                "music_info": {},
+                "poster_delay": 0,
+                "cloud_edit_video_height": 720,
+                "cloud_edit_video_width": 1280,
+                "cloud_edit_is_use_video_canvas": false
+            }
+        }
+    ]
+}
+
+状态
+fetch("https://www.douyin.com/tiktok/web/project/status/v1/?project_id=7438613541592126510&aid=1988", {
+    "headers": {
+      "accept": "application/json, text/plain, */*",
+      "accept-language": "zh,pt-BR;q=0.9,pt;q=0.8,zh-CN;q=0.7,en-US;q=0.6,en;q=0.5,zh-TW;q=0.4",
+      "cache-control": "no-cache",
+      "pragma": "no-cache",
+      "priority": "u=1, i",
+      "sec-ch-ua": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+      "sec-ch-ua-mobile": "?0",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "sec-fetch-dest": "empty",
+      "sec-fetch-mode": "cors",
+      "sec-fetch-site": "same-origin",
+      "cookie": "tt_chain_token=J4uJTz6INnTkIuVMUHohTw==; living_user_id=880168972930; delay_guest_mode_vid=5; passport_csrf_token=e1a18fbcb29f71b12c19f77bbbb7b449; passport_csrf_token_default=e1a18fbcb29f71b12c19f77bbbb7b449; d_ticket=4017add8e4c0c470abdf2911f26b75c264559; multi_sids=7028939348067795974%3A84955bc523bb8b242acba5ece1f54170; uid_tt=9173e3514512a9466106735b2f8f33c7b15e3154485372e91f5cde799f8764f1; uid_tt_ss=9173e3514512a9466106735b2f8f33c7b15e3154485372e91f5cde799f8764f1; sid_tt=84955bc523bb8b242acba5ece1f54170; sessionid=84955bc523bb8b242acba5ece1f54170; sessionid_ss=84955bc523bb8b242acba5ece1f54170; store-idc=useast5; store-country-code=us; store-country-code-src=uid; tt-target-idc=useast5; tt-target-idc-sign=bv67Pwidt8xksbI6hEG-p-hzl382KKBgrMgrYBiWO0XJQEQU-vmVgW3WS6zAPK2GAcxM9QnoWY2TOSh-Y9Jylr5BOIOvg9pM8TxGsCNTTD7yRFKbuDBSBDAabE_WGvUXV-tqFaal5dOqAv0hDZ1hHi7eYUb8fd15flq43cGDTWaOV_cuy_tx2lRIeBJcj4U3Tcef7vPemjCOICoDnJjC9C30O3Bgo2BRfeYq2C95h_Q-gVC_OBKJm-2qSn45fkZrmkKFUKM2thNZXeyReBUNstoUjOV0AeZEaRP9LDUxOQZAUJFsPlXyzoE4kVmZZhJPlTDzp5qvO4IMEFih31JV-bXJyhzteltGGTg8qQNQ0xzLM74MbapgPS9OXbVOOKk5WcenZyiveRzAFotC0p-eMNrHP8ImiVRN5OeRIWDY2Hzuz8GgP3RgjzbKZlXgUOTIGI1Y1vDJ43toqz-5Pbz2CSfvZ9nCbE-k2XS11fLEmsIROWip_amA8_hooDD4c7m4; last_login_method=email; _ga=GA1.1.1340106346.1729093966; FPID=FPID2.3.amaVTAd%2By16pprTZCPyAQpK%2B5ViUD5bm%2BZOWjOvk%2FKk%3D.1729093966; FPAU=1.3.1664634681.1729093969; FPID=FPID2.2.amaVTAd%2By16pprTZCPyAQpK%2B5ViUD5bm%2BZOWjOvk%2FKk%3D.1729093966; _ga_GR6VLNH8D4=GS1.1.1729126266.2.0.1729126266.0.0.678575815; cmpl_token=AgQQAPNSF-RO0rG1Ib8Vah0__JjlWyjSP4chYNQnpQ; sid_guard=84955bc523bb8b242acba5ece1f54170%7C1729156890%7C15552000%7CTue%2C+15-Apr-2025+09%3A21%3A30+GMT; sid_ucp_v1=1.0.0-KGVlYzZhMzRlZWU1OTFiY2Y0Zjk5N2MwNjhlNGFjOTg4NDBmODMzYTAKIgiGiOPqiePzxWEQmq7DuAYYswsgDDDNnq-MBjgBQOoHSAQQBBoHdXNlYXN0NSIgODQ5NTViYzUyM2JiOGIyNDJhY2JhNWVjZTFmNTQxNzA; ssid_ucp_v1=1.0.0-KGVlYzZhMzRlZWU1OTFiY2Y0Zjk5N2MwNjhlNGFjOTg4NDBmODMzYTAKIgiGiOPqiePzxWEQmq7DuAYYswsgDDDNnq-MBjgBQOoHSAQQBBoHdXNlYXN0NSIgODQ5NTViYzUyM2JiOGIyNDJhY2JhNWVjZTFmNTQxNzA; FPAU=1.3.1664634681.1729093969; tiktok_webapp_theme=light; _tt_enable_cookie=1; _ga_GZB380RXJX=GS1.1.1731686624.3.1.1731689801.0.0.53012713; tt_csrf_token=e2Qnok3s-jylCtyR70Y8tEFhqPaCBeHhpzQU; _ttp=2p0IrS8VpSTFCOVfTwk11blLaUN; csrf_session_id=ba7551c11184ee2d0f546357006b71c7; _ga_K04KJD8QTB=GS1.1.1731899042.1.1.1731899060.0.0.31316289; passport_fe_beating_status=true; odin_tt=244a3b076c21e83d26ad0eda36110367193d4d6fb7474d3caa618469c1c7e96b34ed958d6b28e960e7f16d1f95068d51b648d0fcfa0aa2b946f25416b43c40bff8b9135520bd038c856258d19f61fa42; FPLC=3Je%2Bo2iY4UsFJIgS3O4UjA6shNLS8zZSUNfW75FRdeB0h%2BjL%2BfhGLdJOd5Kr0RroR8%2FW1n3zo2zuJE4R%2FBljwPcRqT7JacEM2C9eGVjHJOsr8rT35pEGcdpSEBnEWg%3D%3D; _ga_LWWPCY99PB=GS1.1.1731920524.69.1.1731920540.0.0.1816143127; s_v_web_id=verify_m3mu9hnz_kUrkqeiK_hE6T_4ENO_A0Aq_lysDvAxWwklW; ak_bmsc=45CF4F325A29EDF2B342122133A53695~000000000000000000000000000000~YAAQrlA7F4rOMiaTAQAAru5EPxkDOnSf+/+JQ08Z+qSXpN2kzePaPHScv7nfdi5QRivXaU03rB8ZYllep2inMA1zPAQkAfsSXnWS1tvydip7+q3TBEzE8zGUQzTnch3EA+9wY9hoLgn7z8XoQv5K2ozOglqeCb/kzIMSoDBPMkd/vMAKfOD/4W8e0mlCG2db5E2WErZ30yl2c78WmY4vLjpVkdgNrBro26M1/f+3SXCdOdj2JHYhvh3wg2aOi8d81bY+N1yi9LfqUTFvwk1pW0RQB1nESGdrdnudWir5fhacBQjFbHzZVdcZG8+ddXhl4PCIQ9uq/RUUnH95uUzRMZbTz9AhAoSa21L80MnSseTpp58iLNc+aIF4tl7WK/X/JnJ4X3e8eYVj5A==; tiktok_webapp_theme_source=system; ttwid=1%7CjFMK-RknGsU3ecgNQbRHqlLfSEWHwMlEBLeAqAUNFTY%7C1731933309%7Cd47b49685eb9a3e81fc4f3f68f8a35a6042206742a983ead46add0a4094e7443; perf_feed_cache={%22expireTimestamp%22:1732104000000%2C%22itemIds%22:[%227438539106667253022%22%2C%227438512075338452257%22]}; msToken=6-7OdfccG9CjWVUXrAodcLaPJDm23DAGLP833sGxQe2FRHobVc3iFlwY9nAXacYCpkTTA8-R7fR6V5bwiHCQg86kkao_F24MF-8LYsxugDnI00Oe_azXYXb_m21wuh5PdTeIGgHKWb4Z2tXk45SrxaU6Jgjj; msToken=-nAESfs3pUnoEX_vACcQYYcliUok6J_askkpciMJLqYf5BwjjL4R0B7Yl8eOl-QRizyvmlaHlcd7RcdfextluIFxSW_RxCPWG6K2ZqmsdMmr5hv0WFEyPQAJaAgMbq9J0j_ncsdM7Z7EhD_NTngk5EDfLJNI",
+      "Referer": "https://www.douyin.com/tiktokstudio/upload?from=upload&lang=zh-Hant-TW",
+      "Referrer-Policy": "strict-origin-when-cross-origin"
+    },
+    "body": null,
+    "method": "GET"
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    SINGPASS_REQUEST_VENDOR_ERROR: {
+        code: "c200602",
+        message: "singpass request vendor api error"
+    },
+    InvokeHookError: {
+        code: "c200701",
+        message: "KYCInvokeHookError"
+    },
+    JUMIO_ERROR: {
+        code: "c200501",
+        message: "Jumio error"
+    },
+    YOTI_ERROR: {
+        code: "c200502",
+        message: "Yoti error"
+    },
+    UNKNOW_ERROR: {
+        code: "c30",
+        message: "Unknow error"
+    },
+    JSBError: {
+        code: "c200200",
+        message: "JSBError"
+    },
+    JSBLoadingError: {
+        code: "c200201",
+        message: "JSBLoadingFailed"
+    },
+    INVOKE_HOOK_ERROR: {
+        code: "c100401",
+        message: "KYCInvokeHookError"
+    },
+    SINGPASS_REQUEST_ERROR: {
+        code: "c200001",
+        message: "singpass request error"
+    },
+    SINGPASS_RESPONSE_CODE_ERROR: {
+        code: "c200002",
+        message: "singpass request response code error"
+    },
+    SINGPASS_REQUEST_VENDOR_URL_ERROR: {
+        code: "c200101",
+        message: "singpass request vendor url error"
+    },
+    SINGPASS_RESPONSE_VENDOR_URL_ERROR: {
+        code: "c200102",
+        message: "singpass request vendor url response code error"
+    },
+    SINGPASS_REQUEST_GET_KYC_INFO_ERROR: {
+        code: "c200201",
+        message: "singpass request kyc info error"
+    },
+    SINGPASS_RESPONSE_GET_KYC_INFO_ERROR: {
+        code: "c200202",
+        message: "singpass request kyc info response code error"
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// i = {
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_ALGO_RECOMMENDATION: 1,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_ALGO_FOLLOWER_CNT_ASCENDING: 2,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_ALGO_FOLLOWER_CNT_DESCENDING: 3,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_ALGO_VIDEO_AVG_VIEW_DESCENDING: 5,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_ALGO_VIDEO_AVG_VIEW_ASCENDING: 4,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_ALGO_VIDEO_PUBLISH_CNT_DESCENDING: 7,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_ALGO_LIVE_AVG_VIEW_DESCENDING: 8,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_ALGO_LIVE_AVG_VIEW_ASCENDING: 9,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_GMV_DESCENDING: 10,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_GMV_ASCENDING: 11,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_ALGO_EC_VIDEO_AVG_VIEW_DESCENDING: 12,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_ALGO_EC_VIDEO_AVG_VIEW_ASCENDING: 13,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_VIDEO_GPM_DESCENDING: 14,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_VIDEO_GPM_ASCENDING: 15,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_LIVE_GPM_DESCENDING: 16,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_LIVE_GPM_ASCENDING: 17,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_GMV_REVENUE_DESCENDING: 18,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_UNITS_SOLD_DESCENDING: 20,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_AVG_ENGAGEMENT_RATE_DESCENDING: 22,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_ALGO_VIDEO_MED_VIEW_DESCENDING: 24,
+//     AFFILIATE_CREATOR_SEARCH_PROFILE_SORTING_ALGO_FOLLOWER_CNT_V2_DESCENDING: 26
+// }
+//   , a = {
+//     VIDEO: 1,
+//     LIVE: 2
+// }
+//   , c = {
+//     AMONG_10_19: 1,
+//     AMONG_20_29: 2,
+//     AMONG_30_39: 3,
+//     ABOVE_40: 4
+// }
+//   , u = {
+//     AGE_GROUP_18_24: 1,
+//     AGE_GROUP_25_34: 2,
+//     AGE_GROUP_GT_34: 3,
+//     AGE_GROUP_35_44: 4,
+//     AGE_GROUP_45_54: 5,
+//     AGE_GROUP_GT_55: 6
+// }
+//   , s = {
+//     GENDER_UNKNOWN: 1,
+//     GENDER_MALE: 2,
+//     GENDER_FEMALE: 3
+// }
+//   , l = {
+//     UNITS_SOLD_GROUP_0_10: 1,
+//     UNITS_SOLD_GROUP_10_100: 2,
+//     UNITS_SOLD_GROUP_100_1000: 3,
+//     UNITS_SOLD_GROUP_GT_1000: 4
+// }
+//   , f = {
+//     LIFETIME: 1,
+//     CUSTOMIZED: 2,
+//     TODAY: 10,
+//     CURRENT_WEEK: 11,
+//     CURRENT_MONTH: 12,
+//     CURRENT_WEEK_MON_SUN: 13,
+//     YESTERDAY: 20,
+//     PAST_WEEK: 21,
+//     PAST_MONTH: 22,
+//     PAST_WEEK_MON_SUN: 23,
+//     PAST_2_DAYS: 30,
+//     PAST_7_DAYS: 31,
+//     PAST_14_DAYS: 32,
+//     PAST_28_DAYS: 33,
+//     PAST_56_DAYS: 34,
+//     PAST_30_DAYS: 40,
+//     PAST_60_DAYS: 41,
+//     PAST_2_WEEKS: 50,
+//     PAST_2_WEEKS_MON_SUN: 51,
+//     PAST_2_MONTHS: 60,
+//     TODAY_PLUS_ONE: 100,
+//     YESTERDAY_PLUS_ONE: 101
+// }
+//   , A = {
+//     ALL: 1,
+//     SO_FAR: 2,
+//     HOURLY: 10,
+//     DAILY: 11,
+//     WEEKLY: 12,
+//     MONTHLY: 13,
+//     MINUTE_1: 20,
+//     MINUTE_5: 21,
+//     MINUTE_10: 22,
+//     MINUTE_15: 23,
+//     MINUTE_30: 24,
+//     DAYS_7: 30,
+//     DAYS_14: 31,
+//     DAYS_28: 32,
+//     DAYS_30: 40
+// }
+//   , p = {
+//     AFFILIATE_CREATOR_DATA_AGGREGATION_ALL: 1,
+//     AFFILIATE_CREATOR_DATA_AGGREGATION_ECOM: 2
+// }
+//   , d = {
+//     AFFILIATE_CREATOR_VIDEO_AGGREGATION_ALL: 1,
+//     AFFILIATE_CREATOR_VIDEO_AGGREGATION_ECOM: 2
+// }
+//   , h = {
+//     YES: 1,
+//     NO: 2
+// }
+//   , m = {
+//     FOLLOWER_SIZE_0_10K: 1,
+//     FOLLOWER_SIZE_10K_100K: 2,
+//     FOLLOWER_SIZE_100K_1M: 3,
+//     FOLLOWER_SIZE_1M_10M: 4,
+//     FOLLOWER_SIZE_GT_10M: 5
+// }
+//   , y = {
+//     AVG_VIDEO_VIEWS_NO_THRESHOLD: 1,
+//     AVG_VIDEO_VIEWS_GT_100: 2,
+//     AVG_VIDEO_VIEWS_GT_10K: 3,
+//     AVG_VIDEO_VIEWS_GT_100K: 4
+// }
+//   , v = {
+//     AVG_LIVE_VIEWS_NO_THRESHOLD: 1,
+//     AVG_LIVE_VIEWS_GT_100: 2,
+//     AVG_LIVE_VIEWS_GT_10K: 3,
+//     AVG_LIVE_VIEWS_GT_100K: 4
+// }
+//   , g = {
+//     VIDEO_ENGAGEMENT_RATE_NO_THRESHOLD: 1,
+//     VIDEO_ENGAGEMENT_RATE_GT_5_PERCENT: 2,
+//     VIDEO_ENGAGEMENT_RATE_GT_10_PERCENT: 3,
+//     VIDEO_ENGAGEMENT_RATE_GT_20_PERCENT: 4
+// }
+//   , b = {
+//     UNSPECIFIED: 0,
+//     FIXED_RATE: 1,
+//     COMMISSION_RATE: 2
+// }
+//   , _ = {
+//     ContactInfoFieldType_UNSPECIFIED: 0,
+//     WHATS_APP: 1,
+//     EMAIL: 2,
+//     SELLER_WHATS_APP: 3,
+//     SELLER_EMAIL: 4,
+//     SELLER_IM_SCHEMA: 5,
+//     SELLER_INVITATION_WHATS_APP: 6,
+//     SELLER_INVITATION_EMAIL: 7,
+//     SELLER_WHATS_APP_COUNTRY_CODE: 8,
+//     CREATOR_WHATS_APP_COUNTRY_CODE: 9,
+//     SELLER_INVITATION_WHATS_APP_COUNTRY_CODE: 10,
+//     SELLER_LINE: 21,
+//     SELLER_ZALO: 22,
+//     SELLER_VIBER: 23,
+//     SELLER_FACEBOOK: 24,
+//     CREATOR_LINE: 31,
+//     CREATOR_ZALO: 32,
+//     CREATOR_VIBER: 33,
+//     CREATOR_FACEBOOK: 34,
+//     SELLER_INVITATION_LINE: 41,
+//     SELLER_INVITATION_ZALO: 42,
+//     SELLER_INVITATION_VIBER: 43,
+//     SELLER_INVITATION_FACEBOOK: 44,
+//     SELLER_INVITATION_TELEGRAM: 45,
+//     SELLER_INVITATION_PHONE: 46,
+//     SELLER_LINE_COUNTRY_CODE: 51,
+//     SELLER_ZALO_COUNTRY_CODE: 52,
+//     SELLER_VIBER_COUNTRY_CODE: 53,
+//     CREATOR_LINE_COUNTRY_CODE: 61,
+//     CREATOR_ZALO_COUNTRY_CODE: 62,
+//     CREATOR_VIBER_COUNTRY_CODE: 63,
+//     SELLER_INVITATION_LINE_COUNTRY_CODE: 71,
+//     SELLER_INVITATION_ZALO_COUNTRY_CODE: 72,
+//     SELLER_INVITATION_VIBER_COUNTRY_CODE: 73,
+//     SELLER_INVITATION_TELEGRAM_COUNTRY_CODE: 74,
+//     SELLER_INVITATION_PHONE_COUNTRY_CODE: 75
+// }
+//   , E = {
+//     Module_UNSPECIFIED: 0,
+//     Module_CORE: 1,
+//     Module_LIVE: 2,
+//     Module_VIDEO: 3,
+//     Module_CONTENT_TREND_EC: 4,
+//     Module_FOLLOWER: 5,
+//     Module_CONTENT_TREND_ALL: 6
+// }
+//   , C = {
+//     SUGSCENE_DEFAULT: 0,
+//     SUGSCENE_CMP: 1
+// }
+//   , w = {
+//     QUERY_DEFAULT: 0,
+//     MANUAL: 1,
+//     PRODUCT_HINT: 2,
+//     CONTENT_HINT: 3,
+//     CREATOR_SUG: 4,
+//     PRODUCT_SUG: 5,
+//     CONTENT_SUG: 6
+// }
+//   , I = {
+//     PROMOTION_EFFICIENCY: 1,
+//     FAST_GROWING: 2,
+//     POPULAR_CONTENT: 3,
+//     DILIGENT_PROMOTION: 4,
+//     ACTIVE_COOPERATION: 5
+// }
+//   , x = {
+//     RANK_DAILY: 1,
+//     RANK_WEEKLY: 2,
+//     RANK_MONTHLY: 3
+// }
+//   , O = {
+//     CONTENT_ALL: 1,
+//     CONTENT_LIVE: 2,
+//     CONTENT_VIDEO: 3
+// }
+//   , S = {
+//     NORMAL: 0,
+//     UN_AUTHORIZED: 1,
+//     FILTER_BY_ACCU: 2,
+//     INTERNAL_ERR: 99
+// }
+//   , T = {
+//     POSITION_UP: 1,
+//     POSITION_DOWN: 2,
+//     POSITION_SAME: 3,
+//     POSITION_NEW: 4
+// }
+//   , B = {
+//     WL_TYPE_UNKNOW: 0,
+//     WL_TYPE_ADD: 1,
+//     WL_TYPE_REMOVE: 2
+// }
+//   , R = {
+//     DEFAULT: 0,
+//     GMV_28D: 1,
+//     HAS_CONTACT_INFO: 2,
+//     FOLLOWERS_CNT: 3,
+//     VIDEO_PUBLISH_CNT: 4,
+//     VIDEO_AVG_VIEW_CNT: 5,
+//     LIVE_WATCH_UV: 6,
+//     GMV_30D: 7,
+//     VIDEO_GPM: 9,
+//     LIVE_GPM: 10
+// }
+//   , N = {
+//     ASC: 0,
+//     DESC: 1
+// }
+//   , L = {
+//     STAR_CREATOR: 1
+// }
+//   , P = {
+//     OPTION_UNKNOWN: 0,
+//     OPTION_BRAND: 1,
+//     OPTION_CATEGORY: 2,
+//     OPTION_GMV: 3
+// }
+
+
+let mainIndustries = [
+    {
+        "starling_key": "affiliate_find_creator_list_filter_category_beauty",
+        "product_categories": [
+            {
+                "id": "0",
+                "name": "Beauty and Skin Care",
+                "starling_key": "magellan_601592",
+                "category_ids": [
+                    "601592",
+                    "848776"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Makeup \u0026 Perfume",
+                "starling_key": "magellan_848648",
+                "category_ids": [
+                    "848648",
+                    "601526"
+                ]
+            }
+        ],
+        "name": "Beauty"
+    },
+    {
+        "starling_key": "affiliate_find_creator_list_filter_category_electronics",
+        "product_categories": [
+            {
+                "id": "0",
+                "name": "Books, Magazines \u0026 Audio",
+                "starling_key": "magellan_801928",
+                "category_ids": [
+                    "801928"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Commercial Appliances",
+                "starling_key": "magellan_600919",
+                "category_ids": [
+                    "600919"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Computers \u0026 Office Equipment",
+                "starling_key": "magellan_601755",
+                "category_ids": [
+                    "601755"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Household Appliances",
+                "starling_key": "magellan_600942",
+                "category_ids": [
+                    "600942"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Large Appliances",
+                "starling_key": "magellan_600841",
+                "category_ids": [
+                    "600841"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Mobile Phones",
+                "starling_key": "magellan_602090",
+                "category_ids": [
+                    "602089"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Office Equipment and Supplies",
+                "starling_key": "magellan_602966",
+                "category_ids": [
+                    "602966"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Phones \u0026 Electronics",
+                "starling_key": "magellan_601739",
+                "category_ids": [
+                    "601739"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Virtual Products",
+                "starling_key": "magellan_834312",
+                "category_ids": [
+                    "834312"
+                ]
+            }
+        ],
+        "name": "Electronics"
+    },
+    {
+        "starling_key": "affiliate_find_creator_list_filter_category_fashion",
+        "product_categories": [
+            {
+                "id": "0",
+                "name": "Fashion Accessories",
+                "starling_key": "magellan_605248",
+                "category_ids": [
+                    "605248"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Jewellery Accessories \u0026 Derivatives",
+                "starling_key": "magellan_953224",
+                "category_ids": [
+                    "953224"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Luggage \u0026 Bags",
+                "starling_key": "magellan_824584",
+                "category_ids": [
+                    "824584"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Menswear \u0026 Underwear",
+                "starling_key": "magellan_824328",
+                "category_ids": [
+                    "824328"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Outdoors",
+                "starling_key": "magellan_603761",
+                "category_ids": [
+                    "603761"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Shoes",
+                "starling_key": "magellan_601352",
+                "category_ids": [
+                    "601352"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Sports \u0026 Outdoor",
+                "starling_key": "magellan_603014",
+                "category_ids": [
+                    "603014"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Womenswear \u0026 Underwear",
+                "starling_key": "magellan_601152",
+                "category_ids": [
+                    "601152"
+                ]
+            }
+        ],
+        "name": "Fashion"
+    },
+    {
+        "starling_key": "affiliate_find_creator_list_filter_category_food",
+        "product_categories": [
+            {
+                "id": "0",
+                "name": "Food \u0026 Beverages",
+                "starling_key": "magellan_834184",
+                "category_ids": [
+                    "700437"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Liquor and Beverages",
+                "starling_key": "magellan_700558",
+                "category_ids": [
+                    "700558"
+                ]
+            }
+        ],
+        "name": "Food"
+    },
+    {
+        "starling_key": "affiliate_find_creator_list_filter_category_lifestyle",
+        "product_categories": [
+            {
+                "id": "0",
+                "name": "Automobile Supplies",
+                "starling_key": "magellan_605196",
+                "category_ids": [
+                    "605196"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Furniture",
+                "starling_key": "magellan_604453",
+                "category_ids": [
+                    "604453"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Hobbies \u0026 Collectibles",
+                "starling_key": "magellan_951432",
+                "category_ids": [
+                    "951432"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Home Improvement",
+                "starling_key": "magellan_604968",
+                "category_ids": [
+                    "604968"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Home Supplies",
+                "starling_key": "magellan_600001",
+                "category_ids": [
+                    "600001"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Kitchenware",
+                "starling_key": "magellan_600024",
+                "category_ids": [
+                    "600024"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Pet Supplies",
+                "starling_key": "magellan_602118",
+                "category_ids": [
+                    "602118"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Textiles \u0026 Soft Furnishings",
+                "starling_key": "magellan_600154",
+                "category_ids": [
+                    "600154"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Tools \u0026 Hardware",
+                "starling_key": "magellan_604579",
+                "category_ids": [
+                    "604579"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Toys",
+                "starling_key": "magellan_604206",
+                "category_ids": [
+                    "604206"
+                ]
+            }
+        ],
+        "name": "Lifestyle"
+    },
+    {
+        "starling_key": "affiliate_find_creator_list_filter_category_mom_babies",
+        "product_categories": [
+            {
+                "id": "0",
+                "name": "Baby \u0026 Maternity",
+                "starling_key": "magellan_602284",
+                "category_ids": [
+                    "602284"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Kids' Fashion",
+                "starling_key": "magellan_802184",
+                "category_ids": [
+                    "802184"
+                ]
+            }
+        ],
+        "name": "Mom \u0026 Babies"
+    },
+    {
+        "starling_key": "affiliate_find_creator_list_filter_category_personal_care",
+        "product_categories": [
+            {
+                "id": "0",
+                "name": "Bath \u0026 Body Care",
+                "starling_key": "magellan_849160",
+                "category_ids": [
+                    "849160"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Eye \u0026 Ear Care",
+                "starling_key": "magellan_849544",
+                "category_ids": [
+                    "849544"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Feminine Care",
+                "starling_key": "magellan_849800",
+                "category_ids": [
+                    "849800"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Hair Care",
+                "starling_key": "magellan_700786",
+                "category_ids": [
+                    "700786"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Hair Care \u0026 Styling",
+                "starling_key": "magellan_848904",
+                "category_ids": [
+                    "848904"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Hand, Foot \u0026 Nail Care",
+                "starling_key": "magellan_849032",
+                "category_ids": [
+                    "849032"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Health",
+                "starling_key": "magellan_700645",
+                "category_ids": [
+                    "700645"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Nasal \u0026 Oral Care",
+                "starling_key": "magellan_849672",
+                "category_ids": [
+                    "849672"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Personal Care",
+                "starling_key": "magellan_601451",
+                "category_ids": [
+                    "601451"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Personal Care Appliances",
+                "starling_key": "magellan_849416",
+                "category_ids": [
+                    "849416"
+                ]
+            },
+            {
+                "id": "0",
+                "name": "Special Personal Care",
+                "starling_key": "magellan_981128",
+                "category_ids": [
+                    "981128"
+                ]
+            }
+        ],
+        "name": "Personal care \u0026 Health"
+    }
+]
+
+let list = [];
+mainIndustries.forEach(prod=>{
+    prod.product_categories.forEach(cat=>{
+        list = list.concat(cat.category_ids);
+    });
+})
+JSON.stringify(list);
+// 
+let array1 = ["601592","848776","848648","601526","801928","600919","601755","600942","600841","602089","602966","601739","834312","605248","953224","824584","824328","601303","603761","601352","603014","601152","700437","700558","605196","604453","951432","604968","600001","600024","602118","600154","604579","604206","602284","802184","849160","849544","849800","700786","848904","849032","700645","849288","849672","601451","849416","981128"];
+let array2 = ["601592","848776","848648","601526","801928","600919","601755","600942","600841","602089","602966","601739","834312","605248","953224","824584","824328","603761","601352","603014","601152","700437","700558","605196","604453","951432","604968","600001","600024","602118","600154","604579","604206","602284","802184","849160","849544","849800","700786","848904","849032","700645","849672","601451","849416","981128"];
+
+let difference = array2.filter(element => !array1.includes(element));
+
+console.log(difference);

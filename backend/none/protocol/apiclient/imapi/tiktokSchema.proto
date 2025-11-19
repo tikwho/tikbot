@@ -1,0 +1,703 @@
+syntax = "proto3";
+
+package im_proto;
+
+
+// 定义Request消息类型
+message Request {
+  int32 cmd = 1;                         // 命令
+  int64 sequence_id = 2;                 // 序列号
+  string sdk_version = 3;                // SDK版本
+  string token = 4;                      // 令牌
+  int32 refer = 5;                      // 引用
+  int32 inbox_type = 6;                  // 收件箱类型
+  string build_number = 7;               // 构建号
+  RequestBody body = 8;                  // 请求体
+  string device_id = 9;                  // 设备ID
+  string channel = 10;                   // 渠道
+  string device_platform = 11;           // 设备平台
+  string device_type = 12;               // 设备类型
+  string os_version = 13;                // 操作系统版本
+  string version_code = 14;              // 版本代码
+  map<string, string> headers = 15;     // 头部信息
+  int32 config_id = 16;                  // 配置ID
+  TokenInfo token_info = 17;             // 令牌信息
+  int32 auth_type = 18;                 // 认证类型
+  MsgTrace msg_trace = 19;               // 消息追踪
+  int32 retry_count = 20;                // 重试次数
+}
+// 定义TokenInfo消息类型
+message TokenInfo {
+  int32 mark_id = 1;               // 标记ID
+  int32 type = 2;                 // 类型
+  int32 app_id = 3;               // 应用ID
+  int64 user_id = 4;              // 用户ID
+  int64 timestamp = 5;            // 时间戳
+  int32 app_id_without_hook = 6;  // 无钩子的应用ID
+  int64 user_id_without_hook = 7; // 无钩子的用户ID
+}
+
+// 定义MsgTrace消息类型
+message MsgTrace {
+  map<int32, int64> metrics = 1;
+  int32 path = 2;  // path字段
+}
+
+// RequestBody是一个包含多种请求体的oneof
+message RequestBody {
+  oneof body {
+          SendMessageRequestBody send_message_body = 100;
+          // MessagesPerUserRequestBody messages_per_user_body = 200;
+          // MessagesPerUserInitRequestBody messages_per_user_init_body = 201;
+          // MessagesPerUserInitV2RequestBody messages_per_user_init_v2_body = 203;
+          // MessagesPerConversationSearchRequestBody messages_per_conversation_search_body = 206;
+          // CheckMessagePerUserRequestBody check_messages_per_user_body = 210;
+          // GetMessageByIdRequestBody get_message_by_id_body = 211;
+          // ConversationsListRequestBody conversations_list_body = 300;
+          // MessagesInConversationRequestBody messages_in_conversation_body = 301;
+          // GetMessagesCheckInfoInConversationRequestBody get_messages_checkinfo_in_conversation_body = 302;
+          // GetMessagesCheckInfoV2RequestBody get_messages_check_info_v2_body = 303;
+          // SendUserActionRequestBody send_user_action_body = 410;
+          // SendInputStatusRequestBody send_input_status_body = 411;
+          // GetConversationInfoRequestBody get_conversation_info_body = 600;
+          // SetConversationInfoRequestBody set_conversation_info_body = 601;
+          // CreateConversationRequestBody create_conversation_body = 602;
+          // DeleteConversationRequestBody delete_conversation_body = 603;
+          // MarkConversationReadRequestBody mark_conversation_read_body = 604;
+          // ConversationParticipantsListRequestBody conversation_participants_body = 605;
+          // GetConversationInfoListRequestBody get_conversation_info_list_body = 607;
+          // ReportGetMessagesCursorRequestBody report_conversation_cursor_body = 606;
+          // GetConversationInfoV2RequestBody get_conversation_info_v2_body = 608;
+          CreateConversationV2RequestBody create_conversation_v2_body = 609;
+          // GetConversationInfoListV2RequestBody get_conversation_info_list_v2_body = 610;
+          // ConversationsPerUserByFavoriteV2RequestBody get_conversation_info_list_by_favorite_v2_body = 611;
+          // ConversationsPerUserByTopV2RequestBody get_conversation_info_list_by_top_v2_body = 612;
+          // BatchMarkConversationReadRequestBody batch_mark_read_body = 613;
+          // DissolveConversationRequestBody dissolve_conversation_body = 614;
+          // GetConversationsCheckInfoRequestBody get_conversations_checkinfo_body = 615;
+          // GetConversationsCheckInfoV2RequestBody get_conversation_check_info_v2_body = 616;
+          // ConversationAddParticipantsRequestBody conversation_add_participants_body = 650;
+          // ConversationRemoveParticipantsRequestBody conversation_remove_participants_body = 651;
+          // ConversationLeaveRequestBody leave_conversation_body = 652;
+          // ConversationSetRoleRequestBody conversation_set_role_body = 653;
+          // MgetConversationParticipantsRequestBody mget_conversation_participants_body = 654;
+          // UpdateConversationParticipantRequestBody update_conversation_participant_body = 655;
+          // BatchUpdateConversationParticipantRequestBody batch_update_conversation_participant_body = 656;
+          // DeleteMessageRequestBody delete_message_body = 701;
+          // RecallMessageRequestBody recall_message_body = 702;
+          // ReactionMessageRequestBody reaction_message_body = 703;
+          // SyncMessageRequestBody sync_message_body = 704;
+          // ModifyMessagePropertyRequestBody modify_message_property_body = 705;
+          // AckMessageRequestBody ack_message_body = 706;
+          // GetGroupInfoRequestBody get_group_info_body = 801;
+          // SetGroupInfoRequestBody set_group_info_body = 802;
+          // GetGroupInfoListRequestBody get_group_info_list_body = 803;
+          // GetConversationCoreInfoRequestBody get_conversation_core_info_body = 901;
+          // SetConversationCoreInfoRequestBody set_conversation_core_info_body = 902;
+          // GetConversationCoreInfoListRequestBody get_conversation_core_info_list_body = 903;
+          // UpsertConversationCoreExtInfoRequestBody upsert_conversation_core_ext_info_body = 904;
+          // DeleteConversationCoreExtInfoRequestBody delete_conversation_core_ext_info_body = 905;
+          // GetConversationSettingInfoRequestBody get_conversation_setting_info_body = 920;
+          // SetConversationSettingInfoRequestBody set_conversation_setting_info_body = 921;
+          // UpsertConversationSettingExtInfoRequestBody upsert_conversation_setting_ext_info_body = 922;
+          // DeleteConversationSettingExtInfoRequestBody delete_conversation_setting_ext_info_body = 923;
+          GetStrangerConversationListRequestBody get_stranger_conversation_body = 1000;
+          // GetStrangerMessagesRequestBody get_stranger_messages_body = 1001;
+          // DeleteStrangerMessageRequestBody delete_stranger_message_body = 1002;
+          // DeleteStrangerConversationRequestBody delete_stranger_conversation_body = 1003;
+          // DeleteStrangerAllConversationRequestBody delete_stranger_all_conversation_body = 1004;
+          // MarkStrangerConversationReadRequestBody mark_stranger_conversation_read_body = 1005;
+          // MarkStrangerAllConversationReadRequestBody mark_stranger_all_conversation_read_body = 1006;
+          // GetStrangerUnreadCountRequestBody get_stranger_unread_count_body = 1007;
+          // GetConversationParticipantsReadIndexV3RequestBody participants_read_index_body = 2000;
+          // GetConversationParticipantsMinIndexV3RequestBody participants_min_index_body = 2001;
+          // GetUploadTokenRequestBody get_upload_token_body = 2003;
+          // GetMediaUrlsRequestBody get_media_urls_body = 2004;
+          // GetTicketRequestBody get_ticket_body = 2005;
+          // VcdCleanRequestBody vcd_clean_body = 9999;
+          GetUserConversationListRequestBody get_conversation_list_body = 2006;
+          // BroadcastSendMessageRequestBody broadcast_send_message_body = 2007;
+          // BroadcastRecvMessageRequestBody broadcast_recv_message_body = 2008;
+          // BroadcastUserCounterRequestBody broadcast_user_counter_body = 2009;
+          // ClientACKRequestBody client_ack_body = 2010;
+          // CreateVoipRequestBody create_voip_body = 2011;
+          // CallVoipRequestBody call_voip_body = 2012;
+          // UpdateVoipRequestBody update_voip_body = 2013;
+          // ChannelHeartBeatRequestBody channel_heartbeat_body = 2014;
+          // ProfileGetInfoRequestBody profile_get_info = 2015;
+          // ReportClientMetricsRequestBody report_client_metrics_body = 2016;
+          // GetConfigsRequestBody get_configs_body = 2017;
+          // UnReadCountReportRequestBody unread_count_report_body = 2018;
+          // BlockMembersRequestBody block_members_body = 2019;
+          // BlockConversationRequestBody block_conversation_body = 2020;
+          // ModifyMessageExtRequestBody modify_message_ext_body = 2021;
+          // GetConversationAuditSwitchRequestBody get_conversation_audit_switch_body = 2022;
+          // UpdateConversationAuditSwitchRequestBody update_conversation_audit_switch_body = 2023;
+          // SendConversationApplyRequestBody send_conversation_apply_body = 2024;
+          // AckConversationApplyRequestBody ack_conversation_apply_body = 2025;
+          // GetConversationApplyRequestBody get_conversation_apply_body = 2026;
+          // GetConversationAuditListRequestBody get_conversation_audit_list_body = 2027;
+          // GetConversationAuditUnreadRequestBody get_conversation_audit_unread_body = 2028;
+          // ClearConversationAuditUnreadRequestBody clear_conversation_audit_unread_body = 2029;
+          // GetUnreadCountRequestBody get_unread_count_body = 2030;
+          // SendMessageP2PRequestBody send_message_p2p_body = 2031;
+          // GetBlockListRequestBody get_blocklist_body = 2032;
+          // SetBlocklistRequestBody set_blocklist_body = 2033;
+          // CheckInBlockListRequestBody check_in_blocklist_body = 2034;
+          // GetMessageInfoByIndexV2RequestBody get_message_info_by_index_v2_body = 2035;
+          // BatchGetConversationAuditUnreadRequestBody batch_get_conversation_audit_unread = 2042;
+          // MarkMessageRequestBody mark_message_body = 2036;
+          // PullMarkMessageRequestBody pull_mark_message_body = 2037;
+          // BatchGetConversationParticipantsReadIndexRequestBody batch_get_conversation_participants_readindex = 2038;
+          // GetRecentMessageReqBody get_recent_message_body = 2039;
+          // GetCmdMessageReqBody get_cmd_message_body = 2040;
+          // GetMessageInfoByIndexV2RangeRequestBody get_message_info_by_index_v2_range_body = 2041;
+          // MessageByInitRequestBody message_by_init = 2043;
+          // PreviewerMessagesInConversationRequestBody previewer_messages_in_conversation_body = 2044;
+          // PreviewerGetConversationInfoListRequestBody previewer_get_conversation_info_list_body = 2045;
+          // SendFriendApplyRequestBody send_friend_apply_body = 2046;
+          // GetFriendApplyListRequestBody get_friend_apply_list_body = 2047;
+          // GetFriendReceiveApplyListRequestBody get_friend_receive_apply_list_body = 2048;
+          // ReplyFriendApplyRequestBody reply_friend_apply_body = 2049;
+          // GetFriendListRequestBody get_friend_list_body = 2050;
+          // DeleteFriendRequestBody delete_friend_body = 2051;
+          // ProfileBatchGetInfoRequestBody profile_batch_get_info_body = 2052;
+          // ProfileSearchInfoRequestBody profile_search_info_body = 2053;
+          // MarkMsgUnreadCountReportRequestBody mark_msg_unread_count_report = 2054;
+          // MarkMsgGetUnreadCountRequestBody mark_msg_get_unread_count = 2055;
+          // BatchUnmarkMessageRequestBody batch_unmark_message = 2056;
+          // ClientBatchACKRequestBody client_batch_ack_body = 2057;
+          // GetMediaUploadConfigRequestBody media_upload_config_request_body = 2059;
+          // GetMediaStatusRequestBody media_status_request_body = 2060;
+          // GlobalMessageSearchRequestBody global_message_search_body = 2100;
+          // ConversationCoreSearchRequestBody conversation_core_search_body = 2101;
+          // ConversationMessageSearchRequestBody conversation_message_search_body = 2102;
+          // ConversationMessagePreViewRequestBody conversation_message_pre_view_body = 2103;
+          // GetMessagesRequestBody get_messages_body = 2200;
+          
+    }
+}
+
+// 发送消息请求体
+message SendMessageRequestBody {
+    string conversation_id = 1;               // 对话ID
+    int32 conversation_type = 2;              // 对话类型
+    int64 conversation_short_id = 3;          // 对话简短ID
+    string content = 4;                       // 消息内容
+    map<string, string> ext = 5;              // 扩展属性
+    int32 message_type = 6;                   // 消息类型
+    string ticket = 7;                        // 票据信息
+    string client_message_id = 8;             // 客户端消息ID
+    repeated int64 mentioned_users = 9;        // @提及的用户列表
+    bool ignore_badge_count = 10;             // 是否忽略计数
+    ReferencedMessageInfo ref_msg_info = 11;  // 被引用的消息信息
+    map<string, string> client_ext = 12;      // 客户端扩展属性
+    MessageContent content_pb = 13;           // 消息内容的Protocol Buffers表示
+    string scene = 14;                        // 场景
+  }
+
+  // 通用消息卡片
+message CommonMsgCard {
+    map<string, BaseText> text_map = 1; // 文本消息映射
+    map<string, BaseImage> image_map = 2; // 图片消息映射
+    map<string, LinkInfo> link_map = 3; // 链接信息映射
+    map<string, Button> button_map = 4; // 按钮映射
+    map<string, BaseVideo> video_map = 5; // 视频消息映射
+    map<string, BaseUser> user_map = 6; // 用户信息映射
+    FallbackInfo fallback_info = 7; // 回落信息
+    PreviewHint preview_hint = 8; // 预览提示
+    map<string, BaseImage> business_image_map = 100; // 商业图片映射
+    map<string, BaseVideo> business_video_map = 101; // 商业视频映射
+    map<string, BaseUser> business_user_map = 102; // 商业用户映射
+    bytes extra_content = 200; // 额外内容
+    BaseReq req_base = 201; // 请求基础信息
+    BaseResp resp_base = 202; // 响应基础信息
+}
+
+// 消息内容，根据不同的类型包含不同的卡片消息
+message MessageContent {
+    oneof content {
+        ImageCard image_card = 2;
+        PictureCard picture_card = 4;
+        VideoCard video_card = 5;
+        InfoCard info_card = 6;
+        StickerCard sticker_card = 7;
+        CommonMsgCard common_msg_card = 100;
+        DynamicCard dynamic_card = 101;
+    }
+}
+
+// 被引用消息的信息
+message ReferencedMessageInfo {
+    int64 referenced_message_id = 1; // 被引用的消息ID
+    string hint = 2;                // 提示信息
+    int64 root_message_id = 3;       // 根消息ID
+    int64 root_message_conv_index = 4; // 根消息在对话中的索引
+}
+
+message ImageCard {
+    // ImageCard的字段定义...
+  }
+  
+  message PictureCard {
+    // PictureCard的字段定义...
+  }
+  
+  message VideoCard {
+    // VideoCard的字段定义...
+  }
+  
+// 信息卡片
+message InfoCard {
+    InfoCardTitle title = 1;             // 卡片标题
+    InfoCardContent content = 2;        // 卡片内容
+    BaseVideo video = 3;                // 视频信息（如果有）
+    // repeated InfoCardButton buttons = 4; // 按钮列表
+    LinkInfo link_info = 6;              // 链接信息
+    BaseReq req_base = 200;              // 请求基础信息
+    BaseResp resp_base = 201;            // 响应基础信息
+  }
+  
+  message StickerCard {
+    // StickerCard的字段定义...
+  }
+  
+message DynamicCard {
+
+}
+// 信息卡片标题
+message InfoCardTitle {
+    BaseText title = 1; // 标题文本
+    BaseImage image = 2; // 标题图片
+}
+message InfoCardContent {
+    BaseText description = 1;  // 描述文本
+    repeated BaseText contents = 2;  // 内容列表，可能包含多段文本或其他内容项
+}
+
+// 假设BaseText, BaseImage, LinkInfo, Button, BaseVideo, BaseUser, FallbackInfo, PreviewHint, BaseReq, BaseResp消息已经在其他地方定义
+message BaseText {
+    string text = 1;  // 要展示的文本内容
+}
+
+message BaseImage {
+    string image_id = 1;              // 图片ID
+    repeated string url_list = 2;      // 图片URL列表
+    string display_name = 4;          // 展示名称
+    // Resolution resolution = 5;         // 分辨率信息
+    string decrypt_key = 6;            // 解密密钥
+    int32 fallback_icon_type = 7;     // 回落图标类型
+}
+
+message LinkInfo {
+    repeated string url_list = 1;// 资源URL列表
+    int32 action_type = 2;// 动作类型，例如点击链接后的动作
+}
+
+message Button {
+    BaseText text = 1;            // 文本内容
+    // ButtonStyle style = 2;        // 样式信息
+    LinkInfo link_info = 4;       // 链接信息
+}
+
+message BaseVideo {
+    string video_id = 1;            // 视频ID
+    int32 video_type = 2;           // 视频类型
+    BaseImage cover = 3;            // 封面图片
+    string video_model = 4;         // 视频模型或来源
+    LinkInfo linkInfo = 5;          // 视频链接信息
+    // Resolution resolution = 6;       // 视频分辨率
+}
+
+message BaseUser {
+    int64 user_id = 1;               // 用户ID
+    BaseText nickname = 2;           // 昵称
+    BaseText description = 3;         // 描述
+    BaseImage avatar = 4;            // 头像图片
+    LinkInfo link_info = 5;           // 链接信息
+    BaseText username = 6;           // 用户名
+    int32 follower_count = 7;        // 关注者数量
+    bool is_verify = 8;               // 是否已验证
+}
+
+message FallbackInfo {
+    BaseImage image = 1;  // 可选的图片信息
+    BaseText text = 2;     // 可选的文本信息
+    LinkInfo link_info = 3; // 可选的链接信息
+}
+
+// 预览提示信息
+message PreviewHint {
+    BaseText sender_preview_text = 1;     // 发送者预览文本
+    BaseText receiver_preview_text = 2;   // 接收者预览文本
+    BaseText quote_preview_text = 3;      // 引用预览文本
+  }
+
+message BaseReq {
+    // QueryData query_data = 1;  // 查询数据
+}
+
+message BaseResp {
+    // TTL ttl = 1;  // TTL(Time-To-Live)信息
+    repeated string context_menu = 2;  // 右键菜单项列表
+    int64 min_version = 3;  // 支持的最小版本号
+    map<string, string> extra = 4;  // 额外信息的映射
+}
+
+// 请求体消息定义
+message CreateConversationV2RequestBody {
+    int32 conversation_type = 1; // 对话类型
+    repeated int64 participants = 2; // 参与者列表
+    bool persistent = 3; // 是否持久化
+    string idempotent_id = 4; // 幂等性ID
+    string name = 6; // 对话名称
+    string avatar_url = 7; // 对话头像URL
+    string description = 8; // 对话描述
+    map<string, string> biz_ext = 11; // 业务扩展字段
+    string biz = 12; // 业务标识
+    string channel = 13; // 渠道标识
+}
+
+//会话信息
+message GetConversationInfoV2RequestBody {
+    string conversation_id = 1;
+    int64 conversation_short_id = 2;
+    int32 conversation_type = 3;
+}
+
+message GetConversationInfoListV2RequestBody {
+    repeated GetConversationInfoV2RequestBody conversation_info_list = 1;  // 重复字段，存储对话信息请求体列表
+}
+
+message GetStrangerConversationListRequestBody {
+  int64 cursor = 1;             // 分页游标
+  int64 count = 2;              // 请求的会话数量
+  bool show_total_unread = 3;   // 是否显示总未读数
+  string biz_info = 4;         // 业务信息，具体含义根据实际业务确定
+}
+
+
+// 定义 GetUserConversationListRequestBody 消息
+message GetUserConversationListRequestBody {
+  int32 sort_type = 1; // 1 表示字段编号
+  int64 cursor = 2;
+  int32 con_type = 3;
+  int64 limit = 4;
+  int32 include_role = 5;
+  int32 exclude_role = 6;
+  bool include_removed_group = 7;
+  bool with_cold = 8;
+  int32 customed_con_type = 9;
+  repeated int32 include_multiple_roles = 10; // 表示这个字段是一个列表
+}
+
+
+//响应////////////////////////////////////////////////////////////////////////////////////
+// 响应消息
+message Response {
+  int32 cmd = 1;                         // 命令
+  int64 sequence_id = 2;                 // 序列号
+  int32 status_code = 3;                // 状态码
+  string error_desc = 4;                // 错误描述
+  int32 inbox_type = 5;                  // 收件箱类型
+  ResponseBody body = 6;                 // 响应体
+  string log_id = 7;                    // 日志ID
+  map<string, string> headers = 8;       // 头部信息
+  int64 start_time_stamp = 9;            // 开始时间戳
+  int64 request_arrived_time = 10;       // 请求到达时间
+  int64 server_execution_end_time = 11;  // 服务器执行结束时间
+  int32 retry_count = 12;               // 重试计数
+  int64 server_start_time = 13;          // 服务器开始时间
+}
+
+message ResponseBody {
+    oneof body {
+        SendMessageResponseBody send_message_body = 100;
+        // MessagesPerUserResponseBody messages_per_user_body = 200;
+        // MessagesPerUserInitResponseBody messages_per_user_init_body = 201;
+        // MessagesPerUserInitV2ResponseBody messages_per_user_init_v2_body = 203;
+        // MessagesPerConversationSearchResponseBody messages_per_conversation_search_body = 206;
+        // CheckMessagesPerUserResponseBody check_messages_per_user_body = 210;
+        // GetMessageByIdResponseBody get_message_by_id_body = 211;
+        // ConversationsListResponseBody conversations_list_body = 300;
+        // MessagesInConversationResponseBody messages_in_conversation_body = 301;
+        // GetMessagesCheckInfoInConversationResponseBody get_messages_checkinfo_in_conversation_body = 302;
+        // GetMessagesCheckInfoV2ResponseBody get_message_check_info_v2_body = 303;
+        // SendUserActionResponseBody send_user_action_body = 410;
+        // SendInputStatusResponseBody send_input_status_body = 411;
+        // NewMessageNotify has_new_message_notify = 500;
+        // MarkConversationReadNotify mark_conversation_read_notify = 501;
+        // ConversationInfoUpdatedNotify conversation_info_updated_notify = 502;
+        // StrangerNewMessageNotify stranger_has_new_message_notify = 503;
+        // NewDirectPushNotify has_new_direct_push_notify = 504;
+        // InputStatusNotify input_status_notify = 510;
+        // NewFriendMessageNotify new_friend_message_notify = 507;
+        // GetConversationInfoResponseBody get_conversation_info_body = 600;
+        // SetConversationInfoResponseBody set_conversation_info_body = 601;
+        // CreateConversationResponseBody create_conversation_body = 602;
+        // ConversationParticipantsListResponseBody conversation_participants_body = 605;
+        // GetConversationInfoListResponseBody get_conversations_info_list_body = 607;
+        // GetConversationInfoV2ResponseBody get_conversation_info_v2_body = 608;
+        CreateConversationV2ResponseBody create_conversation_v2_body = 609;
+        GetConversationInfoListV2ResponseBody get_conversation_info_list_v2_body = 610;
+        // GetConversationInfoListByFavoriteV2ResponseBody get_conversation_info_list_by_favorite_v2_body = 611;
+        // GetConversationInfoListByTopV2ResponseBody get_conversation_info_list_by_top_v2_body = 612;
+        // BatchMarkConversationReadResponseBody batch_mark_read_body = 613;
+        // GetConversationsCheckInfoResponseBody get_conversations_checkinfo_body = 615;
+        // GetConversationsCheckInfoV2ResponseBody get_conversations_check_info_v2_body = 616;
+        // ConversationAddParticipantsResponseBody conversation_add_participants_body = 650;
+        // ConversationRemoveParticipantsResponseBody conversation_remove_participants_body = 651;
+        // ConversationSetRoleResponseBody conversation_set_role_body = 653;
+        // MgetConversationParticipantsResponseBody mget_conversation_participants_body = 654;
+        // UpdateConversationParticipantResponseBody update_conversation_participant_body = 655;
+        // BatchUpdateConversationParticipantResponseBody batch_update_conversation_participant_body = 656;
+        // ReactionMessageResponseBody reaction_message_body = 703;
+        // SyncMessageResponseBody sync_message_body = 704;
+        // ModifyMessagePropertyResponseBody modify_message_property_body = 705;
+        // AckMessageResponseBody ack_message_body = 706;
+        // GetGroupInfoResponseBody get_group_info_body = 801;
+        // SetGroupInfoResponseBody set_group_info_body = 802;
+        // GetGroupInfoListResponseBody get_groups_info_body = 803;
+        // GetConversationCoreInfoResponseBody get_conversation_core_info_body = 901;
+        // SetConversationCoreInfoResponseBody set_conversation_core_info_body = 902;
+        // GetConversationCoreInfoListResponseBody get_conversation_core_info_list_body = 903;
+        // UpsertConversationCoreExtInfoResponseBody upsert_conversation_core_ext_info_body = 904;
+        // DeleteConversationCoreExtInfoResponseBody delete_conversation_core_ext_info_body = 905;
+        // GetConversationSettingInfoResponseBody get_conversation_setting_info_body = 920;
+        // SetConversationSettingInfoResponseBody set_conversation_setting_info_body = 921;
+        // UpsertConversationSettingExtInfoResponseBody upsert_conversation_setting_ext_info_body = 922;
+        // DeleteConversationSettingExtInfoResponseBody delete_conversation_setting_ext_info_body = 923;
+        GetStrangerConversationListResponseBody get_stranger_conversation_body = 1000;
+        // GetStrangerMessagesResponseBody get_stranger_messages_body = 1001;
+        // DeleteStrangerMessageResponseBody delete_stranger_message_body = 1002;
+        // DeleteStrangerConversationResponseBody delete_stranger_conversation_body = 1003;
+        // DeleteStrangerAllConversationResponseBody delete_stranger_all_conversation_body = 1004;
+        // MarkStrangerConversationReadResponseBody mark_stranger_conversation_read_body = 1005;
+        // MarkStrangerAllConversationReadResponseBody mark_stranger_all_conversation_read_body = 1006;
+        // GetStrangerUnreadCountResponseBody get_stranger_unread_count_body = 1007;
+        // GetConversationParticipantsReadIndexV3ResponseBody participants_read_index_body = 2000;
+        // GetConversationParticipantsMinIndexV3ResponseBody participants_min_index_body = 2001;
+        // GetUploadTokenResponseBody get_upload_token_body = 2003;
+        // GetMediaUrlsResponseBody get_media_urls_body = 2004;
+        // GetTicketResponseBody get_ticket_body = 2005;
+        // VcdCleanResponseBody vcd_clean_body = 9999;
+        GetUserConversationListResponseBody get_conversation_list_body = 2006;
+        // BroadcastSendMessageResponseBody broadcast_send_message_body = 2007;
+        // BroadcastRecvMessageResponseBody broadcast_recv_message_body = 2008;
+        // BroadcastUserCounterResponseBody broadcast_user_counter_body = 2009;
+        // ClientACKResponseBody client_ack_body = 2010;
+        // CreateVoipResponseBody create_voip_body = 2011;
+        // CallVoipResponseBody call_voip_body = 2012;
+        // UpdateVoipResponseBody update_voip_body = 2013;
+        // ChannelHeartBeatResponseBody channel_heartbeat_body = 2014;
+        // ProfileGetInfoResponseBody profile_get_info = 2015;
+        // ReportClientMetricsResponseBody report_client_metrics_body = 2016;
+        // GetConfigsResponseBody get_configs_body = 2017;
+        // UnReadCountReportResponseBody unread_count_report_body = 2018;
+        // BlockMembersResponseBody block_members_body = 2019;
+        // BlockConversationResponseBody block_conversation_body = 2020;
+        // ModifyMessageExtResponseBody modify_message_ext_body = 2021;
+        // GetConversationAuditSwitchResponseBody get_conversation_audit_switch_body = 2022;
+        // UpdateConversationAuditSwitchResponseBody update_conversation_audit_switch_body = 2023;
+        // SendConversationApplyResponseBody send_conversation_apply_body = 2024;
+        // AckConversationApplyResponseBody ack_conversation_apply_body = 2025;
+        // GetConversationApplyResponseBody get_conversation_apply_body = 2026;
+        // GetConversationAuditListResponseBody get_conversation_audit_list_body = 2027;
+        // GetConversationAuditUnreadResponseBody get_conversation_audit_unread_body = 2028;
+        // ClearConversationAuditUnreadResponseBody clear_conversation_audit_unread_body = 2029;
+        // GetUnreadCountResponseBody get_unread_count_body = 2030;
+        // SendMessageP2PResponseBody send_message_p2p_body = 2031;
+        // GetBlockListResponseBody get_blocklist_body = 2032;
+        // SetBlocklistResponseBody set_blocklist_body = 2033;
+        // CheckInBlockListResponseBody check_in_blocklist_body = 2034;
+        // GetMessageInfoByIndexV2ResponseBody get_message_info_by_index_v2_body = 2035;
+        // BatchGetConversationAuditUnreadResponseBody batch_get_conversation_audit_unread_body = 2042;
+        // MarkMessageResponseBody mark_message_body = 2036;
+        // PullMarkMessageResponseBody pull_mark_message_body = 2037;
+        // BatchGetConversationParticipantsReadIndexResponseBody batch_get_conversation_participants_readindex = 2038;
+        // GetRecentMessageRespBody get_recent_message_body = 2039;
+        // GetCmdMessageRespBody get_cmd_message_body = 2040;
+        // GetMessageInfoByIndexV2RangeResponseBody get_message_info_by_index_v2_range_body = 2041;
+        // MessageByInitResponseBody message_by_init = 2043;
+        // PreviewerMessagesInConversationResponseBody previewer_messages_in_conversation_body = 2044;
+        // PreviewerGetConversationInfoListResponseBody previewer_get_conversation_info_list_body = 2045;
+        // SendFriendApplyResponseBody send_friend_apply_body = 2046;
+        // GetFriendApplyListResponseBody get_friend_apply_list_body = 2047;
+        // GetFriendReceiveApplyListResponseBody get_friend_receive_apply_list_body = 2048;
+        // ReplyFriendApplyResponseBody reply_friend_apply_body = 2049;
+        // GetFriendListResponseBody get_friend_list_body = 2050;
+        // DeleteFriendResponseBody delete_friend_body = 2051;
+        // ProfileBatchGetInfoResponseBody profile_batch_get_info_body = 2052;
+        // ProfileSearchInfoResponseBody profile_search_info_body = 2053;
+        // MarkMsgUnreadCountReportResponseBody mark_msg_unread_count_report = 2054;
+        // MarkMsgGetUnreadCountResponseBody mark_msg_get_unread_count = 2055;
+        // BatchUnmarkMessageResponseBody batch_unmark_message = 2056;
+        // ClientBatchACKResponseBody client_batch_ack_body = 2057;
+        // GetMediaUploadConfigResponseBody media_upload_config_response_body = 2059;
+        // GetMediaStatusResponseBody media_status_response_body = 2060;
+        // GlobalMessageSearchResponseBody global_message_search_body = 2100;
+        // ConversationCoreSearchResponseBody conversation_core_search_body = 2101;
+        // ConversationMessageSearchResponseBody conversation_message_search_body = 2102;
+        // ConversationMessagePreViewResponseBody conversation_message_pre_view_body = 2103;
+        // GetMessagesResponseBody get_messages_body = 2200;
+    }
+  }
+
+// 发送消息响应体消息定义
+message SendMessageResponseBody {
+    int64 server_message_id = 1;  // 服务器消息ID
+    string extra_info = 2;         // 额外信息
+    int32 status = 3;              // 状态码
+    string client_message_id = 4;  // 客户端消息ID
+    int64 check_code = 5;          // 校验码
+    string check_message = 6;      // 校验消息
+    string filtered_content = 7;   // 被过滤的内容
+    bool is_async_send = 8;        // 是否异步发送
+    string new_ticket = 9;         // 新票据
+    ConversationInfoV2 conversation = 10;  // 对话信息
+    int32 inboxPageCategory = 12;  // 收件箱页面分类
+    int32 filter_reason = 13;      // 过滤原因
+  }
+
+  // 创建对话v2的响应体消息定义
+message CreateConversationV2ResponseBody {
+    ConversationInfoV2 conversation = 1; // 对话信息
+    int64 check_code = 2; // 校验码
+    string check_message = 3; // 校验消息
+    string extra_info = 4; // 额外信息
+    int32 status = 5; // 状态码
+}
+
+
+  // 会话核心信息
+message ConversationCoreInfo {
+    string conversation_id = 1;          // 会话ID
+    int64 conversation_short_id = 2;     // 会话简短ID
+    int32 conversation_type = 3;         // 会话类型
+    int64 info_version = 4;               // 信息版本
+    string name = 5;                     // 会话名称
+    string desc = 6;                     // 描述
+    string icon = 7;                     // 图标
+    int32 inbox_type = 8;                // 收件箱类型
+    string notice = 9;                   // 通知
+    map<string, string> ext = 11;        // 扩展字段，用于存储额外信息
+    int64 owner = 12;                    // 所有者
+    string sec_owner = 13;               // 次要所有者
+    int32 block_status = 14;             // 屏蔽状态
+    bool block_normal_only = 15;         // 是否仅屏蔽普通消息
+    int32 mode = 16;                     // 模式
+    int64 creator_uid = 17;              // 创建者用户ID
+  }
+
+// 参与者信息
+message Participant {
+    int64 user_id = 1;               // 用户ID
+    int64 sort_order = 2;            // 排序序号
+    int32 role = 3;                  // 角色
+    string alias = 4;                // 别名
+    string sec_uid = 5;              // 第二ID，可能用于安全或会话标识
+    int32 blocked = 6;               // 屏蔽状态，可能是0或1
+    int64 left_block_time = 7;       // 离开屏蔽时间
+    map<string, string> ext = 8;     // 扩展字段，用于存储额外信息
+  }
+
+message ParticipantsPage {
+    repeated Participant participants = 1; // 参与者列表
+    bool has_more = 2;                     // 是否还有更多的参与者
+    int64 cursor = 3;                       // 游标，用于分页
+    // 其他字段...
+  }
+
+// 对话信息V2
+message ConversationInfoV2 {
+    string conversation_id = 1;               // 对话ID
+    int64 conversation_short_id = 2;          // 对话简短ID
+    int32 conversation_type = 3;              // 对话类型
+    string ticket = 4;                         // 票据
+    ParticipantsPage first_page_participants = 6; // 第一页参与者
+    int32 participants_count = 7;              // 参与者总数
+    bool is_participant = 8;                   // 是否是参与者
+    int32 inbox_type = 9;                      // 收件箱类型
+    int32 badge_count = 10;                    // 徽章数量
+    int32 badge_count_v2 = 11;                 // 徽章数量V2
+    int64 conversation_rank_version = 12;      // 对话排名版本
+    Participant user_info = 20;                // 用户信息
+    ConversationCoreInfo conversation_core_info = 50; // 对话核心信息
+    // ConversationSettingInfo conversation_setting_info = 51; // 对话设置信息
+}
+
+// 获取对话信息响应体V2
+message GetConversationInfoV2ResponseBody {
+    ConversationInfoV2 conversation_info = 1;  // 对话信息
+  }
+
+message PropertyItemList {
+  // 这里需要根据实际的 PropertyItemList 结构填充字段
+  // 例如:
+  // repeated string items = 1;
+  // ...
+}
+
+message ReferenceInfo {
+  int64 referenced_message_id = 1;       // 被引用的消息 ID
+  string hint = 2;                      // 提示信息
+  int64 ref_message_type = 3;           // 引用消息的类型
+  int32 referenced_message_status = 4;   // 被引用消息的状态
+  int64 root_message_id = 5;            // 根消息 ID
+  int64 root_message_conv_index = 6;    // 根消息在会话中的索引
+  int64 sender = 7;                     // 发送者 ID
+}
+
+// 定义 MessageBody 消息
+message MessageBody {
+    string conversation_id = 1;           // 会话 ID
+    int32 conversation_type = 2;         // 会话类型
+    int64 server_message_id = 3;         // 服务器消息 ID
+    int64 index_in_conversation = 4;     // 在会话中的索引
+    int64 conversation_short_id = 5;     // 会话短 ID
+    int32 message_type = 6;              // 消息类型
+    int64 sender = 7;                    // 发送者
+    string content = 8;                  // 消息内容
+    map<string, string> ext = 9;         // 扩展字段，使用 map 存储键值对
+    int64 create_time = 10;               // 创建时间
+    int64 version = 11;                  // 版本
+    int32 status = 12;                   // 状态
+    int64 order_in_conversation = 13;    // 在会话中的顺序
+    string sec_sender = 14;              // 第二发送者
+    // map<string, PropertyItemList> property_list = 15; // 属性列表
+    map<string, string> user_profile = 16; // 用户资料
+    int64 index_in_conversation_v2 = 17; // 在会话中的索引 V2
+    ReferenceInfo reference_info = 18;   // 引用信息
+    int64 index_in_conversation_v1 = 19; // 在会话中的索引 V1
+    bytes content_pb = 20;               // 内容 protobuf 序列化
+    string scene = 21;                   // 场景
+    int32 conv_rank_update_rule = 22;    // 会话排名更新规则
+}
+message StrangerConversation {
+  int64 conversation_short_id = 1; // 假设 conversation_short_id 是 int64 类型
+  int32 unread = 2;                 // unread 是 int32 类型
+  MessageBody last_message = 3;     // 上一条消息
+  string conversation_id = 4;       // 会话 ID
+  repeated Participant participants = 5; // 参与者列表
+  int32 badge_count = 6;            // 未读消息计数
+  map<string, string> ext = 7;                      // 扩展字段
+}
+
+message GetStrangerConversationListResponseBody {
+  int64 next_cursor = 1; // 假设 next_cursor 是 int64 类型
+  bool has_more = 2;     // has_more 是 bool 类型
+  int32 total_unread = 3; // total_unread 是 int32 类型
+  repeated StrangerConversation conversation_list = 4; // 重复的 StrangerConversation 列表
+}
+
+
+message GetConversationInfoListV2ResponseBody {
+  // 列表类型的字段，存储 ConversationInfoV2 消息
+  repeated ConversationInfoV2 conversation_info_list = 1;
+}
+
+message GetUserConversationListResponseBody {
+  repeated ConversationInfoV2 list = 1; // 列表类型的字段，存储 ConversationInfoV2 消息
+  bool has_more = 2; // 是否还有更多数据
+  int64 next_cursor = 3; // 下一个游标
+}

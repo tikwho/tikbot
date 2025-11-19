@@ -1,0 +1,34 @@
+npm install protobufjs
+npm install -g protobufjs-cli
+
+
+pbjs -t static-module -w commonjs -o tiktokSchema.js tiktokSchema.proto
+
+pbts -o tiktokSchema.d.ts tiktokSchema.js
+
+��none��������
+
+
+mstoken
+
+https://github.com/JoeanAmier/TikTokDownloader/blob/f84ea07cf0e61d92834a838753739762b7296f0e/src/encrypt/msToken.py#L23
+二维码登录
+https://github.com/xinlingqudongX/TSDK/blob/18a16ab0d5c7f42dd88c099ea5e2ca1d35a0c70d/api/douyin/h5.py#L574
+
+abogus参数
+http://39.107.101.62:8111/docs#/
+
+https://blog.csdn.net/m0_54373110/article/details/136932847
+
+
+
+从原JS中找BadgeStruct.toObject
+https://github.com/frankvHoof93/TikTokLiveSharp/blob/be7cb0ef6728d0a9bd716aa32cf5a8f326a0a635/tiktok_schema.proto#L1145
+
+https://github.com/jwdeveloper/TikTokLiveJava/blob/0f6ee58d7f8845d1f7e4465a558703bf25b98251/API/src/main/proto/data.proto#L111
+https://github.com/isaackogan/TikTokLive/blob/1b0a6de29949f178685dde64baa3843b984fde12/scripts/proto/src/data.proto
+
+
+
+
+https://github.com/isaackogan/TikTokLive

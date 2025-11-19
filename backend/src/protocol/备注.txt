@@ -1,0 +1,201 @@
+
+被关注或进入
+{
+  ext: [
+    l { key: 's:from_mt_sync', value: 'true' },
+    l { key: 's:mode', value: '0' },
+    l { key: 's:sync_create_conversation', value: 'true' },
+    l {
+      key: 's:sync_create_conversation_cbbizext',
+      value: '{"s:from_mt_sync":"true"}'
+    },
+    l {
+      key: 's:visible',
+      value: '6948680389724570630,7028939348067795974'
+    },
+    l {
+      key: 's:client_message_id',
+      value: '133e2af4-c1a1-4f33-affb-5dcc4b543892'
+    }
+  ],
+  conversation_id: '0:1:6948680389724570630:7028939348067795974',
+  conversation_type: 1,
+  server_message_id: Long { low: 1633732624, high: 1701707831, unsigned: true },
+  index_in_conversation: Long { low: 0, high: 0, unsigned: true },
+  conversation_short_id: Long { low: 1946255659, high: 1701707687, unsigned: true },
+  message_type: 50001,
+  sender: Long { low: -1655127034, high: 1636552472, unsigned: true },
+  content: '{"command_type":8,"conversation_id":"0:1:6948680389724570630:7028939348067795974","conversation_type":1,"inbox_type":0}',
+  create_time: Long { low: 900783370, high: 396, unsigned: true },
+  version: Long { low: 0, high: 0, unsigned: true },
+  status: 0,
+  order_in_conversation: Long { low: 0, high: 0, unsigned: true },
+  sec_sender: 'MS4wLjABAAAASSOUgco2xzmGTsWS8ywyyzts_KLvO04TD-LwCGefOzuUF7LkpuVx10lzlp3HNOoI'
+}
+发送消息异常
+{
+  ext: [
+    l {
+      key: 's:client_message_id',
+      value: 'f30257be-420e-4f21-9918-8df80c110678'
+    },
+    l { key: 's:visible', value: '6948680389724570630' }
+  ],
+  conversation_id: '0:1:6948680389724570630:7028939348067795974',
+  conversation_type: 1,
+  server_message_id: Long { low: 2035140625, high: 1701707982, unsigned: true },
+  index_in_conversation: Long { low: 0, high: 0, unsigned: true },
+  conversation_short_id: Long { low: 1946255659, high: 1701707687, unsigned: true },
+  message_type: 50001,
+  sender: Long { low: -1354660858, high: 1617865727, unsigned: true },
+  content: '{"command_type":1,"conversation_id":"0:1:6948680389724570630:7028939348067795974","conversation_type":1,"inbox_type":0,"read_index":1,"target_message_id":0}',
+  create_time: Long { low: 900934712, high: 396, unsigned: true },
+  version: Long { low: 0, high: 0, unsigned: true },
+  status: 0,
+  order_in_conversation: Long { low: 0, high: 0, unsigned: true },
+  sec_sender: 'MS4wLjABAAAAFFx45kBliCVWYcNDTeDqb4VroMbKGvrOdthfFbszi9_MpcBMHtWA763VK49zGpOh'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+依赖
+
+yarn add long sequelize uuid jsdom
+
+
+
+
+
+
+
+
+
+ // const n = await xe.GetUserInfo(t.sec_sender, t.sender.toString());
+        // this.protocolSevice.cacheService.set("test_",{n,t});        if(!t){
+        //     let cache = await this.protocolSevice.cacheService.get("test_");
+        //     console.info(cache);
+        //     n=cache.n;t=cache.t;
+        // }else{
+        //     n = await xe.GetUserInfo(t.sec_sender, t.sender.toString());
+        //     this.protocolSevice.cacheService.set("test_",{n,t});
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    "event": "im_receive_msg",
+    "client_key": "awkw69fh280dzk43",
+    "from_user_id": "b24c3da2-94c4-45a2-a7d7-f4149c69eafa",
+    "to_user_id": "d45e2e92-0e7c-4bb2-bab5-9960363afea3",
+    "content": {
+        "conversation_short_id": "@9VwPwaXLWsFiZyeletNpE8791WbhNfmKPZZ4qQ2nK1ARafX860zdRmYqig357zEB7vQW9OJBGWpZWnyxeAxhLg==",
+        "server_message_id": "@9VwPwaXLWsFiZyeletNpE879123sO/6HOJV5oQKgLFcaZvT/60zdRmYqig357zEBxY90PKajXCPLxoc4ckhs1g==",
+        "conversation_type": 1,
+        "create_time": 1696326147346,
+        "message_type": "text",
+        "source": "",
+        "scene_type": 100,
+        "text": "1",
+        "user_infos": [
+            {
+                "open_id": "b24c3da2-94c4-45a2-a7d7-f4149c69eafa",
+                "nick_name": "写新数字人欣欣",
+                "avatar": "https://p26.protocolpic.com/aweme/720x720/aweme-avatar/tos-cn-i-0813c001_d8f4f73e50384af9b66c93b297fac886.jpeg?from=3782654143"
+            },
+            {
+                "open_id": "d45e2e92-0e7c-4bb2-bab5-9960363afea3",
+                "nick_name": "星力量旅游定制",
+                "avatar": "https://p26.protocolpic.com/aweme/720x720/aweme-avatar/tos-cn-i-0813_1f7853be3e4a42aa8ca144fd0a55d0d0.jpeg?from=3782654143"
+            }
+        ],
+        "group_info": {}
+    },
+    "log_id": "02169632614703500000000000000000000ffff0ad2ca1b50d915",
+    "event_id": ""
+}
+
+
+
+{
+    "event": "im_enter_direct_msg",
+    "client_key": "awkw69fh280dzk43",
+    "from_user_id": "b24c3da2-94c4-45a2-a7d7-f4149c69eafa",
+    "to_user_id": "d45e2e92-0e7c-4bb2-bab5-9960363afea3",
+    "content": {
+        "conversation_short_id": "@9VwPwaXLWsFiZyeletNpE8791WbhNfmKPZZ4qQ2nK1ARafX860zdRmYqig357zEB7vQW9OJBGWpZWnyxeAxhLg==",
+        "server_message_id": "@9VwPwaXLWsFiZyeletNpE879123sOv6APpR2rgmjJlETaPn460zdRmYqig357zEBuofI6mgN31tEn3QDEnc+yA==",
+        "conversation_type": 1,
+        "create_time": 1696348776529,
+        "scene_type": 5,
+        "user_infos": [
+            {
+                "open_id": "b24c3da2-94c4-45a2-a7d7-f4149c69eafa",
+                "nick_name": "写新数字人欣欣",
+                "avatar": "https://p6.protocolpic.com/aweme/720x720/aweme-avatar/tos-cn-i-0813c001_d8f4f73e50384af9b66c93b297fac886.jpeg?from=3782654143"
+            },
+            {
+                "open_id": "d45e2e92-0e7c-4bb2-bab5-9960363afea3",
+                "nick_name": "星力量旅游定制",
+                "avatar": "https://p6.protocolpic.com/aweme/720x720/aweme-avatar/tos-cn-i-0813_1f7853be3e4a42aa8ca144fd0a55d0d0.jpeg?from=3782654143"
+            }
+        ]
+    },
+    "log_id": "20231003235936BCA77B206AE16EF58E33"
+}
+
+
+图片上传
+{
+  height: 863,
+  image_id: '@9VwPwaXLWsFiZyeletNpE86+iib0bqafYog16knsa1AUPKajyCHgLAsTsmSR2w89CmXGj2hZKNEBgobfGCC2WS2PirF4mT1hatJT3UhT8k/DTF0s4azUilvBUkDNcfqE',
+  md5: '07393d8fcba9eea9bbad15ba69109144',
+  width: 881,
+  data: { error_code: 0, description: '' },
+  extra: {
+    error_code: 0,
+    description: '',
+    sub_error_code: 0,
+    sub_description: '',
+    logid: '2023100401232045E4CA02B72CB9496852',
+    now: 1696353801
+  }
+}

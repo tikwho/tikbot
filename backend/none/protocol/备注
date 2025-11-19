@@ -1,0 +1,540 @@
+window.__$UNIVERSAL_DATA$__.__DEFAULT_SCOPE__['webapp.user-detail'].userInfo
+
+
+
+
+{
+    const e = {}
+      , t = Object.create(e);
+    return t[e[1] = "LEGACY_MESSAGE_TYPE_SYSTEM"] = 1,
+    t[e[2] = "LEGACY_MESSAGE_TYPE_IMAGE"] = 2,
+    t[e[3] = "LEGACY_MESSAGE_TYPE_AUDIO"] = 3,
+    t[e[4] = "LEGACY_MESSAGE_TYPE_VIDEO"] = 4,
+    t[e[5] = "LEGACY_MESSAGE_TYPE_EMOJI"] = 5,
+    t[e[6] = "LEGACY_MESSAGE_TYPE_FILE"] = 6,
+    t[e[7] = "LEGACY_MESSAGE_TYPE_TEXT"] = 7,
+    t[e[8] = "LEGACY_MESSAGE_TYPE_USER_CARD"] = 8,
+    t[e[9] = "LEGACY_MESSAGE_TYPE_TOAST"] = 9,
+    t[e[10] = "LEGACY_MESSAGE_TYPE_GROUP_CARD"] = 10,
+    t[e[10001] = "MESSAGE_TYPE_TEXT"] = 10001,
+    t[e[10002] = "MESSAGE_TYPE_STICKER"] = 10002,
+    t[e[10003] = "MESSAGE_TYPE_IMAGE"] = 10003,
+    t[e[10004] = "MESSAGE_TYPE_VIDEO"] = 10004,
+    t[e[10005] = "MESSAGE_TYPE_FILE"] = 10005,
+    t[e[10006] = "MESSAGE_TYPE_AUDIO"] = 10006,
+    t[e[10007] = "MESSAGE_TYPE_LOCATION"] = 10007,
+    t[e[10008] = "MESSAGE_TYPE_SYSTEM"] = 10008,
+    t[e[10009] = "MESSAGE_TYPE_LINK"] = 10009,
+    t[e[50001] = "MESSAGE_TYPE_COMMAND"] = 50001,
+    t[e[50002] = "MESSAGE_TYPE_UPDATE_MESSAGE_EXT"] = 50002,
+    t[e[50010] = "MESSAGE_TYPE_MODE_CHANGE"] = 50010,
+    t[e[50003] = "MESSAGE_TYPE_UPDATE_MIN_INDEX"] = 50003,
+    t[e[50004] = "MESSAGE_TYPE_USER_ACTION"] = 50004,
+    t[e[50005] = "MESSAGE_TYPE_CONVERSATION_DESTROY"] = 50005,
+    t[e[50011] = "MESSAGE_TYPE_BLOCK_COMMAND"] = 50011,
+    t[e[50012] = "MESSAGE_TYPE_MARK_COMMAND"] = 50012,
+    t[e[50013] = "MESSAGE_TYPE_READ_COMMAND"] = 50013,
+    t[e[50016] = "MESSAGE_TYPE_BATCH_UNMARK_COMMAND"] = 50016,
+    t[e[60001] = "MESSAGE_TYPE_NOTIFY_COMMAND"] = 60001,
+    t[e[70001] = "MESSAGE_TYPE_MESSAGE_PROPERTY"] = 70001,
+    t[e[70002] = "MESSAGE_TYPE_UPDATE_MESSAGE_PROPERTY"] = 70002,
+    t[e[80001] = "MESSAGE_TYPE_VOIP_COMMAND"] = 80001,
+    t[e[80002] = "MESSAGE_TYPE_VOIP_CARD_COMMAND"] = 80002,
+    t[e[80003] = "MESSAGE_TYPE_VOIP_SINGLE_CHAT_STATUS_COMMAND"] = 80003,
+    t[e[80004] = "MESSAGE_TYPE_VOIP_CALLEE_LIST_UPDATE_NOTIFY"] = 80004,
+    t
+}
+
+message_type: 50001,
+sender: Long { low: -1655127034, high: 1636552472, unsigned: true },
+content: '{"command_type":1,"conversation_id":"0:1:6940517328601924613:7028939348067795974","conversation_type":1,"inbox_type":0,"read_index":1702630256544645,"target_message_id":7312741238808020497}',
+
+function(e) {
+    e[e.MarkConversationRead = 1] = "MarkConversationRead",
+    e[e.DeleteMessage = 2] = "DeleteMessage",
+    e[e.DeleteConversation = 3] = "DeleteConversation",
+    e[e.SettingInfoUpdate = 4] = "SettingInfoUpdate",
+    e[e.CoreInfoUpdate = 6] = "CoreInfoUpdate",
+    e[e.ParticipantUpdate = 7] = "ParticipantUpdate",
+    e[e.FirstMessage = 8] = "FirstMessage"
+}(te || (te = {}));
+
+
+
+商品推荐
+
+43
+{
+    "seller_avatar": {
+        "url_key": "",
+        "url_list": [
+            "https://p19-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/8171699e6431426c952d96b820f0654e~tplv-omjb5zjo8w-resize-png:300:300.png?from=2422056039",
+            "https://p16-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/8171699e6431426c952d96b820f0654e~tplv-omjb5zjo8w-resize-png:300:300.png?from=2422056039"
+        ],
+        "width": 300,
+        "height": 300,
+        "uri": "tos-useast5-i-omjb5zjo8w-tx/8171699e6431426c952d96b820f0654e"
+    },
+    "aweType": 0,
+    "product_price": "$39.99",
+    "product_query_params": "?biz_type=0&requestParams=%7B%22product_id%22%3A%5B%221729403856705393313%22%5D%7D&orderRequestParams=%7B%22room_id%22%3A%227309896110750141227%22%7D&trackParams=%7B%22biz_type%22%3A%220%22%2C%22is_sold_out%22%3A0%2C%22commerce_inner_source%22%3A%22%22%2C%22product_id%22%3A%221729403856705393313%22%2C%22traffic_source_list%22%3A%5B1%5D%2C%22source_product_id%22%3A%22%22%2C%22follow_status%22%3A0%2C%22search_pre_product_id%22%3A%22%5B%5D%22%2C%22open_stock_cnt%22%3A67449%2C%22enter_from_info%22%3A%22product_share_im%22%2C%22search_result_id%22%3A%227309896213644463406%22%2C%22product_type%22%3A1%2C%22last_from_group_id%22%3A%227305444528901672238%22%2C%22user_type%22%3A%22new_user%22%2C%22source_page_type%22%3A%22%22%2C%22search_entrance_second%22%3A%22homepage_hot%22%2C%22origin_is_mall_tab%22%3A%22%22%2C%22source_content_id%22%3A%227309896110750141227%22%2C%22is_mix_product%22%3A0%2C%22platform_extension%22%3A%22%7B%5C%22level1%5C%22%3A%5C%220%5C%22%7D%22%2C%22delivery_option%22%3A4%2C%22live_lineup_user_type%22%3A%22basic_user%22%2C%22volume%22%3A28558%2C%22entrance_form%22%3A%22product_share_card%22%2C%22lineup_room_id%22%3A%227309896110750141227%22%2C%22action_type%22%3A%22click%22%2C%22search_id%22%3A%2220231208162001A95C26A1C36A4F0247E0%22%2C%22commerce_inner_flow_id%22%3A%22%22%2C%22volume_type%22%3A%22sold%22%2C%22source%22%3A%22open_api%22%2C%22seller_logo_type%22%3A%22blue_v%2Cseller_logo%22%2C%22list_source_content_id%22%3A%227309896110750141227%22%2C%22enter_product_id%22%3A%22%22%2C%22product_source%22%3A5%2C%22search_type%22%3A%22shop%22%2C%22purchase_path%22%3A%22normal%22%2C%22is_commerce_inner_flow%22%3A0%2C%22source_from%22%3A2%2C%22ttf_page_type%22%3A%22sku_version%22%2C%22original_price%22%3A%22%2439.99%22%2C%22page_show_type%22%3A%22half_screen%22%2C%22a11y_setting_params%22%3A%22%7B%5C%22ios_video_autoplay%5C%22%3Atrue%7D%22%2C%22live_lineup_change_type%22%3A%22non_lineup%22%2C%22search_keyword%22%3A%22us%22%2C%22sku_show_type%22%3A%22no_greater_than_6%22%2C%22marketing_stock_cnt%22%3A0%2C%22author_id%22%3A%227287892135051035694%22%2C%22track_id%22%3A%2220231208162001A95C26A1C36A4F0247E0_0%22%2C%22is_single_sku%22%3Afalse%2C%22search_entrance%22%3A%22homepage_hot%22%2C%22is_ad%22%3A%220%22%2C%22shop_id%22%3A%227495182113810385569%22%2C%22is_ecom_search%22%3A0%2C%22has_buy_now%22%3A1%2C%22first_track_id%22%3A%2220231208162001A95C26A1C36A4F0247E0_0%22%2C%22previous_page%22%3A%22live%22%2C%22lineup_author_id%22%3A%227287892135051035694%22%2C%22live_lineup_type%22%3A%22normal%22%7D&fullScreen=true",
+    "is_card": false,
+    "product_sales": "已售出 28.6K 件",
+    "seller_name": "JLabTech",
+    "product_picture": {
+        "url_key": "",
+        "url_list": [
+            "https://p19-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/ea95ad1e24dc404bb4d819ed4e670ab6~tplv-omjb5zjo8w-resize-webp:260:260.webp?from=1826719393",
+            "https://p16-oec-ttp.tiktokcdn-us.com/tos-useast5-i-omjb5zjo8w-tx/ea95ad1e24dc404bb4d819ed4e670ab6~tplv-omjb5zjo8w-resize-webp:260:260.webp?from=1826719393"
+        ],
+        "width": 260,
+        "height": 260,
+        "uri": "tos-useast5-i-omjb5zjo8w-tx/ea95ad1e24dc404bb4d819ed4e670ab6"
+    },
+    "product_title": "JBuds Mini True Wireless Earbuds"
+}
+
+
+直播间推荐
+ 1021,
+    {
+        "cover_url": {
+            "uri": "",
+            "url_list": [
+                "https://p16-webcast.tiktokcdn.com/webcast-va/7262560924707113734~tplv-resize:1080:1080.webp",
+                "https://p19-webcast.tiktokcdn.com/webcast-va/7262560924707113734~tplv-resize:1080:1080.webp"
+            ]
+        },
+        "push_detail": "Tecno Mobile Philippine Store",
+        "aweType": 0,
+        "room_owner_sec_id": "MS4wLjABAAAATiLfxcD4z-Uk5M6inoBdW32yH90Bd6myijrB_SN9iB4dXMqgmJzPTCwX6OfwLhuC",
+        "shared_enter_from": "",
+        "room_owner_id": "6772046067133350914",
+        "room_id": "7310020968872004358",
+        "room_owner_avatar": {
+            "uri": "",
+            "url_list": [
+                "https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/9dd279dbaabb33675debe0c7c441e2e3.webp?x-expires=1702220400&x-signature=v%2BOuyyUumQjotzaXdtH9nsLw8lc%3D",
+                "https://p9-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/9dd279dbaabb33675debe0c7c441e2e3.webp?x-expires=1702220400&x-signature=AjA2fkc50wwnRn8Dkrf96Kk3rbU%3D",
+                "https://p16-sign-sg.tiktokcdn.com/aweme/100x100/tos-alisg-avt-0068/9dd279dbaabb33675debe0c7c441e2e3.jpeg?x-expires=1702220400&x-signature=Upy0wWGqNwA1UqVghVmJuTUfVtI%3D"
+            ]
+        },
+        "room_owner_name": "Tecno Mobile Philippine Store",
+        "share_live_intent": "",
+        "room_description": "share_chat_live_old_tips"
+    }
+
+
+评论推荐 40,
+{
+    "aweme_id": "7150641871298120962",
+    "comment_media_type": 0,
+    "cover_url": {
+        "uri": "tos-alisg-p-0037/932ce662aa444e0583571ad563db3840_1664888572",
+        "url_list": [
+            "https://p16-sign-sg.tiktokcdn.com/tos-alisg-p-0037/932ce662aa444e0583571ad563db3840_1664888572~tplv-dmt-adapt-360p.jpeg?x-expires=1702130400&x-signature=Z4SpBwFyyBz4Yc8Efuk7vHQBPY8%3D&s=PUBLISH&se=false&sh=&sc=feed_cover&l=20231208144749209D8E4388EA143D7C08"
+        ]
+    },
+    "is_reply_with_video": false,
+    "avatar_url": {
+        "uri": "tos-maliva-avt-0068/e8bc7766a99a0e50e7bfbb95ec4c6e6d",
+        "url_list": [
+            "https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/e8bc7766a99a0e50e7bfbb95ec4c6e6d~c5_100x100.webp?x-expires=1702134000&x-signature=6BSjKc%2BJxbko6DMaUdwwkFfmn%2FA%3D",
+            "https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/e8bc7766a99a0e50e7bfbb95ec4c6e6d~c5_100x100.jpeg?x-expires=1702134000&x-signature=p5fVxmNHv5l6VZ1y20ZusUHogVs%3D"
+        ]
+    },
+    "aweType": 0,
+    "comment": "perdón rey, no tengo talento solo buen gusto 🥺",
+    "reply_user_id": "",
+    "aweme_type": 0,
+    "author_id": "6841957479535559685",
+    "comment _id": "7150660424488043269",
+    "is_sub_comment": 0,
+    "author_name": "vcsyeol",
+    "reply_user_name": ""
+}
+
+
+视频推荐
+{
+    "type": 8,
+    "sender_str": "7028939348067795974",
+    "sender": {
+        "low": -1655127034,
+        "high": 1636552472,
+        "unsigned": true
+    },
+    "sec_sender": "MS4wLjABAAAASSOUgco2xzmGTsWS8ywyyzts_KLvO04TD-LwCGefOzuUF7LkpuVx10lzlp3HNOoI",
+    "create_time": "2023-12-08 23:20:15",
+    "conversation_id": "0:1:6940517328601924613:7028939348067795974",
+    "conversation_short_id_str": "7310120299335631121",
+    "conversation_short_id": {
+        "low": 2068168977,
+        "high": 1702020014,
+        "unsigned": true
+    },
+    "conversation_type": 1,
+    "content": {
+        "aweType": 800,
+        "uid": "6615855638264430593",
+        "itemId": "7150641871298120962",
+        "cover_url": {
+            "uri": "tos-alisg-p-0037/f22c8da794a04a4da81710a624f4cf77_1664888572",
+            "url_list": [
+                null
+            ]
+        },
+        "content_thumb": {
+            "uri": "tos-alisg-avt-0068/7f9df07e337b7f5520551a35578be9b8",
+            "url_list": [
+                null
+            ]
+        },
+        "content_name": "Lay Zhang 张艺兴",
+        "content_title": "You’re up next! Let me see your moves! #MOVEtheVEIL #LAYVEIL ",
+        "cover_width": 1080,
+        "cover_height": 1920
+    },
+    "message_id_str": "7310243978643801646",
+    "message_id": {
+        "low": -796883410,
+        "high": 1702048810,
+        "unsigned": true
+    },
+    "client_id": "82CB1EEF-96F2-4732-A156-99472B0F2FAB"
+}
+
+名片
+25
+{
+    "uid": "6615855638264430593",
+    "secUID": "MS4wLjABAAAAI_1Ym88K48L-lUYEaPuqbKPy-kfOwT-gik1iHmdAOUeWZ9KCpumBF7JxZTkwiDSk",
+    "name": "Lay Zhang 张艺兴",
+    "desc": "layzhang",
+    "avatar": {
+        "uri": "tos-alisg-avt-0068/7f9df07e337b7f5520551a35578be9b8",
+        "url_list": [
+            "https://p16-sign-sg.tiktokcdn.com/obj/tos-alisg-avt-0068/7f9df07e337b7f5520551a35578be9b8?x-expires=1703340000\\u0026x-signature=TJaIaRGyh%2FP%2BpnTm2VPSfX%2BPlGA%3D"
+        ]
+    },
+    "cover_url": [
+        {
+            "uri": "tos-alisg-p-0037/fbfab832882341469e3a59c29e8033f5_1701917071",
+            "url_list": [
+                "https://p16-sign-sg.tiktokcdn.com/obj/tos-alisg-p-0037/fbfab832882341469e3a59c29e8033f5_1701917071?x-expires=2017404000\\u0026x-signature=wK0N2Lc5WJEb8J5pp2W9LWXkXOc%3D"
+            ]
+        },
+        {
+            "uri": "tos-alisg-p-0037/oEkw5TEQIBglOecf07FUgqDFcDW4TEA2DBHREp",
+            "url_list": [
+                "https://p16-sign-sg.tiktokcdn.com/obj/tos-alisg-p-0037/oEkw5TEQIBglOecf07FUgqDFcDW4TEA2DBHREp?x-expires=2017404000\\u0026x-signature=t2mQl7AMIzZqFRJawsI9rQr8rlc%3D"
+            ]
+        },
+        {
+            "uri": "tos-alisg-p-0037/okBzRPD8b1vfDah4uy6AQLoEBfmFEElbBIgATp",
+            "url_list": [
+                "https://p16-sign-sg.tiktokcdn.com/obj/tos-alisg-p-0037/okBzRPD8b1vfDah4uy6AQLoEBfmFEElbBIgATp?x-expires=2017404000\\u0026x-signature=l7MLFps0OrO0HGdRQXFr3RH%2F1K0%3D"
+            ]
+        }
+    ],
+    "push_detail": "Lay Zhang 张艺兴"
+}
+
+
+
+
+{
+    "headers": [
+        {
+            "key": "X-Bogus",
+            "value": "WBWHCQpsdG/lep1G"
+        },
+        {
+            "key": "referer",
+            "value": "https://www.tiktok.com/messages?lang=zh-Hans&scene=business"
+        },
+        {
+            "key": "from_appID",
+            "value": "1988"
+        },
+        {
+            "key": "app_language",
+            "value": "zh-Hans"
+        },
+        {
+            "key": "app_name",
+            "value": "tiktok_web"
+        },
+        {
+            "key": "channel",
+            "value": "web"
+        },
+        {
+            "key": "user_agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+        },
+        {
+            "key": "Web-Sdk-Ms-Token",
+            "value": "52__yoN_-gEovEv3u03d_UM4nWnT4Iv1opVGKFfQONDcBtV9F1vgr2k59wd1kaskDXly1r02rvOOVU8c9zszGE2iX1ans9qMmp8orX2kOavtKVqtnUfS_dBE9JM20MltgeHHPQ=="
+        }
+    ]
+}
+
+// 获取会话列表
+{
+    "__internal_ctx": {
+        "initResult": 3,
+        "cachedToken": "",
+        "id": "ce696c1b-63d5-413e-8999-dee165286eed",
+        "option": {
+            "appId": 1459,
+            "token": "",
+            "deviceId": "7310121483757536799",
+            "userId": "6940517328601924613",
+            "biz": "",
+            "apiUrl": "https://im-api-sg.tiktok.com",
+            "frontierUrl": "wss://im-ws-sg.tiktok.com/ws/v2",
+            "fpId": 9,
+            "appKey": "e1bd35ec9db7b8d846de66ed140b1ad9",
+            "service": 5,
+            "method": 1,
+            "authType": 1,
+            "inboxType": [
+                0
+            ],
+            "headers": {
+                "referer": "https://www.tiktok.com/messages?lang=zh-Hans&scene=business",
+                "from_appID": "1988",
+                "app_language": "zh-Hans",
+                "app_name": "tiktok_web",
+                "channel": "web",
+                "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+                "Web-Sdk-Ms-Token": "F3LjtjnvHYZhxhqonhje52omXoG62zBlZE5vhSSAZXQtKqmXpWUbtb-n1qhEIGZZ3TZ8U4XNWVeGl5Jhq3PMMkBKZAbRyZohWyAAgEZ0LwjEsM2oUJpbJMlwJqahB2AM-nPeTcTcX-_x6n4="
+            },
+            "httpHeaders": {},
+            "devicePlatform": "web",
+            "timeout": 5000,
+            "pullInterval": 30000,
+            "throttle": 100,
+            "triggerStrategy": {
+                "conversation-change": 2,
+                "message-upsert": 2,
+                "conversation-upsert": 3
+            },
+            "maxMessageCount": 1000,
+            "secUid": "MS4wLjABAAAABuzW9Er_W7H3liQYmuYgquwG_YLvvFeVOtY2Be_e1p6HlBn09M-tKn18F01znsWs",
+            "acceptIncorrectInboxType": true,
+            "extended": {
+                "ttwid": "1|cWPjPe0TDdJFI7Q7P01zTqv8NN59I1u-QF1fQiXbz94|1702020601|4e513e4eaa19634c57c6d80c2daea9e204373bf65d2844c7d987da1face36abb",
+                "Web-Sdk-Ms-Token": "F3LjtjnvHYZhxhqonhje52omXoG62zBlZE5vhSSAZXQtKqmXpWUbtb-n1qhEIGZZ3TZ8U4XNWVeGl5Jhq3PMMkBKZAbRyZohWyAAgEZ0LwjEsM2oUJpbJMlwJqahB2AM-nPeTcTcX-_x6n4="
+            },
+            "disableInitPull": true,
+            "debug": false,
+            "withCredentials": true
+        }
+    },
+    "retryTimes": 1,
+    "seqId": 10026,
+    "reqBody": {
+        "get_stranger_conversation_body": {
+            "cursor": {
+                "low": 0,
+                "high": 0,
+                "unsigned": false
+            },
+            "count": {
+                "low": 1,
+                "high": 0,
+                "unsigned": false
+            },
+            "show_total_unread": true
+        }
+    },
+    "cmd": 1001,
+    "url": "https://im-api-sg.tiktok.com/v1/stranger/get_conversation_list",
+    "request": {
+        "headers": {
+            "referer": "https://www.tiktok.com/messages?lang=zh-Hans&scene=business",
+            "from_appID": "1988",
+            "app_language": "zh-Hans",
+            "app_name": "tiktok_web",
+            "channel": "web",
+            "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+            "Web-Sdk-Ms-Token": "F3LjtjnvHYZhxhqonhje52omXoG62zBlZE5vhSSAZXQtKqmXpWUbtb-n1qhEIGZZ3TZ8U4XNWVeGl5Jhq3PMMkBKZAbRyZohWyAAgEZ0LwjEsM2oUJpbJMlwJqahB2AM-nPeTcTcX-_x6n4="
+        },
+        "body": {
+            "get_stranger_conversation_body": {
+                "cursor": {
+                    "low": 0,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "count": {
+                    "low": 1,
+                    "high": 0,
+                    "unsigned": false
+                },
+                "show_total_unread": true
+            }
+        },
+        "cmd": 1001,
+        "sequence_id": {
+            "low": 10026,
+            "high": 0,
+            "unsigned": false
+        },
+        "refer": 3,
+        "token": "",
+        "device_id": "7310121483757536799",
+        "sdk_version": "0.7.5-tt-web.1",
+        "build_number": "f59aa4a:fix/upgrade-uploader",
+        "inbox_type": 0,
+        "device_platform": "web",
+        "auth_type": 1,
+        "biz": "",
+        "access": "web_sdk"
+    },
+    "startTime": 1702025132720,
+    "method": "ws"
+}
+
+发送消息
+{
+    "__internal_ctx": {
+        "initResult": 3,
+        "cachedToken": "",
+        "id": "ce696c1b-63d5-413e-8999-dee165286eed",
+        "option": {
+            "appId": 1459,
+            "token": "",
+            "deviceId": "7310121483757536799",
+            "userId": "6940517328601924613",
+            "biz": "",
+            "apiUrl": "https://im-api-sg.tiktok.com",
+            "frontierUrl": "wss://im-ws-sg.tiktok.com/ws/v2",
+            "fpId": 9,
+            "appKey": "e1bd35ec9db7b8d846de66ed140b1ad9",
+            "service": 5,
+            "method": 1,
+            "authType": 1,
+            "inboxType": [
+                0
+            ],
+            "headers": {
+                "referer": "https://www.tiktok.com/messages?lang=zh-Hans&scene=business",
+                "from_appID": "1988",
+                "app_language": "zh-Hans",
+                "app_name": "tiktok_web",
+                "channel": "web",
+                "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+                "Web-Sdk-Ms-Token": "F3LjtjnvHYZhxhqonhje52omXoG62zBlZE5vhSSAZXQtKqmXpWUbtb-n1qhEIGZZ3TZ8U4XNWVeGl5Jhq3PMMkBKZAbRyZohWyAAgEZ0LwjEsM2oUJpbJMlwJqahB2AM-nPeTcTcX-_x6n4="
+            },
+            "httpHeaders": {},
+            "devicePlatform": "web",
+            "timeout": 5000,
+            "pullInterval": 30000,
+            "throttle": 100,
+            "triggerStrategy": {
+                "conversation-change": 2,
+                "message-upsert": 2,
+                "conversation-upsert": 3
+            },
+            "maxMessageCount": 1000,
+            "secUid": "MS4wLjABAAAABuzW9Er_W7H3liQYmuYgquwG_YLvvFeVOtY2Be_e1p6HlBn09M-tKn18F01znsWs",
+            "acceptIncorrectInboxType": true,
+            "extended": {
+                "ttwid": "1|cWPjPe0TDdJFI7Q7P01zTqv8NN59I1u-QF1fQiXbz94|1702020601|4e513e4eaa19634c57c6d80c2daea9e204373bf65d2844c7d987da1face36abb",
+                "Web-Sdk-Ms-Token": "F3LjtjnvHYZhxhqonhje52omXoG62zBlZE5vhSSAZXQtKqmXpWUbtb-n1qhEIGZZ3TZ8U4XNWVeGl5Jhq3PMMkBKZAbRyZohWyAAgEZ0LwjEsM2oUJpbJMlwJqahB2AM-nPeTcTcX-_x6n4="
+            },
+            "disableInitPull": true,
+            "debug": false,
+            "withCredentials": true
+        }
+    },
+    "retryTimes": 1,
+    "seqId": 10039,
+    "reqBody": {
+        "send_message_body": {
+            "conversation_id": "0:1:6940517328601924613:7028939348067795974",
+            "conversation_short_id": {
+                "low": 2068168977,
+                "high": 1702020014,
+                "unsigned": false
+            },
+            "conversation_type": 1,
+            "content": "{\"aweType\":0,\"text\":\"1\"}",
+            "mentioned_users": [],
+            "client_message_id": "e6908a54-f7f2-407c-aa91-affd6b657234",
+            "ticket": "deprecated",
+            "message_type": 7,
+            "ext": {
+                "s:mentioned_users": "",
+                "s:client_message_id": "e6908a54-f7f2-407c-aa91-affd6b657234"
+            }
+        }
+    },
+    "cmd": 100,
+    "url": "https://im-api-sg.tiktok.com/v1/message/send",
+    "request": {
+        "headers": {
+            "referer": "https://www.tiktok.com/messages?lang=zh-Hans&scene=business",
+            "from_appID": "1988",
+            "app_language": "zh-Hans",
+            "app_name": "tiktok_web",
+            "channel": "web",
+            "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+            "Web-Sdk-Ms-Token": "F3LjtjnvHYZhxhqonhje52omXoG62zBlZE5vhSSAZXQtKqmXpWUbtb-n1qhEIGZZ3TZ8U4XNWVeGl5Jhq3PMMkBKZAbRyZohWyAAgEZ0LwjEsM2oUJpbJMlwJqahB2AM-nPeTcTcX-_x6n4="
+        },
+        "body": {
+            "send_message_body": {
+                "conversation_id": "0:1:6940517328601924613:7028939348067795974",
+                "conversation_short_id": {
+                    "low": 2068168977,
+                    "high": 1702020014,
+                    "unsigned": false
+                },
+                "conversation_type": 1,
+                "content": "{\"aweType\":0,\"text\":\"1\"}",
+                "mentioned_users": [],
+                "client_message_id": "e6908a54-f7f2-407c-aa91-affd6b657234",
+                "ticket": "deprecated",
+                "message_type": 7,
+                "ext": {
+                    "s:mentioned_users": "",
+                    "s:client_message_id": "e6908a54-f7f2-407c-aa91-affd6b657234"
+                }
+            }
+        },
+        "cmd": 100,
+        "sequence_id": {
+            "low": 10039,
+            "high": 0,
+            "unsigned": false
+        },
+        "refer": 3,
+        "token": "",
+        "device_id": "7310121483757536799",
+        "sdk_version": "0.7.5-tt-web.1",
+        "build_number": "f59aa4a:fix/upgrade-uploader",
+        "inbox_type": 0,
+        "device_platform": "web",
+        "auth_type": 1,
+        "biz": "",
+        "access": "web_sdk"
+    },
+    "startTime": 1702025295412,
+    "method": "ws"
+}
+
+
+
+
+
+
+// 
+点击阅读
+{"__internal_ctx":{"initResult":3,"cachedToken":"","id":"ce696c1b-63d5-413e-8999-dee165286eed","option":{"appId":1459,"token":"","deviceId":"7310121483757536799","userId":"6940517328601924613","biz":"","apiUrl":"https://im-api-sg.tiktok.com","frontierUrl":"wss://im-ws-sg.tiktok.com/ws/v2","fpId":9,"appKey":"e1bd35ec9db7b8d846de66ed140b1ad9","service":5,"method":1,"authType":1,"inboxType":[0],"headers":{"referer":"https://www.tiktok.com/messages?lang=zh-Hans&scene=business","from_appID":"1988","app_language":"zh-Hans","app_name":"tiktok_web","channel":"web","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36","Web-Sdk-Ms-Token":"F3LjtjnvHYZhxhqonhje52omXoG62zBlZE5vhSSAZXQtKqmXpWUbtb-n1qhEIGZZ3TZ8U4XNWVeGl5Jhq3PMMkBKZAbRyZohWyAAgEZ0LwjEsM2oUJpbJMlwJqahB2AM-nPeTcTcX-_x6n4="},"httpHeaders":{},"devicePlatform":"web","timeout":5000,"pullInterval":30000,"throttle":100,"triggerStrategy":{"conversation-change":2,"message-upsert":2,"conversation-upsert":3},"maxMessageCount":1000,"secUid":"MS4wLjABAAAABuzW9Er_W7H3liQYmuYgquwG_YLvvFeVOtY2Be_e1p6HlBn09M-tKn18F01znsWs","acceptIncorrectInboxType":true,"extended":{"ttwid":"1|cWPjPe0TDdJFI7Q7P01zTqv8NN59I1u-QF1fQiXbz94|1702020601|4e513e4eaa19634c57c6d80c2daea9e204373bf65d2844c7d987da1face36abb","Web-Sdk-Ms-Token":"F3LjtjnvHYZhxhqonhje52omXoG62zBlZE5vhSSAZXQtKqmXpWUbtb-n1qhEIGZZ3TZ8U4XNWVeGl5Jhq3PMMkBKZAbRyZohWyAAgEZ0LwjEsM2oUJpbJMlwJqahB2AM-nPeTcTcX-_x6n4="},"disableInitPull":true,"debug":false,"withCredentials":true}},"retryTimes":1,"seqId":10017,"reqBody":{"mark_conversation_read_body":{"conversation_id":"0:1:6940517328601924613:7028939348067795974","conversation_short_id":{"low":2068168977,"high":1702020014,"unsigned":false},"conversation_type":1,"read_message_index":{"low":719128207,"high":396283,"unsigned":false}}},"cmd":2002,"url":"https://im-api-sg.tiktok.com/v3/conversation/mark_read","request":{"headers":{"referer":"https://www.tiktok.com/messages?lang=zh-Hans&scene=business","from_appID":"1988","app_language":"zh-Hans","app_name":"tiktok_web","channel":"web","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36","Web-Sdk-Ms-Token":"F3LjtjnvHYZhxhqonhje52omXoG62zBlZE5vhSSAZXQtKqmXpWUbtb-n1qhEIGZZ3TZ8U4XNWVeGl5Jhq3PMMkBKZAbRyZohWyAAgEZ0LwjEsM2oUJpbJMlwJqahB2AM-nPeTcTcX-_x6n4="},"body":{"mark_conversation_read_body":{"conversation_id":"0:1:6940517328601924613:7028939348067795974","conversation_short_id":{"low":2068168977,"high":1702020014,"unsigned":false},"conversation_type":1,"read_message_index":{"low":719128207,"high":396283,"unsigned":false}}},"cmd":2002,"sequence_id":{"low":10017,"high":0,"unsigned":false},"refer":3,"token":"","device_id":"7310121483757536799","sdk_version":"0.7.5-tt-web.1","build_number":"f59aa4a:fix/upgrade-uploader","inbox_type":0,"device_platform":"web","auth_type":1,"biz":"","access":"web_sdk"},"startTime":1702024969406,"method":"ws"}
+
+获取当前用户消息
+{"__internal_ctx":{"initResult":3,"cachedToken":"","id":"ce696c1b-63d5-413e-8999-dee165286eed","option":{"appId":1459,"token":"","deviceId":"7310121483757536799","userId":"6940517328601924613","biz":"","apiUrl":"https://im-api-sg.tiktok.com","frontierUrl":"wss://im-ws-sg.tiktok.com/ws/v2","fpId":9,"appKey":"e1bd35ec9db7b8d846de66ed140b1ad9","service":5,"method":1,"authType":1,"inboxType":[0],"headers":{"referer":"https://www.tiktok.com/messages?lang=zh-Hans&scene=business","from_appID":"1988","app_language":"zh-Hans","app_name":"tiktok_web","channel":"web","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36","Web-Sdk-Ms-Token":"F3LjtjnvHYZhxhqonhje52omXoG62zBlZE5vhSSAZXQtKqmXpWUbtb-n1qhEIGZZ3TZ8U4XNWVeGl5Jhq3PMMkBKZAbRyZohWyAAgEZ0LwjEsM2oUJpbJMlwJqahB2AM-nPeTcTcX-_x6n4="},"httpHeaders":{},"devicePlatform":"web","timeout":5000,"pullInterval":30000,"throttle":100,"triggerStrategy":{"conversation-change":2,"message-upsert":2,"conversation-upsert":3},"maxMessageCount":1000,"secUid":"MS4wLjABAAAABuzW9Er_W7H3liQYmuYgquwG_YLvvFeVOtY2Be_e1p6HlBn09M-tKn18F01znsWs","acceptIncorrectInboxType":true,"extended":{"ttwid":"1|cWPjPe0TDdJFI7Q7P01zTqv8NN59I1u-QF1fQiXbz94|1702020601|4e513e4eaa19634c57c6d80c2daea9e204373bf65d2844c7d987da1face36abb","Web-Sdk-Ms-Token":"F3LjtjnvHYZhxhqonhje52omXoG62zBlZE5vhSSAZXQtKqmXpWUbtb-n1qhEIGZZ3TZ8U4XNWVeGl5Jhq3PMMkBKZAbRyZohWyAAgEZ0LwjEsM2oUJpbJMlwJqahB2AM-nPeTcTcX-_x6n4="},"disableInitPull":true,"debug":false,"withCredentials":true}},"retryTimes":1,"seqId":10021,"reqBody":{"messages_per_user_body":{"cursor":{"low":-1814401064,"high":396283,"unsigned":false},"limit":50}},"cmd":200,"url":"https://im-api-sg.tiktok.com/v1/message/get_by_user","request":{"headers":{"referer":"https://www.tiktok.com/messages?lang=zh-Hans&scene=business","from_appID":"1988","app_language":"zh-Hans","app_name":"tiktok_web","channel":"web","user_agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36","Web-Sdk-Ms-Token":"F3LjtjnvHYZhxhqonhje52omXoG62zBlZE5vhSSAZXQtKqmXpWUbtb-n1qhEIGZZ3TZ8U4XNWVeGl5Jhq3PMMkBKZAbRyZohWyAAgEZ0LwjEsM2oUJpbJMlwJqahB2AM-nPeTcTcX-_x6n4="},"body":{"messages_per_user_body":{"cursor":{"low":-1814401064,"high":396283,"unsigned":false},"limit":50}},"cmd":200,"sequence_id":{"low":10021,"high":0,"unsigned":false},"refer":3,"token":"","device_id":"7310121483757536799","sdk_version":"0.7.5-tt-web.1","build_number":"f59aa4a:fix/upgrade-uploader","inbox_type":0,"device_platform":"web","auth_type":1,"biz":"","access":"web_sdk"},"startTime":1702025012950,"method":"ws"}
+

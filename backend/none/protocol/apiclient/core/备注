@@ -1,0 +1,112 @@
+{
+    "statusCode": 200,
+    "body": {
+        "i18n": {
+            "cookieBannerTitle": "Allow cookies from TikTok on this browser?",
+            "cookieBannerSubTitle": "TikTok uses cookies and similar technologies to provide, improve, protect and analyze our services. Essential cookies are necessary for our site to work as intended. By selecting \"Allow all\", you allow us to use optional cookies for additional purposes, such as measuring the effectiveness and relevance of ads, including personalized ads on TikTok.com, depending on your settings. Optional cookies also help us do other things, such as better measure the performance of our advertising campaigns off TikTok.com. Learn more about how we use cookies and manage your choices in our <a href=\"https://www.douyin.com/legal/tiktok-website-cookies-policy?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">Cookies Policy</a>.",
+            "cookieBannerBtnAccept": "Allow all",
+            "cookieBannerBtnDecline": "Decline optional cookies",
+            "cookieBannerSaveToast": "Saved!",
+            "cookieSettingSaveBtn": "Save",
+            "cookieSettingsTitle": "Manage cookies",
+            "cookieSettingsSubTitle": "Change your cookie settings to allow or decline optional cookies.",
+            "cookieSettingsFooter": "Learn more in our <a href=\"https://www.douyin.com/legal/tiktok-website-cookies-policy?lang=en\" target=\"_blank\" rel=\"noopener noreferrer\">Cookies Policy</a>"
+        },
+        "appProps": {
+            "region": "US",
+            "user": {
+                "ftcUser": false,
+                "region": ""
+            },
+            "idcRegion": "ALL_SG"
+        },
+        "cookieBanner": {
+            "resource": {
+                "esm": "/pns/tiktok-cookie-banner/1.0.0.247/default.esm.js",
+                "nomodule": "/pns/tiktok-cookie-banner/1.0.0.247/default.js",
+                "baseUrl": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static",
+                "version": "1.0.0.247"
+            },
+            "settings": [
+                {
+                    "groupName": "Optional cookies",
+                    "groupDescription": "With your consent, we use optional cookies for additional purposes, such as measuring the effectiveness and relevance of ads, including personalized ads on TikTok.com, depending on your settings. Optional cookies also help us better measure the performance of our advertising campaigns off TikTok.com.",
+                    "disabled": false,
+                    "items": {},
+                    "groupEntityKeys": [
+                        {
+                            "entityKey": "optional"
+                        },
+                        {
+                            "entityKey": "ga"
+                        },
+                        {
+                            "entityKey": "af"
+                        },
+                        {
+                            "entityKey": "fbp"
+                        },
+                        {
+                            "entityKey": "lip"
+                        },
+                        {
+                            "entityKey": "bing"
+                        },
+                        {
+                            "entityKey": "ttads"
+                        },
+                        {
+                            "entityKey": "reddit"
+                        },
+                        {
+                            "entityKey": "hubspot"
+                        }
+                    ]
+                },
+                {
+                    "groupName": "Essential cookies",
+                    "groupDescription": "Essential cookies are necessary for TikTok to work as intended. This includes cookies which are necessary to provide, improve, protect and analyze our services.",
+                    "disabled": true,
+                    "items": {}
+                }
+            ],
+            "disabled": false,
+            "isEffective": false,
+            "version": "v10",
+            "disabledAccessKeys": [
+                {
+                    "path": ".",
+                    "accessKeys": [
+                        "*"
+                    ]
+                }
+            ]
+        },
+        "consent": {
+            "domain": "https://www.douyin.com",
+            "appId": 1988,
+            "entityKeys": {
+                "optional": [
+                    "data-cookie-optional"
+                ]
+            },
+            "mode": "production",
+            "fetchDataAtInit": false,
+            "api": {
+                "consent": {
+                    "fetch": {
+                        "version": "v2"
+                    },
+                    "update": {
+                        "version": "v2"
+                    }
+                }
+            },
+            "wid": "7373473685678884358"
+        },
+        "tea": {
+            "channel": "sg",
+            "channel_type": "tcpy"
+        }
+    }
+}
